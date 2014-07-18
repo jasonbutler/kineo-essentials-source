@@ -10,7 +10,7 @@ It is assumed that all development companies have the basic required knowledge o
 
 The points of reference for checking work should be the page 101 developed by Kineo, the extension links in the [wiki] (https://github.com/cgkineo/kineo-essentials-source/wiki), and the example.json file in each extension repository.
 
-Kineo will continue to update this branch to improve features and address bug fixes (all issues must be reported on the supplied Kineo Trac site). With regard to this codebase, all that is required is to pull the updated vesrion as and when Kineo communicate (via email) that it is appropriate to do so. Modules would then require to be rebuilt from the updated source (updating is a quick automated task using the grunt command _grunt buildall_
+Kineo will continue to update this branch to improve features and address bug fixes (all issues must be reported on the supplied Kineo Trac site). With regard to this codebase, all that is required is to pull the updated vesrion as and when Kineo communicate (via email) that it is appropriate to do so. Modules would then require to be rebuilt from the updated source (updating is a quick automated task using the grunt command _grunt buildall_)
 
 
 ## Upcoming updates
