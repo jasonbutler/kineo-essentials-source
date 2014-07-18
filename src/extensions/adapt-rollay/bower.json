@@ -1,0 +1,14 @@
+{
+  "name": "adapt-rollay",
+  "homepage": "https://github.com/gitlab/adapt-rollay",
+  "authors": [
+    "Oliver Foster <oliver.foster@kineo.com"
+  ],
+  "description": "%description",
+  "main": "/js/adapt-rollay.js",
+  "keywords": [
+    "adapt-plugin",
+    "adapt-extension"
+  ],
+  "license": "GPLv3"
+}

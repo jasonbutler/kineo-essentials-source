@@ -1,0 +1,14 @@
+{
+  "name": "adapt-introRouter",
+  "homepage": "",
+  "authors": [
+    "Gavin McMaster <gavin.mcmaster@kineo.com>"
+  ],
+  "description": "Handles displaying an intro page before the menu",
+  "main": "/js/adapt-introRouter.js",
+  "keywords": [
+    "adapt-plugin",
+    "adapt-extension"
+  ],
+  "license": "GPLv3"
+}

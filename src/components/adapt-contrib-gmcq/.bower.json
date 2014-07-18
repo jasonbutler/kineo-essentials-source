@@ -1,0 +1,31 @@
+{
+  "name": "adapt-contrib-gmcq",
+  "homepage": "https://github.com/adaptlearning/adapt-contrib-gmcq",
+  "authors": [
+    "Daryl Hedley <darylhedley@hotmail.com>"
+  ],
+  "displayName": "Graphical Multiple Choice Question",
+  "component": "gmcq",
+  "assetFields": [
+    "_items[]._graphic.small",
+    "_items[]._graphic.medium",
+    "_items[]._graphic.large"
+  ],
+  "description": "A multiple choice question component, with images",
+  "main": "/js/adapt-contrib-gmcq.js",
+  "keywords": [
+    "adapt-plugin",
+    "adapt-component"
+  ],
+  "license": "GPLv3",
+  "_release": "609e7640fb",
+  "_resolution": {
+    "type": "branch",
+    "branch": "develop",
+    "commit": "609e7640fb2a2961d9a5231315045175057be73c"
+  },
+  "_source": "git://github.com/adaptlearning/adapt-contrib-gmcq.git",
+  "_target": "develop",
+  "_originalSource": "adapt-contrib-gmcq",
+  "_direct": true
+}

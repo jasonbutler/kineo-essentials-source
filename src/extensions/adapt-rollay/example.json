@@ -1,0 +1,7 @@
+// To go in the course.json file
+"_rollay": {
+    "_duration": {
+        "show": 200,
+        "hide": 200
+    }
+}

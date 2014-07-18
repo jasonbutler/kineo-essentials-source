@@ -1,0 +1,15 @@
+{
+  "name": "adapt-results",
+  "version": "0.0.1",
+  "homepage": "https://github.com/cgkineo/adapt-results",
+  "authors": [
+    "Dan Ghost <danielghost@kineo.com>"
+  ],
+  "description": "A simple core contributed text component",
+  "main": "/js/adapt-results.js",
+  "keywords": [
+    "adapt-plugin",
+    "adapt-component"
+  ],
+  "license": "GPLv3"
+}

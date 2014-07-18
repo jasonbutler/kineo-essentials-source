@@ -1,0 +1,24 @@
+{
+  "name": "adapt-contrib-media",
+  "homepage": "https://github.com/adaptlearning/adapt-contrib-media",
+  "authors": [
+    "Chris Steele <chris.steele@kineo.com>"
+  ],
+  "description": "Playback of video and audio with a Flash Player fallback for IE8+",
+  "main": "/js/adapt-contrib-media.js",
+  "keywords": [
+    "adapt-plugin",
+    "adapt-component"
+  ],
+  "license": "GPLv3",
+  "_release": "301cd2f124",
+  "_resolution": {
+    "type": "branch",
+    "branch": "develop",
+    "commit": "301cd2f124d2045b3c22fe8fb986b153d843311d"
+  },
+  "_source": "git://github.com/adaptlearning/adapt-contrib-media.git",
+  "_target": "develop",
+  "_originalSource": "adapt-contrib-media",
+  "_direct": true
+}

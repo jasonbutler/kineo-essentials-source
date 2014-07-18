@@ -1,0 +1,364 @@
+// =========
+// Variables
+// =========
+
+// Main colors
+// ===========
+
+@primary-color: @red;
+
+@red: #ea0020;
+@black: #181914;
+@grey: #605d58;
+@white: #ffffff;
+
+@foreground-color: @white;
+@background-color: @grey;
+
+@inverted-foreground-color: @background-color;
+@inverted-background-color: @foreground-color;
+
+@transparency:rgba(248,248,248,0.8);
+@transparency-fallback-png:url('assets/transparency-light.png');
+
+
+// Validation Error color
+// ======================
+
+@validation-error-text-color:#f55;
+@validation-error-icon-color:#f55;
+@validation-error-border-color:#f55;
+
+// ==========
+// Item setup
+// ==========
+
+// Item color
+// ==========
+
+@item-color: @white;
+@item-hover-color: @grey;
+@item-disabled-color: #666666;
+@item-visited-color: @black;
+@item-selected-color: @black;
+@item-text-color: @black;
+@item-text-hover-color: @white;
+@item-text-disabled-color: @white;
+@item-text-visited-color: @white;
+@item-text-selected-color: @white;
+
+
+// Item padding
+// ============
+
+@item-padding-top:10px;
+@item-padding-right:10px;
+@item-padding-bottom:10px;
+@item-padding-left:10px;
+
+@item-padding:@item-padding-top @item-padding-right @item-padding-bottom @item-padding-left;
+
+
+// Item border
+// ===========
+
+@item-border-width:0px;
+@item-border-style:solid;
+@item-border-color: @white;
+@item-border-hover-color: @white;
+@item-border-disabled-color: @white;
+@item-border-visited-color: @white;
+@item-border-selected-color: @white;
+@item-border: @item-border-width @item-border-style @item-border-color;
+
+
+// focus
+// =====
+
+@focus-outline: 1px dashed @primary-color;	
+
+
+// Item spacing
+// ============
+
+@item-spacing:2px;
+
+
+// Button
+// ======
+
+@button-color: @red;
+@button-hover-color: darken(@red, 10%);
+@button-disabled-color: @grey;
+
+@button-text-color: @white;
+@button-text-hover-color: @white;
+@button-text-disabled-color: @white;
+
+@button-padding-top:8px;
+@button-padding-right:20px;
+@button-padding-bottom:8px;
+@button-padding-left:20px;
+
+@button-padding:@button-padding-top @button-padding-right @button-padding-bottom @button-padding-left;
+
+@button-margin-top:10px;
+@button-margin-right:0px;
+@button-margin-bottom:10px;
+@button-margin-left:0px;
+
+@button-margin:@button-margin-top @button-margin-right @button-margin-bottom @button-margin-left;
+
+@button-border:1px solid @red;
+
+// Device widths
+// =============
+
+@device-width-small: 699px;
+@device-width-medium: 800px;
+@device-width-large: 1024px;
+@ie8-max-width:1024px;
+
+// ==============
+// Global spacing
+// ==============
+
+// Title paddings
+// ==============
+
+@menu-title-padding-top:30px;
+@menu-title-padding-sides:30px;
+@menu-title-padding-bottom:30px;
+
+@menu-title-padding:@menu-title-padding-top @menu-title-padding-sides @menu-title-padding-bottom;
+
+@page-title-padding-top:50px;
+@page-title-padding-sides:10px;
+@page-title-padding-bottom:50px;
+
+@page-title-padding:@page-title-padding-top @page-title-padding-sides @page-title-padding-bottom;
+
+@article-title-padding-top:30px;
+@article-title-padding-sides:20px;
+@article-title-padding-bottom:20px;
+
+@article-title-padding:@article-title-padding-top @article-title-padding-sides @article-title-padding-bottom;
+
+@block-title-padding-top: 20px;
+@block-title-padding-sides: 40px;
+@block-title-padding-bottom: 60px;
+
+@block-title-padding:@block-title-padding-top @block-title-padding-sides @block-title-padding-bottom;
+
+@component-title-padding-top:30px;
+@component-title-padding-sides:30px;
+@component-title-padding-bottom:0px;
+
+@component-title-padding:@component-title-padding-top @component-title-padding-sides @component-title-padding-bottom;
+
+
+// Title margins
+// =============
+
+@menu-title-margin-top:30px;
+@menu-title-margin-sides:30px;
+@menu-title-margin-bottom:30px;
+
+@menu-title-margin:@menu-title-margin-top @menu-title-margin-sides @menu-title-margin-bottom;
+
+@page-title-margin-top:10px;
+@page-title-margin-sides:10px;
+@page-title-margin-bottom:10px;
+
+@page-title-margin:@page-title-margin-top @page-title-margin-sides @page-title-margin-bottom;
+
+@article-title-margin-top:10px;
+@article-title-margin-sides:10px;
+@article-title-margin-bottom:10px;
+
+@article-title-margin:@article-title-margin-top @article-title-margin-sides @article-title-margin-bottom;
+
+@block-title-margin-top:0px;
+@block-title-margin-sides:0px;
+@block-title-margin-bottom:0px;
+
+@block-title-margin:@block-title-margin-top @block-title-margin-sides @block-title-margin-bottom;
+
+@component-title-margin-top:0px;
+@component-title-margin-sides:0px;
+@component-title-margin-bottom:0px;
+
+@component-title-margin:@component-title-margin-top @component-title-margin-sides @component-title-margin-bottom;
+
+
+// Body paddings
+// =============
+
+@menu-body-padding-top:30px;
+@menu-body-padding-sides:30px;
+@menu-body-padding-bottom:0px;
+
+@menu-body-padding:@menu-body-padding-top @menu-body-padding-sides @menu-body-padding-bottom;
+
+@page-body-padding-top:10px;
+@page-body-padding-sides:10px;
+@page-body-padding-bottom:10px;
+
+@page-body-padding:@page-body-padding-top @page-body-padding-sides @page-body-padding-bottom;
+
+@article-body-padding-top:10px;
+@article-body-padding-sides:20px;
+@article-body-padding-bottom:40px;
+
+@article-body-padding:@article-body-padding-top @article-body-padding-sides @article-body-padding-bottom;
+
+@block-body-padding-top: 40px;
+@block-body-padding-sides:0px;
+@block-body-padding-bottom: 40px;
+
+@block-body-padding:@block-body-padding-top @block-body-padding-sides @block-body-padding-bottom;
+
+@component-body-padding-top:30px;
+@component-body-padding-sides:30px;
+@component-body-padding-bottom:30px;
+
+@component-body-padding:@component-body-padding-top @component-body-padding-sides @component-body-padding-bottom;
+
+
+// Body margins
+// ============
+
+@menu-body-margin-top:10px;
+@menu-body-margin-sides:10px;
+@menu-body-margin-bottom:10px;
+
+@menu-body-margin:@menu-body-margin-top @menu-body-margin-sides @menu-body-margin-bottom;
+
+@page-body-margin-top:10px;
+@page-body-margin-sides:10px;
+@page-body-margin-bottom:10px;
+
+@page-body-margin:@page-body-margin-top @page-body-margin-sides @page-body-margin-bottom;
+
+@article-body-margin-top:10px;
+@article-body-margin-sides:10px;
+@article-body-margin-bottom:10px;
+
+@article-body-margin:@article-body-margin-top @article-body-margin-sides @article-body-margin-bottom;
+
+@block-body-margin-top:10px;
+@block-body-margin-sides:10px;
+@block-body-margin-bottom:10px;
+
+@block-body-margin:@block-body-margin-top @block-body-margin-sides @block-body-margin-bottom;
+
+@component-body-margin-top:0px;
+@component-body-margin-sides:0px;
+@component-body-margin-bottom:0px;
+
+@component-body-margin:@component-body-margin-top @component-body-margin-sides @component-body-margin-bottom;
+
+
+// Instruction padding
+// ===================
+
+@component-instruction-padding-top:0px;
+@component-instruction-padding-sides:30px;
+@component-instruction-padding-bottom:0px;
+
+@component-instruction-padding:@component-instruction-padding-top @component-instruction-padding-sides @component-instruction-padding-bottom;
+
+
+// Instruction margin
+// ==================
+
+@component-instruction-margin-top:0px;
+@component-instruction-margin-sides:0px;
+@component-instruction-padding-bottom:20px;
+
+@component-instruction-margin:@component-instruction-margin-top @component-instruction-margin-sides @component-instruction-padding-bottom;
+
+// Navigation
+// ==========
+
+@navigation-color: @black;
+@navigation-icon-color: @white;
+@navigation-icon-hover-color: @red;
+
+@navigation-border-width:1px;
+@navigation-border-style:solid;
+@navigation-border-color: @black;
+@navigation-border: @navigation-border-width @navigation-border-style @navigation-border-color;
+
+@navigation-height: 60px;
+@navigation-height-mobile: 50px;
+@navigation-padding: ((@navigation-height - @icon-size)/2);
+@navigation-padding-mobile: ((@navigation-height-mobile - @icon-size)/2);
+
+
+// Drawer
+// ======
+
+@drawer-color: @black;
+@drawer-text-color: @white;
+
+@drawer-icon-color: @white;
+@drawer-icon-hover-color: @primary-color;
+
+@drawer-item-color: @black;
+@drawer-item-hover-color: @grey;
+
+@drawer-item-text-color: @white;
+@drawer-item-text-hover-color: @white;
+
+@drawer-item-padding-top:10px;
+@drawer-item-padding-right:10px;
+@drawer-item-padding-bottom:10px;
+@drawer-item-padding-left:10px;
+
+@drawer-item-padding:@drawer-item-padding-top @drawer-item-padding-right @drawer-item-padding-bottom @drawer-item-padding-left;
+
+
+// Notify
+// ======
+
+@notify-color: @red;
+@notify-text-color: @white;
+
+@notify-icon-color: @white;
+@notify-icon-hover-color: @white;
+
+@notify-button-color: @white;
+@notify-button-hover-color: darken(@red, 10%);
+@notify-button-text-color: @red;
+@notify-button-text-hover-color: @white;
+
+@notify-popup-padding-top:30px;
+@notify-popup-padding-right:30px;
+@notify-popup-padding-bottom:30px;
+@notify-popup-padding-left:30px;
+
+@notify-popup-padding:@notify-popup-padding-top @notify-popup-padding-right @notify-popup-padding-bottom @notify-popup-padding-left;
+
+
+// Fonts
+// =====
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,700);
+
+@font-family: 'Open Sans', sans-serif;
+@font-size:16px;
+@font-extra-line-height:10px;
+@font-color: @black;
+@font-weight-light:300;
+@font-weight-normal:300;
+@font-weight-bold:700;
+
+
+// Icons
+// =====
+
+@icon-size:24px;
+@icon-correct-color:#51FB66;
+@icon-incorrect-color:#F14E4E;
+

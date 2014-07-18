@@ -1,0 +1,125 @@
+@article-reveal-max-width: 1440px;
+
+.article-reveal {
+	
+	margin: 0 auto;
+	position:relative;
+	max-width: @article-reveal-max-width;
+	
+	.article-reveal-inner {
+		height: auto!important;
+		position: relative;
+		padding: 30px;
+		
+		  @media all and (max-width: 520px) {
+            padding: 15px;
+        }
+	}
+
+	.article-reveal-content-container {
+		max-width: 900px;
+		margin: auto;
+		background-color: @white;
+	}
+	.article-reveal-content-container-inner {
+		color: @black;
+		padding: 20px;
+		position: relative;
+		@media all and (max-width:850px) {
+			padding-bottom: 40px;
+		}
+	}
+
+	.article-reveal-graphic-container {
+		float: left;
+		.article-reveal-graphic {
+			@media all and (min-width:850px) {
+				background-image: url(assets/folder.png);
+				background-position: top left;
+				background-repeat: no-repeat;
+				width: 167px;
+				height: 117px;
+			}
+		}
+	}
+
+	.article-reveal-text-container {
+		padding: 30px;
+		@media all and (max-width:850px) {
+			text-align: center;
+		}
+		  @media all and (max-width: 520px) {
+            padding: 15px;
+        }
+	}
+
+	.article-reveal-text-container-title {
+			font-size: 28px;
+	}
+
+    .article-reveal-open-button {
+		position: relative;
+		background-color: @primary-color;
+		text-decoration:none;
+		cursor: pointer;
+		padding: 10px 20px;
+		@media all and (min-width:850px) {
+			float: right;
+		}
+		margin: 30px 20px;
+		margin-top: -80px;
+		&.visited {
+		  .article-reveal-open-button-icon {
+			color: @item-visited-color;
+		  }
+		  &.show:hover {
+			background-color: @grey;
+			cursor:default; 
+		  }
+		}
+		&:hover {
+			background-color: @grey;
+		}
+		
+		
+		@media all and (max-width:@device-width-small) {
+			left: 50% !important;
+		}
+		@media all and (max-width:850px) {
+			left: 50%!important;
+			margin-left: -40px;
+		}
+	}	
+
+	.hide-button {
+		display: none;
+	}
+	
+ 
+  /*Reveal button styling */
+  
+
+  .article-reveal-open-button-text {
+	  position:relative;
+	  color: @white;
+	  text-decoration:none;
+	  text-align: center;
+  }
+}
+
+.article-reveal-enabled {
+
+	.article-inner {
+		opacity:0;
+		transition:opacity 1.5s;
+		&.show {
+			opacity:1;
+		}
+	}
+
+}
+
+
+
+
+

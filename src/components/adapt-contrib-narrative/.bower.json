@@ -1,0 +1,25 @@
+{
+  "name": "adapt-contrib-narrative",
+  "homepage": "https://github.com/adaptlearning/adapt-contrib-narrative",
+  "authors": [
+    "Brian Quinn <brian@learningpool.com>",
+    "Daryl Hedley <darylhedley@hotmail.com>"
+  ],
+  "description": "A component that displays an image gallery with accompanying text",
+  "main": "/js/adapt-contrib-narrative.js",
+  "keywords": [
+    "adapt-plugin",
+    "adapt-component"
+  ],
+  "license": "GPLv3",
+  "_release": "74b155c6f1",
+  "_resolution": {
+    "type": "branch",
+    "branch": "develop",
+    "commit": "74b155c6f192482c2857d12246de414abd7cd991"
+  },
+  "_source": "git://github.com/adaptlearning/adapt-contrib-narrative.git",
+  "_target": "develop",
+  "_originalSource": "adapt-contrib-narrative",
+  "_direct": true
+}

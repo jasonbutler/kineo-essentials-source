@@ -1,0 +1,26 @@
+{
+  "name": "adapt-contrib-matching",
+  "homepage": "https://github.com/adaptlearning/adapt-contrib-matching",
+  "authors": [
+    "Kevin Corry <kevinc@learningpool.com>, Daryl Hedley <darylhedley@gmail.com>"
+  ],
+  "description": "A question component that allows the learner to match the options to question stems",
+  "main": "/js/adapt-contrib-matching.js",
+  "displayName": "Matching Question",
+  "component": "matching",
+  "keywords": [
+    "adapt-plugin",
+    "adapt-component"
+  ],
+  "license": "GPLv3",
+  "_release": "12616b6189",
+  "_resolution": {
+    "type": "branch",
+    "branch": "develop",
+    "commit": "12616b6189c4e31e29864a31b9d16cb719a41a17"
+  },
+  "_source": "git://github.com/adaptlearning/adapt-contrib-matching.git",
+  "_target": "develop",
+  "_originalSource": "adapt-contrib-matching",
+  "_direct": true
+}

@@ -1,0 +1,30 @@
+<div class="menu-item-indicator-inner" role="menuitem" aria-label="{{_ariaLabels.menuItemPage}}">
+	<a href="#" class="menu-item-indicator-graphic">
+		{{#if _isComplete}}
+			{{#if _assessment}}
+				{{#if _assessment.isPassed}}
+				   <img src="{{_coverMenu._indicatorGraphic._isComplete}}"/>
+				 {{else}}
+				 	<img src="{{_coverMenu._indicatorGraphic._isVisited}}"/>
+				 {{/if}}
+			{{else}}
+				<img src="{{_coverMenu._indicatorGraphic._isComplete}}"/>
+			{{/if}}
+		{{else}}
+			{{#if _isVisited}}
+			<img src="{{_coverMenu._indicatorGraphic._isVisited}}"/>
+			{{else}}
+				{{#if _isLocked}}
+				<img src="{{_coverMenu._indicatorGraphic._isLocked}}"/>
+				{{else}}
+					{{#if _accessibilityEnabled}}
+					<img src="{{_coverMenu._indicatorGraphic._accessibilityEnabled}}"/>
+					{{else}}
+					<img class="accessibility-indicator-graphic" src="{{_coverMenu._indicatorGraphic._default}}"/>
+					{{/if}}
+				{{/if}}
+			{{/if}}
+		{{/if}}
+		<span class="menu-item-indicator-title">{{{title}}}</span>
+	</a>
+</div>

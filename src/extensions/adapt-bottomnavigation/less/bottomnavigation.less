@@ -1,0 +1,33 @@
+/*
+* adapt-bottomnavigation
+* License - http://github.com/adaptlearning/adapt_framework/LICENSE
+* Maintainers - Oliver Foster <oliver.foster@kineo.com>
+*/
+
+@bottomnavigation-height: 50px;
+
+#bottomnavigation {
+	display: none;
+	width:100%;
+	background-color: white;
+	height: @bottomnavigation-height;
+	bottom: 0px;
+	left: 0px;
+	right:0px;
+	position: fixed;
+	overflow: hidden;
+	z-index: 20;
+	border-top: 1px solid #3eb4e4;
+}
+
+.body-wrapper-bottomnavigation {
+	#wrapper {
+		margin-bottom: @bottomnavigation-height;
+	}
+}
+
+.extension-trickle {
+	.trickle-button.trickle-button-show {
+		bottom:@bottomnavigation-height;
+	}
+}

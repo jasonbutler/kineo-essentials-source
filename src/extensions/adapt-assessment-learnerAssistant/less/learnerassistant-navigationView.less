@@ -1,0 +1,66 @@
+.learnerassistant-navigationView {
+    position:relative;
+    .buttongroup {
+        margin-top: 3px;
+        margin-left: 3px;
+        float: left;
+        &.not-reviewed.is-resultsshown {
+            #learnerassistant-revision {
+                display: block;
+            }
+            #learnerassistant-next {
+                display: none;
+            }
+            #learnerassistant-finish {
+                display: none;
+            }
+        }
+        &.not-reviewed.not-resultsshown {
+            #learnerassistant-revision {
+                display: none;
+            }
+            #learnerassistant-next {
+                display: block;
+            }
+            #learnerassistant-finish {
+                display: none;
+            }
+        }
+        &.is-reviewed {
+            #learnerassistant-revision {
+                display: none;
+            }
+            #learnerassistant-next {
+                display: none;
+            }
+            #learnerassistant-finish {
+                display: block;
+            }
+        }
+    }
+    .learnerassistant-navigation-completion {
+        float:right;
+        width: 100px;
+        height: 8px;
+        background-color: darken(@background-color, 10%);
+        overflow: hidden;
+        border: 2px solid @background-color;
+        position: relative;
+        border-radius: 5px;
+        margin: 19px 20px 0 0;
+        .learnerassistant-navigation-bar {
+            height: 100%;
+            position: absolute;
+            bottom: 0;
+            background-color: @primary-color;
+        }
+    }
+}
+
+.navigation-inner {
+    &.no-pageLevelProgress {
+        .page-level-progress-navigation {
+            display: none !important;
+        }
+    }
+}
