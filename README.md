@@ -14,7 +14,8 @@ Kineo will continue to update this branch to improve features and address bug fi
 
 
 ## Upcoming updates
-* Guided Learning enhancements, including progress drawer feature
+* Banked Assessment extension
+* Guided Learning extension
 * AA accessibility
 * Final certificate (on quiz passed)
 * SCORM tracking of flagged learning data
