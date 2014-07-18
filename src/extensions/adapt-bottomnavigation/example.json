@@ -1,8 +1,0 @@
-// To go in the course.json file
-"_bottomnavigation": {
-    "_duration": {
-        "show": 200,
-        "hide": 200
-    },
-    "_showMenu": false
-}
