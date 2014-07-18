@@ -7,3 +7,5 @@ This codebase is based on the [Adapt Open Source Software (OSS) product,] (https
 
 
 It is assumed that all development companies have the basic required knowledge of Adapt, and associated technolgies i.e. Git, Grunt, Node, JSON etc. Kineo will not provide support on the fundamentals of these technologies.  
+
+The points of reference for checking work should be the page 101 developed by Kineo, the extension links in the [wiki] (https://github.com/cgkineo/kineo-essentials-source/wiki), and the example.json file in each extension repository.
