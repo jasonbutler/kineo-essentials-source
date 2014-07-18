@@ -1,0 +1,24 @@
+{
+  "name": "adapt-contrib-resources",
+  "homepage": "https://github.com/adaptlearning/adapt-contrib-resources",
+  "authors": [
+    "Daryl Hedley <darylhedley@hotmail.com>, Dan Gray <dan@sinensis.co.uk>"
+  ],
+  "description": "An extension to allow learners to view resources",
+  "main": "/js/adapt-contrib-resources.js",
+  "keywords": [
+    "adapt-plugin",
+    "adapt-extension"
+  ],
+  "license": "GPLv3",
+  "_release": "77a0914a61",
+  "_resolution": {
+    "type": "branch",
+    "branch": "develop",
+    "commit": "77a0914a61ef4b05037645d1528eb09fdffbb9cb"
+  },
+  "_source": "git://github.com/adaptlearning/adapt-contrib-resources.git",
+  "_target": "develop",
+  "_originalSource": "adapt-contrib-resources",
+  "_direct": true
+}

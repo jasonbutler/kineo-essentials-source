@@ -1,0 +1,10 @@
+{
+  "modules": [
+  	"p101"
+  ],
+  "themes": {
+  	"default":"adapt-essentials-int14002-theme",
+  	"custom": {
+  	}
+  }
+}

@@ -1,0 +1,1735 @@
+[
+    {
+        "_id":"c-00",
+        "_parentId":"b-00",
+        "_type":"component",
+        "_component":"media",
+        "_classes":"component-background",
+        "_layout":"full",
+        "title":"Title of the media component",
+        "displayTitle": "",
+        "body": "",
+        "instruction": "",
+        "_setCompletionOn":"inview",
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        },
+        "_media": {
+            "mp4": "course/en/video/big_buck_bunny.mp4",
+            "ogv": "course/en/video/big_buck_bunny.ogv",
+            "poster": "course/en/images/intro-page-video-poster-image.png",
+            "transcriptLink": "assets/transcript.pdf",
+            "transcriptText": "Transcript"
+        }
+    },
+    {
+        "_id":"c-01",
+        "_parentId":"b-01",
+        "_type":"component",
+        "_component":"text",
+        "_classes":"bacteria-cloud-text",
+        "_layout":"full",
+        "title":"BACTERIA",
+        "displayTitle":"BACTERIA",
+        "body":"INVISIBLE TO<br> THE HUMAN EYE",
+        "instruction":"",
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id":"c-02",
+        "_parentId":"b-02",
+        "_type":"component",
+        "_component":"text",
+        "_classes":"big-text-title",
+        "_layout":"full",
+        "title":"BACTERIA IS EVERYWHERE",
+        "displayTitle":"BACTERIA IS EVERYWHERE",
+        "body":"",
+        "instruction":"",
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id":"c-03",
+        "_parentId":"b-03",
+        "_type":"component",
+        "_component":"text",
+        "_classes":"menu-link-component",
+        "_layout":"full",
+        "title":"Menu Link",
+        "displayTitle":"Menu Link",
+        "body":"Menu link body text. All components take this form of a title and body - except a blank component.<br>This component you're reading is a text component. All components take this form of a title and body - except a blank component. However it's important to realise that title and body attributes are not needed.<br/><br/><a href='#/id/co-02' class='button'>Menu</a>",
+        "instruction":"",
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id":"c-05",
+        "_parentId":"b-05",
+        "_type":"component",
+        "_component":"text",
+        "_classes":"header-text",
+        "_layout":"left",
+        "title":"The hidden Enemy",
+        "displayTitle":"The hidden Enemy",
+        "body":"This component you're reading is a text component. All components take this form of a title and body - except a blank component.<br>This component you're reading is a text component. All components take this form of a title and body - except a blank component. However it's important to realise that title and body attributes are not needed.",
+        "instruction":"",
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+        {
+        "_id":"c-10",
+        "_parentId":"b-05",
+        "_type":"component",
+        "_component":"graphic",
+        "_classes":"remove-graphic-background",
+        "_layout":"right",
+        "title":"GRAPHIC",
+        "displayTitle":"",
+        "body":"",
+        "instruction":"",
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        },
+        "_graphic": {
+            "alt": "alt text",
+            "large": "course/en/images/badge_1.png",
+            "medium": "course/en/images/badge_1.png",
+            "small": "course/en/images/badge_1.png"
+        }
+    },
+    {
+        "_id":"c-15",
+        "_parentId":"b-10",
+        "_classes": "component-background",
+        "_type":"component",
+        "_component": "hotgraphic",
+        "_layout": "full",    
+        "title": "FATTAM",
+        "displayTitle": "FATTAM",
+        "body": "We live in a multi-device world. The growth of internet enabled devices such as smartphones, tablets and laptops means that increasingly we have to deliver learning solutions that work on all devices. This is not as simple as a desktop and mobile solution; what is required is a multi-device solution.",
+        "instruction":"Click the icons below for more.",
+        "_graphic": {
+            "src": "course/en/images/fattam.png",
+            "alt": "This is a hot spot graphic of Fattam containing two hot spot links."
+        },
+        "_items": [
+            {
+                "title": "Introduction",
+                "body": "With the advent of modern browsers, frameworks, developments in HTML 5 and responsive design approaches we're now able to create engaging learning that will work, regardless of the device being used.<br><br>In addition, Libraries such as Backbone, Underscore and Handlebars have rapidly sped up development and enabled the production of fast single page applications (SPAs) that improve the user experience.",
+                "_graphic": {
+                    "src": "course/en/images/chicken.png",
+                    "alt": "Hot graphic pop-up pin one. Select here to open."
+                },
+                "strapline": "Introduction",
+                "_top": 58,
+                "_left": 23
+            },
+            {
+                "title": "What is responsive elearning?",
+                "body": "Responsive elearning Design takes its inspiration from Responsive Web Design; an approach to design that ensures a single version of a website (or an elearning course created as a web app) can provide a viewing experience optimised to complement a variety of different devices, from desktop monitor to smartphone.This tailored viewing experience is achieved by:<ul><li>providing dynamic layouts which allow for the resizing of onscreen elements to make the most of the space available (fluid grid concept)</li></ul>",
+                "_graphic": {
+                    "src": "course/en/images/chicken.png",
+                    "alt": "Hot graphic pop-up pin two. Select here to open."
+                },
+                "strapline": "What is responsive elearning?",
+                "_top": 60,
+                "_left": 80
+            }
+        ],
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id":"c-20",
+        "_parentId":"b-15",
+        "_type":"component",
+        "_component":"text",
+        "_classes":"component-background",
+        "_layout":"left",
+        "title":"TOUCH POINTS",
+        "displayTitle":"TOUCH POINTS",
+        "body":"This component you're reading is a text component. All components take this form of a title and body - except a blank component. However it's important to realise that title and body attributes are not needed. <br><br>Take for instance the media component opposite or below on a smaller device - has no body attribute. Instead of the HTML being rendered Adapt simply doesn't render it.",
+        "instruction":"",
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id":"c-25",
+        "_parentId":"b-15",
+        "_type":"component",
+        "_component":"graphic",
+        "_classes":"remove-graphic-background",
+        "_layout":"right",
+        "title":"GRAPHIC",
+        "displayTitle":"",
+        "body":"",
+        "instruction":"",
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        },
+        "_graphic": {
+            "alt": "alt text",
+            "large": "course/en/images/bacteria_table.png",
+            "medium": "course/en/images/bacteria_table.png",
+            "small": "course/en/images/bacteria_table.png"
+        }
+    },
+    {
+        "_id":"c-30",
+        "_parentId":"b-20",
+        "_type":"component",
+        "_component":"text",
+        "_classes":"bold-block-titles",
+        "_layout":"full",
+        "title":"FIGHTING BACK - CLEANING IN THE WORKPLACE",
+        "displayTitle":"FIGHTING - BACK CLEANING IN THE WORKPLACE",
+        "body":"",
+        "instruction":"",
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id":"c-35",
+        "_parentId":"b-25",
+        "_type":"component",
+        "_component":"accordion",
+        "_classes":"component-background",
+        "_layout":"left",
+        "title": "CLEANING TERMS",
+        "displayTitle": "CLEANING TERMS",
+        "body": "Here are some reasons why we think scrolling is perfectly fine – and even desirable:",
+        "instruction":"Select the headings below to reveal the text.",
+        "_items": [
+            {
+                "alt": "Your learners already do it",
+                "title": "Your learners already do it",
+                "body": "Visit a website today and vertical scrolling will most likely factor into the overall design of the site.  Users understand what’s expected of them and are scrolling down the page to read content.  Feedback from our user trialling of scrolling page designs supports the assertion that users ‘get it’. Actually, they preferred this approach over more traditional template designs.<br><br>Surely we want to present learning that uses conventions our audience is most comfortable with?"
+            },
+            {
+                "alt": "Device proof your learning",
+                "title": "Device proof your learning",
+                "body": "More and more learners are accessing content on a wide range of devices and each of these devices will display pages differently. The only thing you can guarantee is if you’re accessing content on a smartphone vertical scrolling will be required. Why not embrace this and place responsive design and vertical scrolling at the heart of your design?"
+            },
+            {
+                "alt": "Meaningful navigation",
+                "title": "Meaningful navigation",
+                "body": "It's common sense to cluster any related content on a single page that’s either as short or as long as it needs to be.  Not only does this reduce any unnecessary navigation, it also helps the learner make sense of the structure and the relationship between content. Navigation becomes meaningful, rather than a by-product of the template size."
+            },
+            {
+                "alt": "‘Everything above the fold’ might be old hat but...",
+                "title": "‘Everything above the fold’ might be old hat but...",
+                "body": "...The principle remains. Due to the variety of devices used to access web content you’ll only be able to guarantee the first 400 or 500 pixels of a page will be visible, so there’s no harm in putting the important stuff first and hooking your learners early. In fact, we advocate this as good practice, regardless of what page layouts are being used."
+            },
+            {
+                "alt": "More flexibility",
+                "title": "More flexibility",
+                "body": "Scrolling pages still allow you to present content via interactive elements (we call them components instead of templates), but with a scrolling page there is far more flexibility in how these elements are presented. Layouts can now vary in size and the density of content, which in turn creates more space for branding to be incorporated. Or indeed some precious white space to give the content space to breathe.  Overruns are also a thing of the past meaning localisation of content becomes a simpler proposition as well."
+            },
+            {
+                "alt": "Don’t throw the baby out with the bath water",
+                "title": "Don’t throw the baby out with the bath water",
+                "body": "None of the above means we stop following instructional design best practice.  We continue to put the learner at the heart of what we produce, writing well-structured which follows an appropriate learning model. It’s more about looking around at what is going on within the wider web community and taking note of changes in best practice and the nature of how content, is being accessed."
+            }
+        ],
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+      {
+        "_id":"c-40",
+        "_parentId":"b-25",
+        "_type":"component",
+        "_component":"text",
+        "_classes":"component-background",
+        "_layout":"right",
+        "title":"CLEANING MATERIALS",
+        "displayTitle":"CLEANING MATERIALS",
+        "body":"This component you're reading is a text component. All components take this form of a title and body - except a blank component. However it's important to realise that title and body attributes are not needed. <br><br>Take for instance the media component opposite or below on a smaller device - has no body attribute. Instead of the HTML being rendered Adapt simply doesn't render it. The title attribute is simply a break tag to push the media component level with the opposite component.",
+        "instruction":"",
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id":"c-45",
+        "_parentId":"b-30",
+        "_type":"component",
+        "_component":"media",
+        "_classes":"component-background",
+        "_layout":"full",
+        "title":"Title of the media component",
+        "displayTitle": "REVEALED COMPONENT",
+        "body": "This is optional body text. Select the play button to start the video.",
+        "instruction": "",
+        "_setCompletionOn":"inview",
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        },
+        "_media": {
+            "mp4": "course/en/video/big_buck_bunny.mp4",
+            "ogv": "course/en/video/big_buck_bunny.ogv",
+            "poster": "",
+            "transcriptLink": "assets/transcript.pdf",
+            "transcriptText": "Transcript"
+        }
+    },
+    {
+        "_id": "c-50",
+        "_parentId":"b-35",
+        "_type":"component",
+        "_classes": "",
+        "_layout": "full",
+        "_component": "narrative",
+        "title": "A DAY IN THE LIFE",
+        "displayTitle": "A DAY IN THE LIFE",
+        "body": "Find out what’s on the roadmap for 2014 for Adapt Learning.",
+        "instruction":"",
+        "_items": [
+            {
+                "title": "Improvements",
+                "body": "Over the next few months we’ll be working on a number of developments to improve Adapt Learning to ensure it’s the leading elearning framework for responsive content. At the heart of these developments are two key pieces of work.",
+                "_graphic": {
+                    "src": "course/en/images/chicken.png",
+                    "alt": "narrative alt text"
+                },
+                "strapline": "Improvements"
+            },
+            {
+                "title": "1: Plug-in Friendly Architecture",
+                "body": "We’re in the process of reworking the codebase to ensure a plugin friendly approach. This will help us to establish an extensive and vibrant open source community to support the framework and adhere to the principles of collaborative development.",
+                "_graphic": {
+                    "src": "course/en/images/chicken.png",
+                    "alt": "narrative 1 alt text"
+                },
+                "strapline": "1: Plug-in Friendly Architecture"
+            },
+            {
+                "title": "2: Authoring Tool",
+                "body": "We’re also creating an authoring tool to allow non-technical users to create fully featured Adapt elearning courses. The authoring tool will be simple enough for novices to use yet powerful enough to meet the needs of the elearning professional.",
+                "_graphic": {
+                    "src": "course/en/images/chicken.png",
+                    "alt": "narrative 2 alt text"
+                },
+                "strapline": "2: Authoring Tool"
+            }
+        ],
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id":"c-55",
+        "_parentId":"b-40",
+        "_type":"component",
+        "_component":"mcq",
+        "_classes":"component-background",
+        "_layout":"right",
+        "_attempts":1,
+        "_questionWeight":10,
+        "_isRandom":true,
+        "_selectable":3,
+        "title": "CLEANING TERMS",
+        "displayTitle": "CLEANING TERMS",
+        "body": "How can anyone get involved with Adapt?",
+        "instruction":"Select the correct answers below.",
+        "_items": [
+            {
+                "text": "Sign up to the community site",
+                "_shouldBeSelected":true
+            },
+            {
+                "text": "Contrib to code on Github",
+                "_shouldBeSelected":true
+            },
+            {
+                "text": "Suggest extra features for plugins",
+                "_shouldBeSelected":true
+            }
+        ],
+        "_feedback":{
+            "correct": "That’s correct. To continue close this tutor pop-up.",
+            "_incorrect": {
+                "notFinal": "Sorry, that’s not right. To continue close this tutor pop-up.",
+                "final": "Final feedback! Sorry, that’s not right. To continue close this tutor pop-up."
+            },
+            "_partlyCorrect": {
+                "notFinal": "That’s not quite right. To continue close this tutor pop-up.",
+                "final": "Final feedback! That’s not quite right. To continue close this tutor pop-up."
+            }
+        },
+        "_buttons":{
+            "submit":"",
+            "reset":"",
+            "showCorrectAnswer":"",
+            "hideCorrectAnswer":""
+        },
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id":"c-60",
+        "_parentId":"b-45",
+        "_type":"component",
+        "_component":"gmcq",
+        "_classes":"component-background",
+        "_layout":"left",
+        "_attempts":1,
+        "_questionWeight":1,
+        "_isRandom":false,
+        "_selectable":1,
+        "title": "GMCQ",
+        "displayTitle": "GMCQ",
+        "body": "Which of the following options would you consider to be correct?",
+        "instruction": "",
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        },
+        "_items": [
+            {
+                "text": "Option 1.",
+                "_shouldBeSelected":true,
+                "_graphic": {
+                    "alt": "Alt text for option 1",
+                    "large": "course/en/images/chicken.png",
+                    "medium": "course/en/images/chicken.png",
+                    "small": "course/en/images/chicken.png"
+                }
+            },
+            {
+                "text": "Option 2.",
+                "_shouldBeSelected":false,
+                "_graphic": {
+                    "alt": "Alt text for option 2",
+                    "large": "course/en/images/chicken.png",
+                    "medium": "course/en/images/chicken.png",
+                    "small": "course/en/images/chicken.png"
+                }
+            }
+        ],
+        "_feedback":{
+            "correct":"Congratulations, this is the correct feedback.",
+            "_incorrect": {
+                "notFinal": "",
+                "final": "Unfortunately this is the incorrect feedback."
+            },
+            "_partlyCorrect": {
+                "notFinal": "",
+                "final": "This is the partly correct feedback."
+            }
+        },
+        "_buttons":{
+            "submit":"",
+            "reset":"",
+            "showCorrectAnswer":"",
+            "hideCorrectAnswer":""
+        }
+    },
+    {
+        "_id": "c-65",
+        "_parentId":"b-45",
+        "_classes": "component-background",
+        "_layout": "right",
+        "_type": "component",
+        "_component": "matching",
+        "_attempts": 2,
+        "_isRandom":true,
+        "_questionWeight":10,
+        "title": "Matching",
+        "displayTitle": "MATCHING",
+        "body": "Basically what you need to do is match the questions below with the drop down box option.",
+        "instruction":"",
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        },
+        "_buttons":{
+            "submit":"Submit",
+            "reset":"Reset",
+            "showCorrectAnswer":"Model Answer",
+            "hideCorrectAnswer":"Your Answer"
+        },
+        "_feedback": {
+            "correct": "This feedback will appear if you answered the question correctly.",
+            "_incorrect": {
+                "notFinal": "",
+                "final": "This feedback will appear if you answered the question incorrectly."
+            },
+            "_partlyCorrect": {
+                "notFinal": "",
+                "final": "This feedback will appear if you answered part of the question correctly."
+            }
+        },
+        "placeholder": "select an option",
+        "_items": [
+            {
+                "text": "Pick option two",
+                "_options": [
+                    {
+                        "text": "Option one",
+                        "_isCorrect": false
+                    },
+                    {
+                        "text": "Option two (correct)",
+                        "_isCorrect": true
+                    },
+                    {
+                        "text": "Option three",
+                        "_isCorrect": false
+                    }
+                ]
+            },
+            {
+                "text": "Pick option three",
+                "_options": [
+                    {
+                        "text": "Option one",
+                        "_isCorrect": false
+                    },
+                    {
+                        "text": "Option two",
+                        "_isCorrect": false
+                    },
+                    {
+                        "text": "Option three (correct)",
+                        "_isCorrect": true
+                    }
+                ]
+            },
+            {
+                "text": "Pick option one",
+                "_options": [
+                    {
+                        "text": "Option one (correct)",
+                        "_isCorrect": true
+                    },
+                    {
+                        "text": "Option two",
+                        "_isCorrect": false
+                    },
+                    {
+                        "text": "Option three",
+                        "_isCorrect": false
+                    }
+                ]
+            }
+        ]
+      },
+      {
+        "_id":"c-70",
+        "_parentId":"b-50",
+        "_type":"component",
+        "_component":"slider",
+        "_classes":"component-background",
+        "_layout":"right",
+        "title": "Slider type component",
+        "displayTitle":"SLIDER TYPE COMPONENT",
+        "body":"Question text here",
+        "instruction": "",
+        "_attempts": 2,
+        "_questionWeight":1,
+        "_showNumber": true,
+        "_showScaleIndicator": true,
+        "labelStart": "incomplete",
+        "labelEnd": "complete",
+        "_scaleStart": 1,
+        "_scaleEnd": 10,
+        "_correctAnswer": "",
+        "_correctRange": {
+            "_bottom": 4,
+            "_top": 9
+        },
+        "_buttons": {
+            "submit": "",
+            "reset": "",
+            "showCorrectAnswer": "",
+            "hideCorrectAnswer": ""
+        },
+        "_feedback": {
+            "correct": "This feedback will appear if you answered the question correctly.",
+            "_incorrect": {
+                "notFinal": "",
+                "final": "This feedback will appear if you answered the question incorrectly."
+            },
+            "_partlyCorrect": {
+                "notFinal": "",
+                "final": "This feedback will appear if you answered part of the question correctly."
+            }
+        },
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id":"c-75",
+        "_parentId":"b-55",
+        "_type":"component",
+        "_component":"graphic",
+        "_classes":"remove-graphic-background",
+        "_layout":"left",
+        "title":"GRAPHIC",
+        "displayTitle":"",
+        "body":"",
+        "instruction":"",
+        "_graphic": {
+            "alt": "alt text",
+            "large": "course/en/images/badge_recap.png",
+            "medium": "course/en/images/badge_recap.png",
+            "small": "course/en/images/badge_recap.png"
+        },
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+      "_id":"c-80",
+      "_parentId":"b-55",
+      "_type":"component",
+      "_component":"accordion",
+      "_classes":"component-background",
+      "_layout":"right",
+      "title": "DID YOU KNOW?",
+      "displayTitle": "DID YOU KNOW?",
+      "body": "This is optional body text. Select the headings below to reveal the text.",
+      "instruction": "",
+      "_pageLevelProgress": {
+            "_isEnabled": true
+        },
+      "_items": [
+        {
+          "alt": "Heading 1",
+          "title": "Heading 1",
+          "body": "This is display text 1."
+        },
+        {
+          "alt": "Heading 2",
+          "title": "Heading 2",
+          "body": "This is display text 2."
+        },
+        {
+          "alt": "Heading 3",
+          "title": "Heading 3",
+          "body": "This is display text 3."
+        }
+      ]
+    },
+    {
+        "_id":"c-81",
+        "_parentId":"b-56",
+        "_type":"component",
+        "_component":"text",
+        "_classes":"component-background",
+        "_layout":"full",
+        "title":"Under construction",
+        "displayTitle":"Under construction",
+        "body":"This component you're reading is a text component. All components take this form of a title and body - except a blank component. However it's important to realise that title and body attributes are not needed. <br><br>Take for instance the media component opposite or below on a smaller device - has no body attribute. Instead of the HTML being rendered Adapt simply doesn't render it. The title attribute is simply a break tag to push the media component level with the opposite component.",
+        "instruction":"",
+        "_pageLevelProgress": {
+            "_isEnabled": true,
+            "_useAssessment": false
+        }
+    },
+    {
+        "_id":"c-82",
+        "_parentId":"b-57",
+        "_type":"component",
+        "_component":"text",
+        "_classes":"component-background",
+        "_layout":"full",
+        "title":"Under construction",
+        "displayTitle":"Under construction",
+        "body":"This component you're reading is a text component. All components take this form of a title and body - except a blank component. However it's important to realise that title and body attributes are not needed. <br><br>Take for instance the media component opposite or below on a smaller device - has no body attribute. Instead of the HTML being rendered Adapt simply doesn't render it. The title attribute is simply a break tag to push the media component level with the opposite component.",
+        "instruction":"",
+        "_pageLevelProgress": {
+            "_isEnabled": true,
+            "_useAssessment": false
+        }
+    },
+    {
+        "_id":"c-83",
+        "_parentId":"b-58",
+        "_type":"component",
+        "_component":"text",
+        "_classes":"component-background",
+        "_layout":"full",
+        "title":"Quiz intro",
+        "displayTitle":"Quiz intro",
+        "body":"This component you're reading is a text component. All components take this form of a title and body - except a blank component. However it's important to realise that title and body attributes are not needed. <br><br>Take for instance the media component opposite or below on a smaller device - has no body attribute. Instead of the HTML being rendered Adapt simply doesn't render it. The title attribute is simply a break tag to push the media component level with the opposite component.",
+        "instruction":"",
+        "_pageLevelProgress": {
+            "_isEnabled": false,
+            "_useAssessment": true
+        },
+        "_learningassistentProgress": {
+            "_isEnabled":false
+        }
+    },
+    {
+        "_id":"c-85",
+        "_parentId":"b-60",
+        "_type":"component",
+        "_component":"mcq",
+        "_classes":"component-background medium-width-component",
+        "_layout":"full",
+        "_attempts":1,
+        "_questionWeight":10,
+        "_isRandom":true,
+        "_selectable":1,
+        "title": "Bank 1 Question 1",
+        "displayTitle": "Bank 1 Question 1",
+        "body": "How can anyone get involved with Adapt?",
+        "instruction":"Select the correct answers below.",
+        "_items": [
+            {
+                "text": "Option 1 (correct)",
+                "_shouldBeSelected":true
+            },
+            {
+                "text": "Option 2",
+                "_shouldBeSelected":false
+            },
+            {
+                "text": "Option 3",
+                "_shouldBeSelected":false
+            }
+        ],
+        "_feedback":{
+            "correct": "That’s correct. To continue close this tutor pop-up.",
+            "_incorrect": {
+                "notFinal": "Sorry, that’s not right. To continue close this tutor pop-up.",
+                "final": "Final feedback! Sorry, that’s not right. To continue close this tutor pop-up."
+            },
+            "_partlyCorrect": {
+                "notFinal": "That’s not quite right. To continue close this tutor pop-up.",
+                "final": "Final feedback! That’s not quite right. To continue close this tutor pop-up."
+            }
+        },
+        "_buttons":{
+            "submit":"",
+            "reset":"",
+            "showCorrectAnswer":"",
+            "hideCorrectAnswer":""
+        },
+        "_pageLevelProgress": {
+            "_isEnabled": false,
+            "_useAssessment": true
+        },
+        "_associatedLearning": ["co-05"]
+    },
+    {
+        "_id":"c-90",
+        "_parentId":"b-65",
+        "_type":"component",
+        "_component":"mcq",
+        "_classes":"component-background medium-width-component",
+        "_layout":"full",
+        "_attempts":1,
+        "_questionWeight":10,
+        "_isRandom":true,
+        "_selectable":1,
+        "title": "Bank 1 Question 2",
+        "displayTitle": "Bank 1 Question 2",
+        "body": "How can anyone get involved with Adapt?",
+        "instruction":"Select the correct answers below.",
+        "_items": [
+            {
+                "text": "Option 1 (correct)",
+                "_shouldBeSelected":true
+            },
+            {
+                "text": "Option 2",
+                "_shouldBeSelected":false
+            },
+            {
+                "text": "Option 3",
+                "_shouldBeSelected":false
+            }
+        ],
+        "_feedback":{
+            "correct": "That’s correct. To continue close this tutor pop-up.",
+            "_incorrect": {
+                "notFinal": "Sorry, that’s not right. To continue close this tutor pop-up.",
+                "final": "Final feedback! Sorry, that’s not right. To continue close this tutor pop-up."
+            },
+            "_partlyCorrect": {
+                "notFinal": "That’s not quite right. To continue close this tutor pop-up.",
+                "final": "Final feedback! That’s not quite right. To continue close this tutor pop-up."
+            }
+        },
+        "_buttons":{
+            "submit":"",
+            "reset":"",
+            "showCorrectAnswer":"",
+            "hideCorrectAnswer":""
+        },
+        "_pageLevelProgress": {
+            "_isEnabled": false,
+            "_useAssessment": true
+        },
+        "_associatedLearning": ["a-05"]
+    },
+    {
+        "_id":"c-95",
+        "_parentId":"b-70",
+        "_type":"component",
+        "_component":"mcq",
+        "_classes":"component-background medium-width-component",
+        "_layout":"full",
+        "_attempts":1,
+        "_questionWeight":10,
+        "_isRandom":true,
+        "_selectable":1,
+        "title": "Bank 1 Question 3",
+        "displayTitle": "Bank 1 Question 3",
+        "body": "How can anyone get involved with Adapt?",
+        "instruction":"Select the correct answers below.",
+        "_items": [
+            {
+                "text": "Option 1 (correct)",
+                "_shouldBeSelected":true
+            },
+            {
+                "text": "Option 2",
+                "_shouldBeSelected":false
+            },
+            {
+                "text": "Option 3",
+                "_shouldBeSelected":false
+            }
+        ],
+        "_feedback":{
+            "correct": "That’s correct. To continue close this tutor pop-up.",
+            "_incorrect": {
+                "notFinal": "Sorry, that’s not right. To continue close this tutor pop-up.",
+                "final": "Final feedback! Sorry, that’s not right. To continue close this tutor pop-up."
+            },
+            "_partlyCorrect": {
+                "notFinal": "That’s not quite right. To continue close this tutor pop-up.",
+                "final": "Final feedback! That’s not quite right. To continue close this tutor pop-up."
+            }
+        },
+        "_buttons":{
+            "submit":"",
+            "reset":"",
+            "showCorrectAnswer":"",
+            "hideCorrectAnswer":""
+        },
+        "_pageLevelProgress": {
+            "_isEnabled": false,
+            "_useAssessment": true
+        },
+        "_associatedLearning": ["a-10"]
+    },
+    {
+        "_id":"c-105",
+        "_parentId":"b-75",
+        "_type":"component",
+        "_component":"mcq",
+        "_classes":"component-background medium-width-component",
+        "_layout":"full",
+        "_attempts":1,
+        "_questionWeight":10,
+        "_isRandom":true,
+        "_selectable":1,
+        "title": "Bank 1 Question 4",
+        "displayTitle": "Bank 1 Question 4",
+        "body": "How can anyone get involved with Adapt?",
+        "instruction":"Select the correct answers below.",
+        "_items": [
+            {
+                "text": "Option 1 (correct)",
+                "_shouldBeSelected":true
+            },
+            {
+                "text": "Option 2",
+                "_shouldBeSelected":false
+            },
+            {
+                "text": "Option 3",
+                "_shouldBeSelected":false
+            }
+        ],
+        "_feedback":{
+            "correct": "That’s correct. To continue close this tutor pop-up.",
+            "_incorrect": {
+                "notFinal": "Sorry, that’s not right. To continue close this tutor pop-up.",
+                "final": "Final feedback! Sorry, that’s not right. To continue close this tutor pop-up."
+            },
+            "_partlyCorrect": {
+                "notFinal": "That’s not quite right. To continue close this tutor pop-up.",
+                "final": "Final feedback! That’s not quite right. To continue close this tutor pop-up."
+            }
+        },
+        "_buttons":{
+            "submit":"",
+            "reset":"",
+            "showCorrectAnswer":"",
+            "hideCorrectAnswer":""
+        },
+        "_pageLevelProgress": {
+            "_isEnabled": false,
+            "_useAssessment": true
+        },
+        "_associatedLearning": ["a-20"]
+    },
+    {
+        "_id":"c-115",
+        "_parentId":"b-80",
+        "_type":"component",
+        "_component":"mcq",
+        "_classes":"component-background medium-width-component",
+        "_layout":"full",
+        "_attempts":1,
+        "_questionWeight":10,
+        "_isRandom":true,
+        "_selectable":1,
+        "title": "Bank 2 Question 1",
+        "displayTitle": "Bank 2 Question 1",
+        "body": "How can anyone get involved with Adapt?",
+        "instruction":"Select the correct answers below.",
+        "_items": [
+            {
+                "text": "Option 1 (correct)",
+                "_shouldBeSelected":true
+            },
+            {
+                "text": "Option 2",
+                "_shouldBeSelected":false
+            },
+            {
+                "text": "Option 3",
+                "_shouldBeSelected":false
+            }
+        ],
+        "_feedback":{
+            "correct": "That’s correct. To continue close this tutor pop-up.",
+            "_incorrect": {
+                "notFinal": "Sorry, that’s not right. To continue close this tutor pop-up.",
+                "final": "Final feedback! Sorry, that’s not right. To continue close this tutor pop-up."
+            },
+            "_partlyCorrect": {
+                "notFinal": "That’s not quite right. To continue close this tutor pop-up.",
+                "final": "Final feedback! That’s not quite right. To continue close this tutor pop-up."
+            }
+        },
+        "_buttons":{
+            "submit":"",
+            "reset":"",
+            "showCorrectAnswer":"",
+            "hideCorrectAnswer":""
+        },
+        "_pageLevelProgress": {
+            "_isEnabled": false,
+            "_useAssessment": true
+        },
+        "_associatedLearning": ["b-05"]
+    },
+    {
+        "_id":"c-125",
+        "_parentId":"b-85",
+        "_type":"component",
+        "_component":"mcq",
+        "_classes":"component-background medium-width-component",
+        "_layout":"full",
+        "_attempts":1,
+        "_questionWeight":10,
+        "_isRandom":true,
+        "_selectable":1,
+        "title": "Bank 2 Question 2",
+        "displayTitle": "Bank 2 Question 2",
+        "body": "How can anyone get involved with Adapt?",
+        "instruction":"Select the correct answers below.",
+        "_items": [
+            {
+                "text": "Option 1 (correct)",
+                "_shouldBeSelected":true
+            },
+            {
+                "text": "Option 2",
+                "_shouldBeSelected":false
+            },
+            {
+                "text": "Option 3",
+                "_shouldBeSelected":false
+            }
+        ],
+        "_feedback":{
+            "correct": "That’s correct. To continue close this tutor pop-up.",
+            "_incorrect": {
+                "notFinal": "Sorry, that’s not right. To continue close this tutor pop-up.",
+                "final": "Final feedback! Sorry, that’s not right. To continue close this tutor pop-up."
+            },
+            "_partlyCorrect": {
+                "notFinal": "That’s not quite right. To continue close this tutor pop-up.",
+                "final": "Final feedback! That’s not quite right. To continue close this tutor pop-up."
+            }
+        },
+        "_buttons":{
+            "submit":"",
+            "reset":"",
+            "showCorrectAnswer":"",
+            "hideCorrectAnswer":""
+        },
+        "_pageLevelProgress": {
+            "_isEnabled": false,
+            "_useAssessment": true
+        },
+        "_associatedLearning": ["b-10"]
+    },
+    {
+        "_id":"c-135",
+        "_parentId":"b-90",
+        "_type":"component",
+        "_component":"mcq",
+        "_classes":"component-background medium-width-component",
+        "_layout":"full",
+        "_attempts":1,
+        "_questionWeight":10,
+        "_isRandom":true,
+        "_selectable":1,
+        "title": "Bank 2 Question 3",
+        "displayTitle": "Bank 2 Question 3",
+        "body": "How can anyone get involved with Adapt?",
+        "instruction":"Select the correct answers below.",
+        "_items": [
+            {
+                "text": "Option 1 (correct)",
+                "_shouldBeSelected":true
+            },
+            {
+                "text": "Option 2",
+                "_shouldBeSelected":false
+            },
+            {
+                "text": "Option 3",
+                "_shouldBeSelected":false
+            }
+        ],
+        "_feedback":{
+            "correct": "That’s correct. To continue close this tutor pop-up.",
+            "_incorrect": {
+                "notFinal": "Sorry, that’s not right. To continue close this tutor pop-up.",
+                "final": "Final feedback! Sorry, that’s not right. To continue close this tutor pop-up."
+            },
+            "_partlyCorrect": {
+                "notFinal": "That’s not quite right. To continue close this tutor pop-up.",
+                "final": "Final feedback! That’s not quite right. To continue close this tutor pop-up."
+            }
+        },
+        "_buttons":{
+            "submit":"",
+            "reset":"",
+            "showCorrectAnswer":"",
+            "hideCorrectAnswer":""
+        },
+        "_pageLevelProgress": {
+            "_isEnabled": false,
+            "_useAssessment": true
+        },
+        "_associatedLearning": ["b-15"]
+    },
+    {
+        "_id":"c-145",
+        "_parentId":"b-95",
+        "_type":"component",
+        "_component":"mcq",
+        "_classes":"component-background medium-width-component",
+        "_layout":"full",
+        "_attempts":1,
+        "_questionWeight":10,
+        "_isRandom":true,
+        "_selectable":1,
+        "title": "Bank 2 Question 4",
+        "displayTitle": "Bank 2 Question 4",
+        "body": "How can anyone get involved with Adapt?",
+        "instruction":"Select the correct answers below.",
+        "_items": [
+            {
+                "text": "Option 1 (correct)",
+                "_shouldBeSelected":true
+            },
+            {
+                "text": "Option 2",
+                "_shouldBeSelected":false
+            },
+            {
+                "text": "Option 3",
+                "_shouldBeSelected":false
+            }
+        ],
+        "_feedback":{
+            "correct": "That’s correct. To continue close this tutor pop-up.",
+            "_incorrect": {
+                "notFinal": "Sorry, that’s not right. To continue close this tutor pop-up.",
+                "final": "Final feedback! Sorry, that’s not right. To continue close this tutor pop-up."
+            },
+            "_partlyCorrect": {
+                "notFinal": "That’s not quite right. To continue close this tutor pop-up.",
+                "final": "Final feedback! That’s not quite right. To continue close this tutor pop-up."
+            }
+        },
+        "_buttons":{
+            "submit":"",
+            "reset":"",
+            "showCorrectAnswer":"",
+            "hideCorrectAnswer":""
+        },
+        "_pageLevelProgress": {
+            "_isEnabled": false,
+            "_useAssessment": true
+        },
+         "_associatedLearning": ["b-25"]
+    },
+    {
+        "_id":"c-155",
+        "_parentId":"b-100",
+        "_type":"component",
+        "_component":"mcq",
+        "_classes":"component-background medium-width-component",
+        "_layout":"full",
+        "_attempts":1,
+        "_questionWeight":10,
+        "_isRandom":true,
+        "_selectable":1,
+        "title": "Bank 3 Question 1",
+        "displayTitle": "Bank 3 Question 1",
+        "body": "How can anyone get involved with Adapt?",
+        "instruction":"Select the correct answers below.",
+        "_items": [
+            {
+                "text": "Option 1 (correct)",
+                "_shouldBeSelected":true
+            },
+            {
+                "text": "Option 2",
+                "_shouldBeSelected":false
+            },
+            {
+                "text": "Option 3",
+                "_shouldBeSelected":false
+            }
+        ],
+        "_feedback":{
+            "correct": "That’s correct. To continue close this tutor pop-up.",
+            "_incorrect": {
+                "notFinal": "Sorry, that’s not right. To continue close this tutor pop-up.",
+                "final": "Final feedback! Sorry, that’s not right. To continue close this tutor pop-up."
+            },
+            "_partlyCorrect": {
+                "notFinal": "That’s not quite right. To continue close this tutor pop-up.",
+                "final": "Final feedback! That’s not quite right. To continue close this tutor pop-up."
+            }
+        },
+        "_buttons":{
+            "submit":"",
+            "reset":"",
+            "showCorrectAnswer":"",
+            "hideCorrectAnswer":""
+        },
+        "_pageLevelProgress": {
+            "_isEnabled": false,
+            "_useAssessment": true
+        },
+         "_associatedLearning": ["a-05"]
+    },
+    {
+        "_id":"c-165",
+        "_parentId":"b-105",
+        "_type":"component",
+        "_component":"mcq",
+        "_classes":"component-background medium-width-component",
+        "_layout":"full",
+        "_attempts":1,
+        "_questionWeight":10,
+        "_isRandom":true,
+        "_selectable":1,
+        "title": "Bank 3 Question 2",
+        "displayTitle": "Bank 3 Question 2",
+        "body": "How can anyone get involved with Adapt?",
+        "instruction":"Select the correct answers below.",
+        "_items": [
+            {
+                "text": "Option 1 (correct)",
+                "_shouldBeSelected":true
+            },
+            {
+                "text": "Option 2",
+                "_shouldBeSelected":false
+            },
+            {
+                "text": "Option 3",
+                "_shouldBeSelected":false
+            }
+        ],
+        "_feedback":{
+            "correct": "That’s correct. To continue close this tutor pop-up.",
+            "_incorrect": {
+                "notFinal": "Sorry, that’s not right. To continue close this tutor pop-up.",
+                "final": "Final feedback! Sorry, that’s not right. To continue close this tutor pop-up."
+            },
+            "_partlyCorrect": {
+                "notFinal": "That’s not quite right. To continue close this tutor pop-up.",
+                "final": "Final feedback! That’s not quite right. To continue close this tutor pop-up."
+            }
+        },
+        "_buttons":{
+            "submit":"",
+            "reset":"",
+            "showCorrectAnswer":"",
+            "hideCorrectAnswer":""
+        },
+        "_pageLevelProgress": {
+            "_isEnabled": false,
+            "_useAssessment": true
+        },
+         "_associatedLearning": ["a-10"]
+    },
+    {
+        "_id":"c-175",
+        "_parentId":"b-110",
+        "_type":"component",
+        "_component":"mcq",
+        "_classes":"component-background medium-width-component",
+        "_layout":"full",
+        "_attempts":1,
+        "_questionWeight":10,
+        "_isRandom":true,
+        "_selectable":1,
+        "title": "Bank 3 Question 3",
+        "displayTitle": "Bank 3 Question 3",
+        "body": "How can anyone get involved with Adapt?",
+        "instruction":"Select the correct answers below.",
+        "_items": [
+            {
+                "text": "Option 1 (correct)",
+                "_shouldBeSelected":true
+            },
+            {
+                "text": "Option 2",
+                "_shouldBeSelected":false
+            },
+            {
+                "text": "Option 3",
+                "_shouldBeSelected":false
+            }
+        ],
+        "_feedback":{
+            "correct": "That’s correct. To continue close this tutor pop-up.",
+            "_incorrect": {
+                "notFinal": "Sorry, that’s not right. To continue close this tutor pop-up.",
+                "final": "Final feedback! Sorry, that’s not right. To continue close this tutor pop-up."
+            },
+            "_partlyCorrect": {
+                "notFinal": "That’s not quite right. To continue close this tutor pop-up.",
+                "final": "Final feedback! That’s not quite right. To continue close this tutor pop-up."
+            }
+        },
+        "_buttons":{
+            "submit":"",
+            "reset":"",
+            "showCorrectAnswer":"",
+            "hideCorrectAnswer":""
+        },
+        "_pageLevelProgress": {
+            "_isEnabled": false,
+            "_useAssessment": true
+        },
+         "_associatedLearning": ["a-20"]
+    },
+    {
+        "_id":"c-185",
+        "_parentId":"b-115",
+        "_type":"component",
+        "_component":"mcq",
+        "_classes":"component-background medium-width-component",
+        "_layout":"full",
+        "_attempts":1,
+        "_questionWeight":10,
+        "_isRandom":true,
+        "_selectable":1,
+        "title": "Bank 3 Question 4",
+        "displayTitle": "Bank 3 Question 4",
+        "body": "How can anyone get involved with Adapt?",
+        "instruction":"Select the correct answers below.",
+        "_items": [
+            {
+                "text": "Option 1 (correct)",
+                "_shouldBeSelected":true
+            },
+            {
+                "text": "Option 2",
+                "_shouldBeSelected":false
+            },
+            {
+                "text": "Option 3",
+                "_shouldBeSelected":false
+            }
+        ],
+        "_feedback":{
+            "correct": "That’s correct. To continue close this tutor pop-up.",
+            "_incorrect": {
+                "notFinal": "Sorry, that’s not right. To continue close this tutor pop-up.",
+                "final": "Final feedback! Sorry, that’s not right. To continue close this tutor pop-up."
+            },
+            "_partlyCorrect": {
+                "notFinal": "That’s not quite right. To continue close this tutor pop-up.",
+                "final": "Final feedback! That’s not quite right. To continue close this tutor pop-up."
+            }
+        },
+        "_buttons":{
+            "submit":"",
+            "reset":"",
+            "showCorrectAnswer":"",
+            "hideCorrectAnswer":""
+        },
+        "_pageLevelProgress": {
+            "_isEnabled": false,
+            "_useAssessment": true
+        },
+        "_associatedLearning": ["a-20"]
+    },
+    {
+        "_id":"c-195",
+        "_parentId":"b-120",
+        "_type":"component",
+        "_component":"mcq",
+        "_classes":"component-background medium-width-component",
+        "_layout":"full",
+        "_attempts":1,
+        "_questionWeight":10,
+        "_isRandom":true,
+        "_selectable":1,
+        "title": "Bank 4 Question 1",
+        "displayTitle": "Bank 4 Question 1",
+        "body": "How can anyone get involved with Adapt?",
+        "instruction":"Select the correct answers below.",
+        "_items": [
+            {
+                "text": "Option 1 (correct)",
+                "_shouldBeSelected":true
+            },
+            {
+                "text": "Option 2",
+                "_shouldBeSelected":false
+            },
+            {
+                "text": "Option 3",
+                "_shouldBeSelected":false
+            }
+        ],
+        "_feedback":{
+            "correct": "That’s correct. To continue close this tutor pop-up.",
+            "_incorrect": {
+                "notFinal": "Sorry, that’s not right. To continue close this tutor pop-up.",
+                "final": "Final feedback! Sorry, that’s not right. To continue close this tutor pop-up."
+            },
+            "_partlyCorrect": {
+                "notFinal": "That’s not quite right. To continue close this tutor pop-up.",
+                "final": "Final feedback! That’s not quite right. To continue close this tutor pop-up."
+            }
+        },
+        "_buttons":{
+            "submit":"",
+            "reset":"",
+            "showCorrectAnswer":"",
+            "hideCorrectAnswer":""
+        },
+        "_pageLevelProgress": {
+            "_isEnabled": false,
+            "_useAssessment": true
+        },
+        "_associatedLearning": ["a-20"]
+    },
+    {
+        "_id":"c-205",
+        "_parentId":"b-125",
+        "_type":"component",
+        "_component":"mcq",
+        "_classes":"component-background medium-width-component",
+        "_layout":"full",
+        "_attempts":1,
+        "_questionWeight":10,
+        "_isRandom":true,
+        "_selectable":1,
+        "title": "Bank 4 Question 2",
+        "displayTitle": "Bank 4 Question 2",
+        "body": "How can anyone get involved with Adapt?",
+        "instruction":"Select the correct answers below.",
+        "_items": [
+            {
+                "text": "Option 1 (correct)",
+                "_shouldBeSelected":true
+            },
+            {
+                "text": "Option 2",
+                "_shouldBeSelected":false
+            },
+            {
+                "text": "Option 3",
+                "_shouldBeSelected":false
+            }
+        ],
+        "_feedback":{
+            "correct": "That’s correct. To continue close this tutor pop-up.",
+            "_incorrect": {
+                "notFinal": "Sorry, that’s not right. To continue close this tutor pop-up.",
+                "final": "Final feedback! Sorry, that’s not right. To continue close this tutor pop-up."
+            },
+            "_partlyCorrect": {
+                "notFinal": "That’s not quite right. To continue close this tutor pop-up.",
+                "final": "Final feedback! That’s not quite right. To continue close this tutor pop-up."
+            }
+        },
+        "_buttons":{
+            "submit":"",
+            "reset":"",
+            "showCorrectAnswer":"",
+            "hideCorrectAnswer":""
+        },
+        "_pageLevelProgress": {
+            "_isEnabled": false,
+            "_useAssessment": true
+        },
+        "_associatedLearning": ["co-10"]
+    },
+    {
+        "_id":"c-215",
+        "_parentId":"b-130",
+        "_type":"component",
+        "_component":"mcq",
+        "_classes":"component-background medium-width-component",
+        "_layout":"full",
+        "_attempts":1,
+        "_questionWeight":10,
+        "_isRandom":true,
+        "_selectable":1,
+        "title": "Bank 4 Question 3",
+        "displayTitle": "Bank 4 Question 3",
+        "body": "How can anyone get involved with Adapt?",
+        "instruction":"Select the correct answers below.",
+        "_items": [
+            {
+                "text": "Option 1 (correct)",
+                "_shouldBeSelected":true
+            },
+            {
+                "text": "Option 2",
+                "_shouldBeSelected":false
+            },
+            {
+                "text": "Option 3",
+                "_shouldBeSelected":false
+            }
+        ],
+        "_feedback":{
+            "correct": "That’s correct. To continue close this tutor pop-up.",
+            "_incorrect": {
+                "notFinal": "Sorry, that’s not right. To continue close this tutor pop-up.",
+                "final": "Final feedback! Sorry, that’s not right. To continue close this tutor pop-up."
+            },
+            "_partlyCorrect": {
+                "notFinal": "That’s not quite right. To continue close this tutor pop-up.",
+                "final": "Final feedback! That’s not quite right. To continue close this tutor pop-up."
+            }
+        },
+        "_buttons":{
+            "submit":"",
+            "reset":"",
+            "showCorrectAnswer":"",
+            "hideCorrectAnswer":""
+        },
+        "_pageLevelProgress": {
+            "_isEnabled": false,
+            "_useAssessment": true
+        },
+         "_associatedLearning": ["co-10"]
+    },
+    {
+        "_id":"c-225",
+        "_parentId":"b-135",
+        "_type":"component",
+        "_component":"mcq",
+        "_classes":"component-background medium-width-component",
+        "_layout":"full",
+        "_attempts":1,
+        "_questionWeight":10,
+        "_isRandom":true,
+        "_selectable":1,
+        "title": "Bank 4 Question 4",
+        "displayTitle": "Bank 4 Question 4",
+        "body": "How can anyone get involved with Adapt?",
+        "instruction":"Select the correct answers below.",
+        "_items": [
+            {
+                "text": "Option 1 (correct)",
+                "_shouldBeSelected":true
+            },
+            {
+                "text": "Option 2",
+                "_shouldBeSelected":false
+            },
+            {
+                "text": "Option 3",
+                "_shouldBeSelected":false
+            }
+        ],
+        "_feedback":{
+            "correct": "That’s correct. To continue close this tutor pop-up.",
+            "_incorrect": {
+                "notFinal": "Sorry, that’s not right. To continue close this tutor pop-up.",
+                "final": "Final feedback! Sorry, that’s not right. To continue close this tutor pop-up."
+            },
+            "_partlyCorrect": {
+                "notFinal": "That’s not quite right. To continue close this tutor pop-up.",
+                "final": "Final feedback! That’s not quite right. To continue close this tutor pop-up."
+            }
+        },
+        "_buttons":{
+            "submit":"",
+            "reset":"",
+            "showCorrectAnswer":"",
+            "hideCorrectAnswer":""
+        },
+        "_pageLevelProgress": {
+            "_isEnabled": false,
+            "_useAssessment": true
+        },
+         "_associatedLearning": ["co-15"]
+    },
+    {
+        "_id":"c-235",
+        "_parentId":"b-140",
+        "_type":"component",
+        "_component":"mcq",
+        "_classes":"component-background medium-width-component",
+        "_layout":"full",
+        "_attempts":1,
+        "_questionWeight":10,
+        "_isRandom":true,
+        "_selectable":1,
+        "title": "Bank 5 Question 1",
+        "displayTitle": "Bank 5 Question 1",
+        "body": "How can anyone get involved with Adapt?",
+        "instruction":"Select the correct answers below.",
+        "_items": [
+            {
+                "text": "Option 1 (correct)",
+                "_shouldBeSelected":true
+            },
+            {
+                "text": "Option 2",
+                "_shouldBeSelected":false
+            },
+            {
+                "text": "Option 3",
+                "_shouldBeSelected":false
+            }
+        ],
+        "_feedback":{
+            "correct": "That’s correct. To continue close this tutor pop-up.",
+            "_incorrect": {
+                "notFinal": "Sorry, that’s not right. To continue close this tutor pop-up.",
+                "final": "Final feedback! Sorry, that’s not right. To continue close this tutor pop-up."
+            },
+            "_partlyCorrect": {
+                "notFinal": "That’s not quite right. To continue close this tutor pop-up.",
+                "final": "Final feedback! That’s not quite right. To continue close this tutor pop-up."
+            }
+        },
+        "_buttons":{
+            "submit":"",
+            "reset":"",
+            "showCorrectAnswer":"",
+            "hideCorrectAnswer":""
+        },
+        "_pageLevelProgress": {
+            "_isEnabled": false,
+            "_useAssessment": true
+        },
+        "_associatedLearning": ["co-15"]
+    },
+    {
+        "_id":"c-245",
+        "_parentId":"b-145",
+        "_type":"component",
+        "_component":"mcq",
+        "_classes":"component-background medium-width-component",
+        "_layout":"full",
+        "_attempts":1,
+        "_questionWeight":10,
+        "_isRandom":true,
+        "_selectable":1,
+        "title": "Bank 5 Question 2",
+        "displayTitle": "Bank 5 Question 2",
+        "body": "How can anyone get involved with Adapt?",
+        "instruction":"Select the correct answers below.",
+        "_items": [
+            {
+                "text": "Option 1 (correct)",
+                "_shouldBeSelected":true
+            },
+            {
+                "text": "Option 2",
+                "_shouldBeSelected":false
+            },
+            {
+                "text": "Option 3",
+                "_shouldBeSelected":false
+            }
+        ],
+        "_feedback":{
+            "correct": "That’s correct. To continue close this tutor pop-up.",
+            "_incorrect": {
+                "notFinal": "Sorry, that’s not right. To continue close this tutor pop-up.",
+                "final": "Final feedback! Sorry, that’s not right. To continue close this tutor pop-up."
+            },
+            "_partlyCorrect": {
+                "notFinal": "That’s not quite right. To continue close this tutor pop-up.",
+                "final": "Final feedback! That’s not quite right. To continue close this tutor pop-up."
+            }
+        },
+        "_buttons":{
+            "submit":"",
+            "reset":"",
+            "showCorrectAnswer":"",
+            "hideCorrectAnswer":""
+        },
+        "_pageLevelProgress": {
+            "_isEnabled": false,
+            "_useAssessment": true
+        },
+        "_associatedLearning": ["co-15"]
+    },
+    {
+        "_id":"c-255",
+        "_parentId":"b-150",
+        "_type":"component",
+        "_component":"mcq",
+        "_classes":"component-background medium-width-component",
+        "_layout":"full",
+        "_attempts":1,
+        "_questionWeight":10,
+        "_isRandom":true,
+        "_selectable":1,
+        "title": "Bank 5 Question 3",
+        "displayTitle": "Bank 5 Question 3",
+        "body": "How can anyone get involved with Adapt?",
+        "instruction":"Select the correct answers below.",
+        "_items": [
+            {
+                "text": "Option 1 (correct)",
+                "_shouldBeSelected":true
+            },
+            {
+                "text": "Option 2",
+                "_shouldBeSelected":false
+            },
+            {
+                "text": "Option 3",
+                "_shouldBeSelected":false
+            }
+        ],
+        "_feedback":{
+            "correct": "That’s correct. To continue close this tutor pop-up.",
+            "_incorrect": {
+                "notFinal": "Sorry, that’s not right. To continue close this tutor pop-up.",
+                "final": "Final feedback! Sorry, that’s not right. To continue close this tutor pop-up."
+            },
+            "_partlyCorrect": {
+                "notFinal": "That’s not quite right. To continue close this tutor pop-up.",
+                "final": "Final feedback! That’s not quite right. To continue close this tutor pop-up."
+            }
+        },
+        "_buttons":{
+            "submit":"",
+            "reset":"",
+            "showCorrectAnswer":"",
+            "hideCorrectAnswer":""
+        },
+        "_pageLevelProgress": {
+            "_isEnabled": false,
+            "_useAssessment": true
+        },
+        "_associatedLearning": ["co-10"]
+    },
+    {
+        "_id":"c-265",
+        "_parentId":"b-155",
+        "_type":"component",
+        "_component":"mcq",
+        "_classes":"component-background medium-width-component",
+        "_layout":"full",
+        "_attempts":1,
+        "_questionWeight":10,
+        "_isRandom":true,
+        "_selectable":1,
+        "title": "Bank 5 Question 4",
+        "displayTitle": "Bank 5 Question 4",
+        "body": "How can anyone get involved with Adapt?",
+        "instruction":"Select the correct answers below.",
+        "_items": [
+            {
+                "text": "Option 1 (correct)",
+                "_shouldBeSelected":true
+            },
+            {
+                "text": "Option 2",
+                "_shouldBeSelected":false
+            },
+            {
+                "text": "Option 3",
+                "_shouldBeSelected":false
+            }
+        ],
+        "_feedback":{
+            "correct": "That’s correct. To continue close this tutor pop-up.",
+            "_incorrect": {
+                "notFinal": "Sorry, that’s not right. To continue close this tutor pop-up.",
+                "final": "Final feedback! Sorry, that’s not right. To continue close this tutor pop-up."
+            },
+            "_partlyCorrect": {
+                "notFinal": "That’s not quite right. To continue close this tutor pop-up.",
+                "final": "Final feedback! That’s not quite right. To continue close this tutor pop-up."
+            }
+        },
+        "_buttons":{
+            "submit":"",
+            "reset":"",
+            "showCorrectAnswer":"",
+            "hideCorrectAnswer":""
+        },
+        "_pageLevelProgress": {
+            "_isEnabled": false,
+            "_useAssessment": true
+        },
+        "_associatedLearning": ["co-05"]
+    },
+    {
+        "_id":"c-275",
+        "_parentId":"b-160",
+        "_type":"component",
+        "_component":"results",
+        "_classes":"component-background",
+        "_layout":"full",
+        "title":"Results",
+        "displayTitle":"Results",
+        "body":"This component you're reading is a results component. The feedback itself comes from the _assessment object in articles.json.",
+        "instruction":"",
+        "_linkToAssociatedLearning": false,
+        "_pageLevelProgress": {
+            "_isEnabled": false,
+            "_useAssessment": true
+        },
+        "_learningassistentProgress": {
+            "_isEnabled":false
+        }
+    }
+]

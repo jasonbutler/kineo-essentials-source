@@ -1,0 +1,31 @@
+{
+  "name": "adapt-cover",
+  "homepage": "",
+  "authors": [
+    "Salamat Ali"
+  ],
+  "description": "",
+  "main": "js/adapt-cover.js",
+  "keywords": [
+    "adapt-plugin",
+    "adapt-menu"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "_release": "",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": ""
+  },
+  "_source": "",
+  "_target": "*",
+  "_originalSource": "",
+  "_direct": true
+}

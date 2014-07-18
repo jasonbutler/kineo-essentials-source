@@ -1,0 +1,33 @@
+// Block styling
+// =============
+
+.block {
+    max-width: 100%;
+    margin: auto 0;
+    .block-inner {
+        padding: @block-body-padding;
+        .responsive-layout;
+        max-width: 900px!important;
+        width:auto!important;
+        padding: 40px;
+        @media all and (max-width: 900px) {
+            max-width: 100%!important;
+            width:auto;
+            padding: 40px;
+        }
+         @media all and (max-width: 520px) {
+            padding: 15px 15px 50px;
+        }
+    }
+    .block-title {
+        text-align:left;
+    }
+    .block-title-inner {
+        padding:@block-title-padding;
+        text-align: center;
+    }
+    .block-body{
+    }
+    .block-body-inner {
+    }
+}

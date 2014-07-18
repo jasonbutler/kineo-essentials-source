@@ -1,0 +1,127 @@
+[
+    {
+        "_id":"co-01",
+        "_parentId":"course",
+        "_type":"page",
+        "_classes":"",
+        "title":"essentials first page",
+        "displayTitle":"essentials first page",
+        "body":""
+    },
+    {
+        "_id":"co-02",
+        "_parentId":"course",
+        "_type":"menu",
+        "_classes":"",
+        "title":"Menu",
+        "displayTitle":"Menu",
+        "body":""
+    },
+    {
+        "_id":"co-05",
+        "_parentId":"co-02",
+        "_type":"page",
+        "_classes":"",
+        "title":"Page One",
+        "displayTitle":"Page One",
+        "body":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.",
+        "_coverMenu":{
+            "_backgroundGraphic": {
+                "alt": "This is a picture of Adapt's origami birds.",
+                "src": "course/en/images/menu-item-one.jpg"
+            },
+            "_indicatorGraphic": {
+                "_isComplete": "course/en/images/menu-item-indicator-completed-one.png",
+                "_isVisited": "course/en/images/menu-item-indicator-visited-one.png",
+                "_default":"course/en/images/menu-item-indicator-default-one.png",
+                "_accessibilityEnabled": "course/en/images/menu-item-indicator-default-one.png"
+            }
+        },
+        "_ariaLabels": {
+            "menuItemPage": "Page one, tab to View button to enter."
+        },
+        "linkText":"View",
+        "duration":"2 mins"
+    },
+    {
+        "_id":"co-10",
+        "_parentId":"co-02",
+        "_type":"page",
+        "_classes":"",
+        "title":"Page Two",
+        "displayTitle":"Page Two",
+        "body":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.",
+        "_coverMenu":{
+            "_backgroundGraphic": {
+                "alt": "This is a picture of Adapt's origami birds.",
+                "src": "course/en/images/menu-item-one.jpg"
+            },
+            "_indicatorGraphic": {
+                "_isComplete": "course/en/images/menu-item-indicator-completed-two.png",
+                "_isVisited": "course/en/images/menu-item-indicator-visited-two.png",
+                "_default":"course/en/images/menu-item-indicator-default-two.png",
+                "_accessibilityEnabled": "course/en/images/menu-item-indicator-default-two.png"
+            }
+        },
+        "_ariaLabels": {
+            "menuItemPage": "Page 2, tab to View button to enter."
+        },
+        "linkText":"View",
+        "duration":"2 mins"
+    },
+    {
+        "_id":"co-15",
+        "_parentId":"co-02",
+        "_type":"page",
+        "_classes":"",
+        "title":"Page Three",
+        "displayTitle":"Page Three",
+        "body":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.",
+        "_coverMenu":{
+            "_backgroundGraphic": {
+                "alt": "This is a picture of Adapt's origami birds.",
+                "src": "course/en/images/menu-item-one.jpg"
+            },
+            "_indicatorGraphic": {
+                "_isComplete": "course/en/images/menu-item-indicator-completed-three.png",
+                "_isVisited": "course/en/images/menu-item-indicator-visited-three.png",
+                "_default":"course/en/images/menu-item-indicator-default-three.png",
+                "_accessibilityEnabled": "course/en/images/menu-item-indicator-default-three.png"
+            }
+        },
+        "_ariaLabels": {
+            "menuItemPage": "Page 3, tab to View button to enter."
+        },
+        "linkText":"View",
+        "duration":"2 mins"
+    },
+    {
+        "_id":"co-20",
+        "_parentId":"co-02",
+        "_type":"page",
+        "_classes":"",
+        "title":"Page Four",
+        "displayTitle":"Page Four",
+        "body":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.",
+        "_coverMenu":{
+            "_backgroundGraphic": {
+                "alt": "This is a picture of Adapt's origami birds.",
+                "src": "course/en/images/menu-item-one.jpg"
+            },
+            "_indicatorGraphic": {
+                "_isComplete": "course/en/images/menu-item-indicator-completed-four.png",
+                "_isVisited": "course/en/images/menu-item-indicator-visited-four.png",
+                "_default":"course/en/images/menu-item-indicator-default-four.png",
+                "_accessibilityEnabled": "course/en/images/menu-item-indicator-default-four.png",
+                "_isLocked":"course/en/images/menu-item-indicator-locked-four.png"
+            }
+        },
+        "_ariaLabels": {
+            "menuItemPage": "Page 4, tab to View button to enter."
+        },
+        "linkText":"View",
+        "duration":"2 mins",
+        "_lock": [
+        ]
+    }
+]

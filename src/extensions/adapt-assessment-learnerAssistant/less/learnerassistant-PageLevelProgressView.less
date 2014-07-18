@@ -1,0 +1,180 @@
+.learnerassistant-page-level-progress-inner {
+    .learnerassistant-page-level-progress-item {
+        display: inline-block;
+        height: 100%;
+        span.icon {
+            padding: 13px;
+        }
+    }
+    &.hide-progress {
+        .learnerassistant-page-level-progress-item {
+            &:not(.correct), &:not(.incorrect), &.correct, &.incorrect {
+                span.icon {
+                    &.correct {
+                        display: none;
+                    }
+                    &.incorrect {
+                        display: none;
+                    }
+                    &.unanswered {
+                        display: inline-block;
+                        color: gray;
+                    }
+                    &.answered {
+                       display: none;
+                    }
+                }
+            }
+        }
+    }
+    &.incrementalMarking.show-progress {
+        .learnerassistant-page-level-progress-item {
+            &:not(.correct), &:not(.incorrect) {
+                span.icon {
+                    &.correct {
+                        display: none;
+                    }
+                    &.incorrect {
+                        display: none;
+                    }
+                    &.unanswered {
+                        display: inline-block;
+                        color: gray;
+                    }
+                    &.answered {
+                       display: none;
+                    }
+                }
+            }
+            &.correct {
+                span.icon {
+                    &.correct {
+                        display: inline-block;
+                        color: green;
+                    }
+                    &.incorrect {
+                        display: none;
+                    }
+                    &.unanswered {
+                        display: none;
+                    }
+                    &.answered {
+                       display: none;
+                    }
+                }
+            }
+            &.incorrect {
+                span.icon {
+                    &.correct {
+                        display: none;
+                    }
+                    &.incorrect {
+                        display: inline-block;
+                        color: red;
+                    }
+                    &.unanswered {
+                        display: none;
+                    }
+                    &.answered {
+                       display: none;
+                    }
+                }
+            }
+        }
+    }
+     &.not-incrementalMarking.show-progress {
+        &.incomplete {
+            .learnerassistant-page-level-progress-item {
+                &:not(.correct), &:not(.incorrect) {
+                    span.icon {
+                        &.correct {
+                            display: none;
+                        }
+                        &.incorrect {
+                            display: none;
+                        }
+                        &.unanswered {
+                            display: inline-block;
+                            color: gray;
+                        }
+                        &.answered {
+                           display: none;
+                        }
+                    }
+                }
+                &.correct, &.incorrect {
+                    span.icon {
+                        &.correct {
+                            display: none;
+                        }
+                        &.incorrect {
+                            display: none;
+                        }
+                        &.unanswered {
+                            display: none;
+                        }
+                        &.answered {
+                            display: inline-block;
+                            color: gray;
+                        }
+                    }
+                }
+            }
+        }
+        &.complete {
+            .learnerassistant-page-level-progress-item {
+                &:not(.correct), &:not(.incorrect) {
+                    span.icon {
+                        &.correct {
+                            display: none;
+                        }
+                        &.incorrect {
+                            display: none;
+                        }
+                        &.unanswered {
+                            display: inline-block;
+                            color: gray;
+                        }
+                        &.answered {
+                           display: none;
+                        }
+                    }
+                }
+                &.correct {
+                    span.icon {
+                        &.correct {
+                            display: inline-block;
+                            color: green;
+                        }
+                        &.incorrect {
+                            display: none;
+                        }
+                        &.unanswered {
+                            display: none;
+                        }
+                        &.answered {
+                           display: none;
+                        }
+                    }
+                }
+                &.incorrect {
+                    span.icon {
+                        &.correct {
+                            display: none;
+                        }
+                        &.incorrect {
+                            display: inline-block;
+                            color: red;
+                        }
+                        &.unanswered {
+                            display: none;
+                        }
+                        &.answered {
+                           display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

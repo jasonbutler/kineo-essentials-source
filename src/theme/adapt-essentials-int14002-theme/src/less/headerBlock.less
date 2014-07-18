@@ -1,0 +1,66 @@
+// header block
+// ============
+// description: Add this class to the first block at the top of each page
+
+.header {
+	width: 100%;
+	height: 648px;
+	background-image: url(assets/bg_1.png);
+	background-position: top;
+	background-repeat: repeat;
+	.graphic-component {
+		width: 40%;
+		padding-top: 0;
+		text-align: center;
+	}
+}
+@media all and (max-width: 800px) {
+	.graphic-component {
+		margin: auto;
+		margin-top: -20px;
+		text-align: center;
+	}
+	.component-right {
+		padding-top: 40px;
+	}
+}
+
+// description: Add this class to the header block text component
+
+.header-text {
+	width: 60%;
+	color: @white;
+	background-color: transparent;
+	@media all and (max-width: 800px) {
+		width: 100%;
+	}
+	.text-title-inner, .text-body-inner {
+		padding-left: 0;
+		padding-top: 10px;
+		font-weight: @font-weight-light;
+		@media all and (max-width: 800px) {
+			width: 100%;
+			text-align: center;
+		}
+	}
+}
+
+// description: Add this class to the first block at the top of each page
+
+.header-block-title {
+	.block-title-inner {
+		padding: 100px 10px 0px 0px;
+		text-align: left;
+		font-size: 72px;
+		color: @white;
+		@media all and (max-width: 800px) {
+			text-align: center;
+			padding-bottom: 10px;
+			padding-top: 40px;
+
+		}
+		@media all and (max-width: 380px) {
+			font-size: 52px;
+		}
+	}
+}

@@ -1,0 +1,11 @@
+<div class="learnerassistant-navigationView-inner block-inner">
+	<div class="buttongroup {{#if isResultsShown}}is-resultsshown{{else}}not-resultsshown{{/if}} {{#if options._isReviewComplete}}is-reviewed{{else}}not-reviewed{{/if}}">
+		<button id="learnerassistant-revision" class="buttons-action" tabindex="0">{{settings._buttons._start}}</button>
+		<button id="learnerassistant-next" class="buttons-action" {{#unless isInteractionsComplete}}disabled{{/unless}} tabindex="0">{{settings._buttons._next}}</button>
+		<button id="learnerassistant-finish" class="buttons-action" {{#unless isInteractionsComplete}}disabled{{/unless}} tabindex="0">{{settings._buttons._finish}}</button>
+	</div>
+	<div class="learnerassistant-navigation-completion" role="progressbar">
+		<div class="learnerassistant-navigation-bar" style="width:{{options._percentageReviewedAssociateLearning}}%">
+		</div>
+	</div>
+</div>

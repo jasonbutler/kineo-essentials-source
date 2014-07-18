@@ -1,0 +1,84 @@
+<div class="learnerassistant-resultsView-inner block-inner">
+	<div class="learnerassistant-banner">
+		<span class="banner-guided">
+			<span><h5>Guided Learning</h5></span>
+		</span>
+	</div>
+	<div class="learnerassistant-resultsView-filter-container">
+	</div>
+	<div class="content-container">
+		
+		<div class="begin-instructions">
+			<div class="begin-instructions-inner">
+				<h4 class="title">{{settings._start.title}}</h4>
+				<div class="body">{{settings._start.body}}</div>
+			</div>
+		</div>
+	
+		<div class="content">
+			<div class="row-content-header clearfix">
+				
+				<div id="status" class="col not-mobile table-threetooone">
+					<div class="table-threetoone-inner">
+					<span class="icon icon-flag"></span><span>
+						<div class="cell col-header"><div class="cell-inner">{{{settings._results._status}}}</span></div></div>
+					</div>
+				</div>
+				
+				<div id="question" class="col not-mobile table-threetooone">
+					<span class="icon icon-question"></span>
+					<div class="table-threetoone-inner">
+						<div class="cell col-header"><div class="cell-inner"><span>{{{settings._results._bank}}}</span></div></div>
+					</div>
+				</div>
+				
+				<div id="tutorialcontent" class="col not-mobile table-threetooone">
+					<span class="icon icon-eye"></span>
+					<div class="table-threetoone-inner">
+						<div class="cell col-header"><div class="cell-inner"><span>{{{settings._results._associateLearnings}}}</span></div></div>
+					</div>
+				</div>
+				
+			</div>
+			{{#with options}}
+				{{#each banks }}
+					<div class="row clearfix">
+						<div id="status" class="col table-threetooone">
+							<div class="table-threetoone-inner">
+								<div class="cell"><div class="cell-inner">{{#if _isReviewComplete}}<span class="mobile-only icon icon-flag"></span><span class="icon icon-star"></span><span>{{learnerAssistantSettings 'settings._results._reviewed'}}</span>{{else}}<span class="mobile-only icon icon-flag"></span><span class="icon icon-star-hollow not-mobile"></span><span>{{learnerAssistantSettings 'settings._results._toReview'}}</span>{{/if}}</div></div>
+							</div>
+						</div>
+						<div id="question" class="col table-threetooone">
+							<div class="table-threetoone-inner">
+								<div class="cell"><div class="cell-inner"><span class="mobile-only icon icon-question"></span>{{title}}</div></div>
+							</div>
+						</div>
+						<div id="tutorialcontent" class="col table-threetooone">
+							<div class="table-threetoone-inner">
+								<div class="cell"><div class="cell-inner"><span class="mobile-only icon icon-eye"></span>{{_countUnreviewedAssociatedLearning}} left or alternatively you're at {{_countReviewedAssociatedLearning}}/{{_countTotalAssociatedLearning}}</div></div>
+							</div>
+						</div>
+					</div>
+				{{else}}
+					<div class="row clearfix">
+						<div id="status" class="col table-threetooone">
+							<div class="table-threetoone-inner">
+								<div class="not-mobile cell"><div class="cell-inner"><span class="mobile-only icon icon-flag"></span>-</div></div>
+							</div>
+						</div>
+						<div id="question" class="col table-threetooone">
+							<div class="table-threetoone-inner">
+								<div class="cell"><div class="cell-inner"><span class="icon icon-question"></span>-</div></div>
+							</div>
+						</div>
+						<div id="tutorialcontent" class="col table-threetooone">
+							<div class="table-threetoone-inner">
+								<div class="cell"><div class="cell-inner"><span class="icon icon-eye"></span>-</div></div>
+							</div>
+						</div>
+					</div>
+				{{/each}}
+			{{/with}}
+		</div>
+	</div>
+</div>

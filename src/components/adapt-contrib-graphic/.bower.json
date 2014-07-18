@@ -1,0 +1,24 @@
+{
+  "name": "adapt-contrib-graphic",
+  "homepage": "https://github.com/adaptlearning/adapt-contrib-graphic",
+  "authors": [
+    "Brian Quinn <brian@learningpool.com>"
+  ],
+  "description": "Please enter a description about your component here. This is what will get shown when registered with the Adapt registry so make it good",
+  "main": "/js/adapt-contrib-graphic.js",
+  "keywords": [
+    "adapt-plugin",
+    "adapt-component"
+  ],
+  "license": "GPLv3",
+  "_release": "2fbe42c071",
+  "_resolution": {
+    "type": "branch",
+    "branch": "develop",
+    "commit": "2fbe42c0711becc1fd3a0411becc02c301af94e8"
+  },
+  "_source": "git://github.com/adaptlearning/adapt-contrib-graphic.git",
+  "_target": "develop",
+  "_originalSource": "adapt-contrib-graphic",
+  "_direct": true
+}

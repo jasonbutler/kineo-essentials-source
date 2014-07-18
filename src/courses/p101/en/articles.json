@@ -1,0 +1,147 @@
+[
+    {
+        "_id":"a-04",
+        "_parentId":"co-01",
+        "_type":"article",
+        "_classes":"",
+        "title":"",
+        "displayTitle":"",
+        "body":""
+    },
+    {
+        "_id":"a-05",
+        "_parentId":"co-05",
+        "_type":"article",
+        "_classes":"bacteria-background",
+        "title":"BACTERIA - THE HIDDEN ENEMY",
+        "displayTitle":"",
+        "body":""
+    },
+    {
+        "_id":"a-10",
+        "_parentId":"co-05",
+        "_type":"article",
+        "_classes":"",
+        "title":"",
+        "displayTitle":"",
+        "body":""
+    },
+    {
+        "_id":"a-15",
+        "_parentId":"co-05",
+        "_type":"article",
+        "_classes":"article-reveal-buttons",
+        "title":"",
+        "displayTitle":"", 
+        "body":"",
+         "_articleReveal":{
+        "_classes": "",
+        "_height":200,
+        "_icon-text": "Open",
+        "_closeButtonText": "CLOSE",
+        "_triggerPosition": {
+            "_top":50,
+            "_left":0
+        },
+        "_ariaLabels": {
+            "openArticle": "This is a hidden article. Select here to reveal the article.",
+            "closeArticle": ""
+        },
+        "_ariaRegions": {
+            "articleReveal": "This is a hidden article. Select the open button to reveal the article."
+        },
+        "_revealTitle": "CASE STUDY",
+        "_revealBody": "Listen to what happened when John Jones failed an FSA inspection.",
+        "_backgroundImage":""
+        }
+    }, 
+    {
+        "_id":"a-20",
+        "_parentId":"co-05",
+        "_type":"article",
+        "_classes":"beige-pattern-background",
+        "title":"",
+        "displayTitle":"", 
+        "body":""
+    }, 
+    {
+        "_id":"a-21",
+        "_parentId":"co-10",
+        "_type":"article",
+        "_classes":"beige-pattern-background",
+        "title":"",
+        "displayTitle":"", 
+        "body":""
+    }, 
+    {
+        "_id":"a-22",
+        "_parentId":"co-15",
+        "_type":"article",
+        "_classes":"beige-pattern-background",
+        "title":"",
+        "displayTitle":"", 
+        "body":""
+    },
+    {
+        "_id":"a-25",
+        "_parentId":"co-20",
+        "_type":"article",
+        "_classes":"",
+        "title":"",
+        "displayTitle":"",
+        "body":"",
+        "_trickle": { 
+            "_isEnabled": true,
+            "_isEnabledOnRevisit": true,
+            "button": "Continue"
+        },
+        "_assessment": {
+            "_isEnabled":true,
+            "_isResetOnRevisit": true,
+            "_canShowFeedback": false,
+            "_startBlockCount": 1,
+            "_endBlockCount": 1,
+             "_assessmentPageLevelProgress": {
+                "_incrementalMarking": false,
+                "_showMarking": false,
+                "_showProgress": true
+            },
+            "_banks": {
+                "_isEnabled": true,
+                "_split": "2,2,2,2,2"
+            },
+            "_randomisation": {
+                "_isEnabled": true,
+                "_blockCount": 10
+            },
+            "_isPercentageBased" : true,
+            "_scoreToPass" : 100,
+            "_completionMessage" : {
+                "title" : "You have finished the assessment",
+                "message": "You scored [SCORE] out of [MAXSCORE].  [FEEDBACK]"
+            },
+            "_bands": [
+                {
+                    "_score": 0,
+                    "feedback": "Your score was below 25%. Why not have another try? Below is a list of areas you might want to study first.",
+                    "_showAssociatedLearning": true
+                },
+                {
+                    "_score": 25,
+                    "feedback": "Your score was below 50%. Why not have another try? Below is a list of areas you might want to study first.",
+                    "_showAssociatedLearning": true
+                },
+                {
+                    "_score": 50,
+                    "feedback": "Good effort, but you're score was under 75%. Let's try again? Below is a list of areas you might want to study first.",
+                    "_showAssociatedLearning": true
+                },
+                {
+                    "_score": 75,
+                    "feedback": "Great work. You passed the assessment article quiz.",
+                    "_showAssociatedLearning": true
+                }
+            ]
+        }
+    }
+]

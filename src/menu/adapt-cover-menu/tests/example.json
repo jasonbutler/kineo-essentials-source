@@ -1,0 +1,30 @@
+//_coverMenu required on each menu item
+
+
+{
+    "_id":"co-15",
+    "_parentId":"course",
+    "_type":"page",
+    "_classes":"",
+    "title":"Page Three",
+    "displayTitle":"Page Three",
+    "body":"",
+    "_graphic": {
+        "alt": "This is a picture of Adapt's origami birds.",
+        "src": "course/en/images/origami-menu-one.jpg"
+    },
+    "_coverMenu":{
+        "_backgroundGraphic": {
+            "alt": "This is a picture of Adapt's origami birds.",
+            "src": "course/en/images/origami-menu-one.jpg"
+        },
+        "_indicatorGraphic": {
+            "_isComplete": "course/en/images/origami-menu-three.jpg",
+            "_isVisited": "course/en/images/origami-menu-two.jpg",
+            "_isLocked":"course/en/images/origami-menu-one.jpg",
+            "_default":"course/en/images/origami-menu-one.jpg"
+        }
+    },
+    "linkText":"View",
+    "duration":"2 mins"
+}

@@ -1,0 +1,33 @@
+// Component styling
+// =================
+
+.component {
+    .component-inner{
+        }
+    .component-title{
+        margin:@component-title-margin;
+    }
+    .component-title-inner {
+        padding:@component-title-padding;
+    }
+    .component-body{
+        margin:@component-body-margin;
+    }
+    .component-body-inner{
+        padding: @component-body-padding;
+    }
+    .component-instruction {
+        margin:@component-instruction-margin;
+        color: @red;
+    }
+    .component-instruction-inner {
+        padding:@component-instruction-padding;
+        font-weight:bold;
+        &.validation-error {
+            color: @validation-error-text-color;
+        }
+    }
+}
+.component-container {
+    margin: auto 0;
+}

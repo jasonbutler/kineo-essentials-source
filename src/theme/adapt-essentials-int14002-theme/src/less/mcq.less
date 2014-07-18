@@ -1,0 +1,22 @@
+.mcq-component {
+
+	.mcq-item label {
+		.no-touch & {
+			&:hover {
+				.mcq-item-state {
+					.mcq-answer-icon {
+						color:@item-text-hover-color;
+					}
+				}
+			}
+		}
+		&.selected {
+			.mcq-item-state {
+				.mcq-answer-icon {
+					color:@item-text-selected-color;
+				}
+			}
+		}
+	}
+
+}

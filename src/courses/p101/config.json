@@ -1,0 +1,29 @@
+{
+    "_defaultLanguage": "en",
+    "_questionWeight": 1,
+    "_accessibility": {
+        "_isEnabled": false,
+        "_shouldSupportLegacyBrowsers": true
+    },
+    "_drawer": {
+        "_showEasing": "easeOutQuart",
+        "_hideEasing": "easeInQuart",
+        "_duration": 400
+    },
+    "_spoor": {
+        "_tracking": {
+            "_requireCourseCompleted": false,
+            "_requireAssessmentPassed": true,
+            "_shouldSubmitScore": false
+        },
+        "_reporting": {
+            "_comment": "Your options here are 'completed', 'passed', 'failed', and 'incomplete'",
+            "_onTrackingCriteriaMet": "completed",
+            "_onQuizFailure": "incomplete"
+        }
+    },
+    "_inspector": {
+        "_isEnabled": false,
+        "_tracUrl": ""
+    }
+}

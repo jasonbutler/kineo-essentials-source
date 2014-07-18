@@ -1,0 +1,14 @@
+{
+  "name": "adapt-assessment-learnerAssistant",
+  "homepage": "https://github.com/cgkineo/adapt-assessment/learnerAssistant",
+  "authors": [
+    "Oliver Foster <oliver.foster@kineo.com"
+  ],
+  "description": "%description",
+  "main": "/js/adapt-assessment-learnerAssistant.js",
+  "keywords": [
+    "adapt-plugin",
+    "adapt-extension"
+  ],
+  "license": "GPLv3"
+}

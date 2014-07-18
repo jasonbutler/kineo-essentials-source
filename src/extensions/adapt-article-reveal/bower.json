@@ -1,0 +1,15 @@
+{
+  "name": "adapt-article-reveal",
+  "version": "0.0.1",
+  "homepage": "https://github.com/adaptlearning/adapt-contrib-tutor",
+  "authors": [
+    ""
+  ],
+  "description": "A basic feedback overlay for question components",
+  "main": "/js/adapt-article-reveal.js",
+  "keywords": [
+    "adapt-plugin",
+    "adapt-extension"
+  ],
+  "license": "GPLv3"
+}
