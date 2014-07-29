@@ -1,8 +1,8 @@
 {
-  "name": "my-adapt-course",
-  "version": "0.0.0",
+  "name": "kineo-essentials-p101",
+  "version": "1.0.0",
   "authors": [
-    "AdaptLearning"
+    "AdaptLearning, Kineo"
   ],
   "main": "build/index.html",
   "license": "GPLv3",
