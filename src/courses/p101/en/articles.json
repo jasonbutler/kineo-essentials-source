@@ -12,9 +12,9 @@
         "_id":"a-05",
         "_parentId":"co-05",
         "_type":"article",
-        "_classes":"bacteria-background",
-        "title":"BACTERIA - THE HIDDEN ENEMY",
-        "displayTitle":"",
+        "_classes":"header bacteria-background",
+        "title":"Freedom of Information &Information Security",
+        "displayTitle":"<span>Freedom of Information &<br/> Information Security</span>",
         "body":""
     },
     {
@@ -44,14 +44,14 @@
             "_left":0
         },
         "_ariaLabels": {
-            "openArticle": "This is a hidden article. Select here to reveal the article.",
+            "openArticle": "Select the Open button to find out more.",
             "closeArticle": ""
         },
         "_ariaRegions": {
             "articleReveal": "This is a hidden article. Select the open button to reveal the article."
         },
         "_revealTitle": "CASE STUDY",
-        "_revealBody": "Listen to what happened when John Jones failed an FSA inspection.",
+        "_revealBody": "Select the Open button to find out more.",
         "_backgroundImage":""
         }
     }, 
@@ -86,19 +86,16 @@
         "_id":"a-25",
         "_parentId":"co-20",
         "_type":"article",
-        "_classes":"",
+        "_classes":"assessment-background",
         "title":"",
         "displayTitle":"",
         "body":"",
-        "_trickle": { 
-            "_isEnabled": true,
-            "_isEnabledOnRevisit": true,
-            "button": "Continue"
-        },
         "_assessment": {
             "_isEnabled":true,
             "_isResetOnRevisit": true,
             "_canShowFeedback": false,
+            "_hideUserAnswer": true,
+            "_hideButtonsOnComplete": true,
             "_startBlockCount": 1,
             "_endBlockCount": 1,
              "_assessmentPageLevelProgress": {

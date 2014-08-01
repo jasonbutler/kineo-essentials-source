@@ -14,7 +14,7 @@
                 "objectives"
             ]
         },
-        "_trackingId": 0
+        "_trackingId": 40
     },
     {
         "_id": "b-01",
@@ -31,7 +31,7 @@
                 "objectives"
             ]
         },
-        "_trackingId": 0
+        "_trackingId": 41
     },
     {
         "_id": "b-02",
@@ -48,7 +48,7 @@
                 "objectives"
             ]
         },
-        "_trackingId": 0
+        "_trackingId": 42
     },
     {
         "_id": "b-03",
@@ -65,13 +65,13 @@
                 "objectives"
             ]
         },
-        "_trackingId": 0
+        "_trackingId": 43
     },
     {
         "_id": "b-05",
         "_parentId": "a-05",
         "_type": "block",
-        "_classes": "header header-block-title",
+        "_classes": "",
         "title": "BACTERIA",
         "displayTitle": "BACTERIA",
         "body": "",
@@ -502,15 +502,5 @@
         "displayTitle": "",
         "body": "",
         "_trackingId": 38
-    },
-    {
-        "_id": "b-160",
-        "_parentId": "a-25",
-        "_type": "block",
-        "_classes": "",
-        "title": "",
-        "displayTitle": "",
-        "body": "",
-        "_trackingId": 39
     }
 ]

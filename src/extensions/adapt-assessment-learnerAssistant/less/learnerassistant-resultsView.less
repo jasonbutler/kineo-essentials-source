@@ -1,0 +1,231 @@
+@la-border-color : #a0a0a1;
+@instructions-bg-color : #FFF;
+@content-header-bg-color : #605E5D;
+@icon-color : #0088c2;
+
+#tutorialcontent {
+    display:none;
+}
+
+//padding-left
+.la-results {
+    
+    position:absolute;
+    top:0px;
+    bottom:0px;
+    width:100%;
+    overflow-y: auto;
+    background-image: url("../../course/en/images/int14002_essentials_guided_learning_bkg.jpg");
+    background-position: center top;
+    background-size: cover;
+    background-repeat: repeat; 
+
+    .col {
+
+        float:left;
+
+        .col-inner {
+
+            .cell  {                
+                padding: 12px 0px 12px 16px;
+
+                .cell-inner {
+
+                }
+            }
+        }
+    }      
+
+    .row {
+
+        margin-bottom: 8px;
+    }    
+    
+    .la-results-inner {
+
+         width: 100%;
+         /*max-width: 1440px;*/
+         margin: auto;
+                      	
+    }
+}
+
+//CONTENT
+.la-results .la-results-inner .la-content-container {
+
+    .begin-instructions {
+
+        margin:0px auto;
+        max-width: @device-width-large;
+        padding: @component-body-padding;
+        padding-bottom:0px;
+
+        .begin-instructions-inner {
+
+            background-color: @instructions-bg-color ;
+
+            h4 {
+                font-size: 28px;
+                font-weight: 700;
+                line-height: 38px;
+                padding:30px 30px 0px;
+            }
+
+            .body {
+                padding:30px;
+            }
+        }
+    }    
+
+    .la-content {
+
+        margin: 0 auto;
+        max-width: @device-width-large;
+        padding: @component-body-padding; 
+    }    
+     
+
+    .la-content-header-row {
+
+        background-color:@content-header-bg-color;
+        margin-bottom: 8px;
+
+        .icon {
+
+            float:left;
+            padding:10px;
+            background-color: @guided-primary-color;
+            margin-right: 10px;
+        }
+
+        .content-header-text {
+
+            text-transform: uppercase;
+            font-weight: bold;
+            color: #fff;
+            font-size: 16px;
+            line-height: 17px;
+        }                    
+    }
+
+    .la-content-bank-row {
+        
+        .adapt-border-radius(10px);
+        background: rgb(255,255,255);
+        .adapt-background-image(linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(223,222,222,1) 100%));
+        .adapt-box-shadow(3px 3px 2px 0px rgba(0, 0, 0, 0.35));
+
+        .cell {
+
+            .cell-inner {                
+
+                .icon.not-mobile {
+
+                    float: left;
+                    padding: 10px;
+                    margin-top: 2px;
+                    font-size: 16px;   
+
+                    &.icon-flag {
+                        color: @guided-primary-color;
+                        display: block;
+                        margin-left: -2px;
+                        margin-top: -5px;
+                        padding-left: 0;                            
+                    }
+                    &.icon-book {
+                        color: @guided-primary-color;
+                        display: block;
+                        margin-left: -2px;
+                        margin-top: -5px;
+                        padding-left: 0;                            
+                    }    
+                }  
+                .icon.mobile-only {
+
+                    float: left;
+                    padding: 10px;                    
+                    color: @guided-primary-color;
+                    font-size: 19px;
+                    margin-left: -5px;
+                    margin-top: -4px;                  
+                }                         
+            }
+        }                  
+    }    
+}
+
+
+//DESKTOP
+@media all and (min-width:@device-width-medium) {
+    .la-results {    
+        .mobile-only {
+            display: none;
+        }
+
+        .col {
+
+            &:nth-child(1) {
+                width:25%;             
+            }
+            &:nth-child(2) {
+                width:75%;
+
+            }
+            /*&:nth-child(3) {
+                width:40%;
+            } */ 
+        }
+
+        .la-content-bank-row .col {
+
+            /*&:nth-child(1), &:nth-child(2) {
+                .cell .cell-inner {                    
+                    border-right: 1px solid @la-border-color;
+                }
+            }*/
+
+            &:nth-child(1) {
+                .cell .cell-inner {                    
+                    border-right: 1px solid @la-border-color;
+                }
+            }            
+        }      
+    }
+}
+
+//TABLET/MOBILE
+@media all and (max-width:(@device-width-medium - 1px)) {
+    .la-results {    
+        .la-results-inner{
+            max-width: 699px;
+        }
+        
+        .not-mobile {
+            display: none !important;
+        } 
+        
+        .col  {
+            width: 100%;
+
+            &:nth-child(2) {
+                
+                .col-inner {
+                    border-top: 1px solid @la-border-color;
+                    /*border-bottom: 1px solid @la-border-color;*/
+                }
+            }
+        }   
+    }
+}
+
+//MOBILE
+@media all and (max-width:(@device-width-small - 1px)) {
+    .la-results { 
+
+       .la-results-inner{
+            max-width: 400px;
+        } 
+    }
+}
+

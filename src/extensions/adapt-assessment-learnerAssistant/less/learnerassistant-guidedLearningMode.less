@@ -1,0 +1,148 @@
+.guided-learning-mode {
+
+
+	@media all and (max-width:(@device-width-medium - 1px)) {
+	   /*.learnerassistant-navigationView .buttongroup button.buttons-action {
+	    	border: 0px solid white;
+	    }*/
+
+	    .navigation {
+		    .close {
+				float:right;
+				padding: 12px 13px 12px 12px;
+				position:absolute;
+				top:0;
+				right:0;
+				cursor: pointer;
+				.no-touch &:hover {
+					color: @guided-bar-icon-hover-color;
+					.icon {
+						 color: @guided-bar-icon-hover-color;
+					}
+				}
+			}
+		}
+			
+	}
+
+	[data-clickstyle-group="tutor-icons"].clickstyle {
+		.icon, span {
+			-webkit-animation: text-shadow-pulse 2s infinite;
+		}
+	}
+
+	
+	.navigation {
+		&:not(.learnerassistant-navigationView) {
+			background-color: @guided-primary-color;
+			border-bottom: @guided-bar-border;
+		}
+
+		.icon {
+			&:not(.guided-learning-item) {
+				display:none;
+			}
+			&.guided-learning-item {
+				display: inline-block;
+			}
+		}
+
+
+		.page-level-progress-navigation {
+			display:none;
+		}
+
+		.la-tutor-icon {
+			.title-bar {
+				position: relative;
+				text-decoration: none;
+				margin: auto;
+				cursor: pointer;
+				left: -16px;
+				text-align: center;
+				width: 400px;
+				color: @guided-bar-button-text-color;
+				.no-touch &:hover {
+					color: @guided-bar-icon-hover-color;
+					.icon {
+						 color: @guided-bar-icon-hover-color;
+					}
+				}
+				.icon {
+					color: @guided-bar-icon-color;
+		            .no-touch &:hover {
+		                color: @guided-bar-icon-hover-color;
+		            }
+				}
+				span.title {
+					display: inline-block;
+					top: -4px;
+					position: relative;
+				}
+			}
+		}
+	}
+
+	.extension-tutor {
+		.tutor {
+			background-color: @guided-primary-color!important;
+		}
+	}
+
+	.drawer {
+		background-color: @guided-primary-color;
+		.drawer-inner {
+			border-left: @guided-bar-border;
+		}
+
+		.drawer-close {
+			color: @guided-bar-icon-color;
+			.no-touch &:hover {
+				color: @guided-bar-icon-hover-color;
+			}
+		}
+
+	}
+
+	.notify {
+		.notify-popup {
+			background-color: @guided-primary-color;
+		}
+
+		.notify-popup-button {
+			background-color: @guided-bar-button-color;
+			color: @guided-bar-button-text-color;
+			border: @guided-bar-button-border;
+			.no-touch &:hover {
+				background-color: @guided-bar-button-hover-color;
+				color: @guided-bar-button-text-hover-color;
+			}
+		}
+	}
+
+}
+
+.body-wrapper-bottomnavigation {
+
+	#bottomnavigation {
+		background-color: @guided-primary-color!important;
+		border-top: @guided-bar-border!important;
+	}
+
+	.notify {
+		.notify-popup {
+			background-color: @guided-primary-color;
+		}
+
+		.notify-popup-button {
+			background-color: @guided-bar-button-color;
+			color: @guided-bar-button-text-color;
+			border: @guided-bar-button-border;
+			.no-touch &:hover {
+				background-color: @guided-bar-button-hover-color;
+				color: @guided-bar-button-text-hover-color;
+			}
+		}
+	}
+
+}

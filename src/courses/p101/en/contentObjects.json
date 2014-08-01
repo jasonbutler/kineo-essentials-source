@@ -15,113 +15,197 @@
         "_classes":"",
         "title":"Menu",
         "displayTitle":"Menu",
-        "body":""
+        "body":"",
+        "_coverMenu":{
+            "_introItemGraphic": {
+                "alt": "",
+                "src": "course/en/images/menu_returnArrow.png",
+                "title": "Intro Page"
+            }
+        }
     },
     {
         "_id":"co-05",
         "_parentId":"co-02",
         "_type":"page",
         "_classes":"",
+        "coursetitle":"Freedom of Information &<br>Information Security",
         "title":"Page One",
         "displayTitle":"Page One",
         "body":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.",
         "_coverMenu":{
             "_backgroundGraphic": {
                 "alt": "This is a picture of Adapt's origami birds.",
-                "src": "course/en/images/menu-item-one.jpg"
+                "src": "course/en/images/menu_bg.jpg"
             },
             "_indicatorGraphic": {
-                "_isComplete": "course/en/images/menu-item-indicator-completed-one.png",
-                "_isVisited": "course/en/images/menu-item-indicator-visited-one.png",
-                "_default":"course/en/images/menu-item-indicator-default-one.png",
-                "_accessibilityEnabled": "course/en/images/menu-item-indicator-default-one.png"
-            }
+                "_isComplete": "course/en/images/menu_btn1_complete.png",
+                "_isVisited": "course/en/images/menu_btn1_started.png",
+                "_default":"course/en/images/menu_btn1_notStarted.png",
+                "_accessibilityEnabled": "course/en/images/menu_btn1_notStarted.png"
+            },
+            "menuViewButton": "Select here to view page one."
         },
         "_ariaLabels": {
             "menuItemPage": "Page one, tab to View button to enter."
         },
         "linkText":"View",
-        "duration":"2 mins"
+        "duration":"2 mins",
+        "_footer": {
+            "_isEnabled": true,
+            "_isContinuous": "global",
+            "_buttons": {
+                "_root": {
+                    "_isHidden": false,
+                    "text": "Go to main menu"
+                },
+                "_up": {
+                    "_isHidden": true,
+                    "text": "Back to menu"
+                },
+                "_previous": {
+                    "_isHidden": true,
+                    "text": "< Previous"
+                },
+                "_next": {
+                    "_isHidden": true,
+                    "text": "Next >"
+                }
+            }
+        }
     },
     {
         "_id":"co-10",
         "_parentId":"co-02",
         "_type":"page",
         "_classes":"",
+        "coursetitle":"Freedom of Information &<br>Information Security",
         "title":"Page Two",
         "displayTitle":"Page Two",
         "body":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.",
         "_coverMenu":{
             "_backgroundGraphic": {
                 "alt": "This is a picture of Adapt's origami birds.",
-                "src": "course/en/images/menu-item-one.jpg"
+                "src": "course/en/images/fire_extinguisher.png"
             },
             "_indicatorGraphic": {
-                "_isComplete": "course/en/images/menu-item-indicator-completed-two.png",
-                "_isVisited": "course/en/images/menu-item-indicator-visited-two.png",
-                "_default":"course/en/images/menu-item-indicator-default-two.png",
-                "_accessibilityEnabled": "course/en/images/menu-item-indicator-default-two.png"
-            }
+                "_isComplete": "course/en/images/menu_btn2_complete.png",
+                "_isVisited": "course/en/images/menu_btn2_started.png",
+                "_default":"course/en/images/menu_btn2_notStarted.png",
+                "_accessibilityEnabled": "course/en/images/menu_btn2_notStarted.png"
+            },
+            "menuViewButton": "Select here to view page two."
         },
         "_ariaLabels": {
             "menuItemPage": "Page 2, tab to View button to enter."
         },
         "linkText":"View",
-        "duration":"2 mins"
+        "duration":"2 mins",
+        "_buttons": {
+            "_root": {
+                "_isHidden": false,
+                "text": "Go to main menu"
+            },
+            "_up": {
+                "_isHidden": true,
+                "text": "Back to menu"
+            },
+            "_previous": {
+                "_isHidden": true,
+                "text": "< Previous"
+            },
+            "_next": {
+                "_isHidden": true,
+                "text": "Next >"
+            }
+        }
     },
     {
         "_id":"co-15",
         "_parentId":"co-02",
         "_type":"page",
         "_classes":"",
+        "coursetitle":"Freedom of Information &<br>Information Security",
         "title":"Page Three",
         "displayTitle":"Page Three",
         "body":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.",
         "_coverMenu":{
             "_backgroundGraphic": {
                 "alt": "This is a picture of Adapt's origami birds.",
-                "src": "course/en/images/menu-item-one.jpg"
+                "src": "course/en/images/pencils.png"
             },
             "_indicatorGraphic": {
-                "_isComplete": "course/en/images/menu-item-indicator-completed-three.png",
-                "_isVisited": "course/en/images/menu-item-indicator-visited-three.png",
-                "_default":"course/en/images/menu-item-indicator-default-three.png",
-                "_accessibilityEnabled": "course/en/images/menu-item-indicator-default-three.png"
-            }
+                "_isComplete": "course/en/images/menu_btn3_complete.png",
+                "_isVisited": "course/en/images/menu_btn3_started.png",
+                "_default":"course/en/images/menu_btn3_notStarted.png",
+                "_accessibilityEnabled": "course/en/images/menu_btn3_notStarted.png"
+            },
+            "menuViewButton": "Select here to view page three."
         },
         "_ariaLabels": {
             "menuItemPage": "Page 3, tab to View button to enter."
         },
         "linkText":"View",
-        "duration":"2 mins"
+        "duration":"2 mins",
+        "_buttons": {
+            "_root": {
+                "_isHidden": false,
+                "text": "Go to main menu"
+            },
+            "_up": {
+                "_isHidden": true,
+                "text": "Back to menu"
+            },
+            "_previous": {
+                "_isHidden": true,
+                "text": "< Previous"
+            },
+            "_next": {
+                "_isHidden": true,
+                "text": "Next >"
+            }
+        }
     },
     {
         "_id":"co-20",
         "_parentId":"co-02",
         "_type":"page",
         "_classes":"",
-        "title":"Page Four",
-        "displayTitle":"Page Four",
-        "body":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.",
+        "coursetitle":"Freedom of Information &<br>Information Security",
+        "title":"Test your knowledge",
+        "displayTitle":"Test your knowledge",
+        "body":"Take this short assessment to check your knowledge. Use the guided learning feature to help improve your score if you don't pass first time.",
         "_coverMenu":{
             "_backgroundGraphic": {
                 "alt": "This is a picture of Adapt's origami birds.",
-                "src": "course/en/images/menu-item-one.jpg"
+                "src": "course/en/images/assessment.png"
             },
             "_indicatorGraphic": {
-                "_isComplete": "course/en/images/menu-item-indicator-completed-four.png",
-                "_isVisited": "course/en/images/menu-item-indicator-visited-four.png",
-                "_default":"course/en/images/menu-item-indicator-default-four.png",
-                "_accessibilityEnabled": "course/en/images/menu-item-indicator-default-four.png",
-                "_isLocked":"course/en/images/menu-item-indicator-locked-four.png"
-            }
+                "_isComplete": "course/en/images/menu_btn4_complete.png",
+                "_isVisited": "course/en/images/menu_btn4_started.png",
+                "_default":"course/en/images/menu_btn4_notStarted.png",
+                "_accessibilityEnabled": "course/en/images/menu_btn4_notStarted.png",
+                "_isLocked": "course/en/images/menu_padlock.png",
+                "_isPassed": "course/en/images/menu_tick.png",
+                "_isFailed": "course/en/images/menu_cross.png"
+            },
+            "menuViewButton": "Select here to view page four."
         },
         "_ariaLabels": {
             "menuItemPage": "Page 4, tab to View button to enter."
         },
+        "_strickle": {
+            "_isEnabled": true
+        },
         "linkText":"View",
-        "duration":"2 mins",
-        "_lock": [
-        ]
+        "duration":"10 mins",
+        "_bookmarking": {
+            "_isEnabled": true,
+            "_level": "page"
+        },
+        "_learnerassistant": {
+            "_redirectOnPassed": true
+        },
+        "_lock": ["co-05", "co-10", "co-15"]
     }
 ]

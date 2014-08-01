@@ -1,0 +1,77 @@
+<div class="la-results-inner block-inner">
+	<div class="la-content-container">
+		
+		<div class="begin-instructions">
+			<div class="begin-instructions-inner">
+				<h4 class="title">{{{settings._start.title}}}</h4>
+				<div class="body"><span class="score">{{{settings._start.youScored}}} {{{data.scoreAsPercent}}}</span>{{{settings._start.body}}}</div>
+			</div>
+		</div>
+	
+		<div class="la-content">
+			<div class="la-content-header-row row clearfix not-mobile">
+				
+				<div id="status" class="col">
+					<div class="col-inner">
+					<span class="icon icon-flag"></span><span>
+						<div class="cell col-header"><div class="cell-inner content-header-text">{{{settings._results._status}}}</span></div></div>
+					</div>
+				</div>
+				
+				<div id="question" class="col">
+					<span class="icon icon-question"></span>
+					<div class="col-inner">
+						<div class="cell col-header"><div class="cell-inner content-header-text"><span>{{{settings._results._bank}}}</span></div></div>
+					</div>
+				</div>
+				
+				<div id="tutorialcontent" class="col">
+					<span class="icon icon-eye"></span>
+					<div class="col-inner">
+						<div class="cell col-header"><div class="cell-inner content-header-text"><span>{{{settings._results._associateLearnings}}}</span></div></div>
+					</div>
+				</div>
+				
+			</div>
+			{{#with options}}
+				{{#each banks }}
+					<div class="la-content-bank-row row clearfix">
+						<div id="status" class="col">
+							<div class="col-inner">
+								<div class="cell"><div class="cell-inner">{{#if _isReviewComplete}}<span class="mobile-only icon icon-book"></span><span class="icon icon-book not-mobile"></span><span>{{learnerAssistantSettings 'settings._results._reviewed'}}</span>{{else}}<span class="mobile-only icon icon-flag"></span><span class="icon icon-flag not-mobile"></span><span>{{learnerAssistantSettings 'settings._results._toReview'}}</span>{{/if}}</div></div>
+							</div>
+						</div>
+						<div id="question" class="col">
+							<div class="col-inner">
+								<div class="cell"><div class="cell-inner"><span class="mobile-only icon icon-question"></span>{{title}}</div></div>
+							</div>
+						</div>
+						<div id="tutorialcontent" class="col">
+							<div class="col-inner">
+								<div class="cell"><div class="cell-inner"><span class="mobile-only icon icon-eye"></span>{{{_countReviewedAssociatedLearning}}}/{{{_countTotalAssociatedLearning}}} reviewed</div></div>
+							</div>
+						</div>
+					</div>
+				{{else}}
+					<div class="la-content-bank-row row clearfix">
+						<div id="status" class="col">
+							<div class="col-inner">
+								<div class="not-mobile cell"><div class="cell-inner"><span class="mobile-only icon icon-flag"></span>-</div></div>
+							</div>
+						</div>
+						<div id="question" class="col">
+							<div class="col-inner">
+								<div class="cell"><div class="cell-inner"><span class="icon icon-question"></span>-</div></div>
+							</div>
+						</div>
+						<div id="tutorialcontent" class="col">
+							<div class="col-inner">
+								<div class="cell"><div class="cell-inner"><span class="icon icon-eye"></span>-</div></div>
+							</div>
+						</div>
+					</div>
+				{{/each}}
+			{{/with}}
+		</div>
+	</div>
+</div>

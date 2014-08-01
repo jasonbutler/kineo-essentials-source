@@ -1,0 +1,14 @@
+{
+  "name": "adapt-footer",
+  "homepage": "https://github.com/cgkineo/adapt-footer",
+  "authors": [
+    "Oliver Foster <oliver.foster@kineo.com"
+  ],
+  "description": "%description",
+  "main": "/js/adapt-footer.js",
+  "keywords": [
+    "adapt-plugin",
+    "adapt-extension"
+  ],
+  "license": "GPLv3"
+}

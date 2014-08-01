@@ -1,0 +1,27 @@
+{
+  "name": "adapt-bookmarking",
+  "homepage": "https://github.com/cgkineo/adapt-bookmarking",
+  "authors": [
+    "Dan Ghost <daniel.ghost@kineo.com>"
+  ],
+  "displayName": "Bookmarking",
+  "extension": "bookmarking",
+  "description": "A bookmarking extension.",
+  "main": "/js/adapt-bookmarking.js",
+  "keywords": [
+    "adapt-plugin",
+    "adapt-extension"
+  ],
+  "license": "GPLv3",
+  "targetAttribute": "_bookmarking",
+  "_release": "ce09d62f99",
+  "_resolution": { 
+    "type": "branch",
+    "branch": "develop",
+    "commit": "ce09d62f9923fb24420f489b4650f5c2dcab3471"
+  },
+  "_source": "git://github.com/cgkineo/adapt-bookmarking.git",
+  "_target": "develop",
+  "_originalSource": "adapt-bookmarking",
+  "_direct": true
+}

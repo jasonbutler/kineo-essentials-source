@@ -1,0 +1,265 @@
+@media all and (min-width:@device-width-medium) {
+    .mobile-only {
+        display: none !important;
+    }
+}
+@media all and (max-width:(@device-width-medium - 1px)) {
+    .not-mobile {
+        display: none !important;
+    }
+}
+.learnerassistant-page-level-progress-inner {
+    .learnerassistant-page-level-progress-info {
+        display: inline-block;
+        padding: 18px 20px 18px 20px;
+        border-right: @guided-bar-border;
+        margin-right: 10px;
+        color: @guided-bar-icon-color;
+        &.clickstyle {
+            -webkit-animation: text-shadow-pulse 2s infinite;
+        }
+        .no-touch &:hover {
+            color: @guided-bar-icon-hover-color;
+        }
+    }
+    .learnerassistant-page-level-progress-item {
+        display: inline-block;
+        height: 100%;
+        pointer-events: none; // disabled click events
+        span.icon {
+            font-size: 20px;
+            height:20px;
+            width:20px;
+            padding: 18px 10px;
+            color: @guided-bar-icon-color;
+            .no-touch &:hover {
+                color: @guided-bar-icon-hover-color;
+            }
+        }
+    }
+    &.hide-progress {
+        .learnerassistant-page-level-progress-item {
+            &:not(.correct), &:not(.incorrect), &.correct, &.incorrect {
+                span.icon {
+                    &.correct {
+                        display: none;
+                    }
+                    &.incorrect {
+                        display: none;
+                    }
+                    &.unanswered {
+                        display: inline-block;
+                    }
+                    &.answered {
+                       display: none;
+                    }
+                }
+            }
+        }
+    }
+    &.incrementalMarking.show-progress.show-useranswer {
+        .learnerassistant-page-level-progress-item {
+            &:not(.correct), &:not(.incorrect) {
+                span.icon {
+                    &.correct {
+                        display: none;
+                    }
+                    &.incorrect {
+                        display: none;
+                    }
+                    &.unanswered {
+                        display: inline-block;
+                    }
+                    &.answered {
+                       display: none;
+                    }
+                }
+            }
+            &.correct {
+                span.icon {
+                    &.correct {
+                        display: inline-block;
+                        color: green;
+                    }
+                    &.incorrect {
+                        display: none;
+                    }
+                    &.unanswered {
+                        display: none;
+                    }
+                    &.answered {
+                       display: none;
+                    }
+                }
+            }
+            &.incorrect {
+                span.icon {
+                    &.correct {
+                        display: none;
+                    }
+                    &.incorrect {
+                        display: inline-block;
+                        color: red;
+                    }
+                    &.unanswered {
+                        display: none;
+                    }
+                    &.answered {
+                       display: none;
+                    }
+                }
+            }
+        }
+    }
+     &.not-incrementalMarking.show-progress.show-useranswer {
+        &.incomplete {
+            .learnerassistant-page-level-progress-item {
+                &:not(.correct), &:not(.incorrect) {
+                    span.icon {
+                        &.correct {
+                            display: none;
+                        }
+                        &.incorrect {
+                            display: none;
+                        }
+                        &.unanswered {
+                            display: inline-block;
+                        }
+                        &.answered {
+                           display: none;
+                        }
+                    }
+                }
+                &.correct, &.incorrect {
+                    span.icon {
+                        &.correct {
+                            display: none;
+                        }
+                        &.incorrect {
+                            display: none;
+                        }
+                        &.unanswered {
+                            display: none;
+                        }
+                        &.answered {
+                            display: inline-block;
+                        }
+                    }
+                }
+            }
+        }
+        &.complete {
+            .learnerassistant-page-level-progress-item {
+                &:not(.correct), &:not(.incorrect) {
+                    span.icon {
+                        &.correct {
+                            display: none;
+                        }
+                        &.incorrect {
+                            display: none;
+                        }
+                        &.unanswered {
+                            display: inline-block;
+                        }
+                        &.answered {
+                           display: none;
+                        }
+                    }
+                }
+                &.correct {
+                    span.icon {
+                        &.correct {
+                            display: inline-block;
+                            color: green;
+                        }
+                        &.incorrect {
+                            display: none;
+                        }
+                        &.unanswered {
+                            display: none;
+                        }
+                        &.answered {
+                           display: none;
+                        }
+                    }
+                }
+                &.incorrect {
+                    span.icon {
+                        &.correct {
+                            display: none;
+                        }
+                        &.incorrect {
+                            display: inline-block;
+                            color: red;
+                        }
+                        &.unanswered {
+                            display: none;
+                        }
+                        &.answered {
+                           display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+     &.show-progress.hide-useranswer {
+        &.incomplete, &.complete {
+            .learnerassistant-page-level-progress-item {
+                &:not(.correct), &:not(.incorrect) {
+                    span.icon {
+                        &.correct {
+                            display: none;
+                        }
+                        &.incorrect {
+                            display: none;
+                        }
+                        &.unanswered {
+                            display: inline-block;
+                        }
+                        &.answered {
+                           display: none;
+                        }
+                    }
+                }
+                &.correct, &.incorrect {
+                    span.icon {
+                        &.correct {
+                            display: none;
+                        }
+                        &.incorrect {
+                            display: none;
+                        }
+                        &.unanswered {
+                            display: none;
+                        }
+                        &.answered {
+                            display: inline-block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@-webkit-keyframes text-shadow-pulse {
+    0% { 
+        text-shadow: 0 0 0 rgba(255,255,255,0.7); 
+    }
+    50% {
+        text-shadow: 0 0 30px rgba(255,255,255,0.7); 
+    }
+    100% { 
+        text-shadow: 0 0 0 rgba(255,255,255,0.7);
+    }
+}
+
+
+
+
+
+
+
+

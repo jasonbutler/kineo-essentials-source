@@ -96,108 +96,6 @@ function program5(depth0,data) {
   return buffer;
   }));
 
-this["Handlebars"]["templates"]["results"] = Handlebars.template(function (Handlebars,depth0,helpers,partials,data) {
-  this.compilerInfo = [4,'>= 1.0.0'];
-helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
-  var buffer = "", stack1, functionType="function", escapeExpression=this.escapeExpression, self=this;
-
-function program1(depth0,data) {
-  
-  var buffer = "", stack1;
-  buffer += "\n    <div class=\"results-title component-title\">\n        <h4 class=\"results-title-inner component-title-inner\">\n            ";
-  if (stack1 = helpers.title) { stack1 = stack1.call(depth0, {hash:{},data:data}); }
-  else { stack1 = depth0.title; stack1 = typeof stack1 === functionType ? stack1.apply(depth0) : stack1; }
-  if(stack1 || stack1 === 0) { buffer += stack1; }
-  buffer += "\n        </h4>\n    </div>\n    ";
-  return buffer;
-  }
-
-function program3(depth0,data) {
-  
-  var buffer = "", stack1;
-  buffer += "\n    <div class=\"results-body component-body\">\n        <div class=\"results-body-inner component-body-inner\">\n            ";
-  if (stack1 = helpers.body) { stack1 = stack1.call(depth0, {hash:{},data:data}); }
-  else { stack1 = depth0.body; stack1 = typeof stack1 === functionType ? stack1.apply(depth0) : stack1; }
-  if(stack1 || stack1 === 0) { buffer += stack1; }
-  buffer += "\n        </div>\n    </div>\n    ";
-  return buffer;
-  }
-
-function program5(depth0,data) {
-  
-  var buffer = "", stack1;
-  buffer += "\n    <div class=\"results-feedback component-feedback\">\n        <div class=\"results-feedback-inner component-feedback-inner\">\n            ";
-  if (stack1 = helpers.feedbackMessage) { stack1 = stack1.call(depth0, {hash:{},data:data}); }
-  else { stack1 = depth0.feedbackMessage; stack1 = typeof stack1 === functionType ? stack1.apply(depth0) : stack1; }
-  if(stack1 || stack1 === 0) { buffer += stack1; }
-  buffer += "\n        </div>\n    </div>\n    ";
-  return buffer;
-  }
-
-function program7(depth0,data) {
-  
-  var buffer = "", stack1;
-  buffer += "\n    <div class=\"results-associatedLearning component-associatedLearning\">\n        <div class=\"results-associatedLearning-inner component-associatedLearning-inner\">\n            <ul>\n                ";
-  stack1 = helpers.each.call(depth0, depth0._associatedLearning, {hash:{},inverse:self.noop,fn:self.programWithDepth(8, program8, data, depth0),data:data});
-  if(stack1 || stack1 === 0) { buffer += stack1; }
-  buffer += "\n            </ul>\n        </div>\n    </div>\n    ";
-  return buffer;
-  }
-function program8(depth0,data,depth1) {
-  
-  var buffer = "", stack1;
-  buffer += "\n                    ";
-  stack1 = helpers['if'].call(depth0, depth1._linkToAssociatedLearning, {hash:{},inverse:self.program(11, program11, data),fn:self.program(9, program9, data),data:data});
-  if(stack1 || stack1 === 0) { buffer += stack1; }
-  buffer += "\n                ";
-  return buffer;
-  }
-function program9(depth0,data) {
-  
-  var buffer = "", stack1;
-  buffer += "\n                        <a href=\"#\" class=\"associatedLearning-link\" data-id=\"";
-  if (stack1 = helpers.id) { stack1 = stack1.call(depth0, {hash:{},data:data}); }
-  else { stack1 = depth0.id; stack1 = typeof stack1 === functionType ? stack1.apply(depth0) : stack1; }
-  buffer += escapeExpression(stack1)
-    + "\" data-type=\"";
-  if (stack1 = helpers.type) { stack1 = stack1.call(depth0, {hash:{},data:data}); }
-  else { stack1 = depth0.type; stack1 = typeof stack1 === functionType ? stack1.apply(depth0) : stack1; }
-  buffer += escapeExpression(stack1)
-    + "\"><li>";
-  if (stack1 = helpers.title) { stack1 = stack1.call(depth0, {hash:{},data:data}); }
-  else { stack1 = depth0.title; stack1 = typeof stack1 === functionType ? stack1.apply(depth0) : stack1; }
-  buffer += escapeExpression(stack1)
-    + "</li></a>\n                    ";
-  return buffer;
-  }
-
-function program11(depth0,data) {
-  
-  var buffer = "", stack1;
-  buffer += "\n                        <li>";
-  if (stack1 = helpers.title) { stack1 = stack1.call(depth0, {hash:{},data:data}); }
-  else { stack1 = depth0.title; stack1 = typeof stack1 === functionType ? stack1.apply(depth0) : stack1; }
-  buffer += escapeExpression(stack1)
-    + "</li>\n                    ";
-  return buffer;
-  }
-
-  buffer += "<div class=\"results-inner component-inner\">\n    ";
-  stack1 = helpers['if'].call(depth0, depth0.title, {hash:{},inverse:self.noop,fn:self.program(1, program1, data),data:data});
-  if(stack1 || stack1 === 0) { buffer += stack1; }
-  buffer += "\n    ";
-  stack1 = helpers['if'].call(depth0, depth0.body, {hash:{},inverse:self.noop,fn:self.program(3, program3, data),data:data});
-  if(stack1 || stack1 === 0) { buffer += stack1; }
-  buffer += "\n    ";
-  stack1 = helpers['if'].call(depth0, depth0.feedbackMessage, {hash:{},inverse:self.noop,fn:self.program(5, program5, data),data:data});
-  if(stack1 || stack1 === 0) { buffer += stack1; }
-  buffer += "\n    ";
-  stack1 = helpers['if'].call(depth0, depth0._associatedLearning, {hash:{},inverse:self.noop,fn:self.program(7, program7, data),data:data});
-  if(stack1 || stack1 === 0) { buffer += stack1; }
-  buffer += "\n</div>";
-  return buffer;
-  });
-
 this["Handlebars"]["templates"]["accordion"] = Handlebars.template(function (Handlebars,depth0,helpers,partials,data) {
   this.compilerInfo = [4,'>= 1.0.0'];
 helpers = this.merge(helpers, Handlebars.helpers); partials = this.merge(partials, Handlebars.partials); data = data || {};
@@ -427,8 +325,10 @@ function program3(depth0,data) {
   if (stack2 = helpers._left) { stack2 = stack2.call(depth0, {hash:{},data:data}); }
   else { stack2 = depth0._left; stack2 = typeof stack2 === functionType ? stack2.apply(depth0) : stack2; }
   if(stack2 || stack2 === 0) { buffer += stack2; }
-  buffer += "%;\" role=\"button\" aria-label=\""
-    + escapeExpression(((stack1 = ((stack1 = depth0._graphic),stack1 == null || stack1 === false ? stack1 : stack1.alt)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
+  buffer += "%;\" role=\"button\" aria-label=\"";
+  if (stack2 = helpers.pinAlt) { stack2 = stack2.call(depth0, {hash:{},data:data}); }
+  else { stack2 = depth0.pinAlt; stack2 = typeof stack2 === functionType ? stack2.apply(depth0) : stack2; }
+  buffer += escapeExpression(stack2)
     + "\">\r\n        <div class=\"hotgraphic-graphic-pin-icon component-item-color icon icon-pin\"></div>\r\n      </a>\r\n      ";
   return buffer;
   }
@@ -1086,85 +986,58 @@ helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
 function program1(depth0,data) {
   
   
-  return "complete";
+  return "hide-useranswer";
   }
 
 function program3(depth0,data) {
   
   
-  return "incomplete";
+  return "show-useranswer";
   }
 
 function program5(depth0,data) {
   
   
-  return "incrementalMarking";
+  return "complete";
   }
 
 function program7(depth0,data) {
   
   
-  return "not-incrementalMarking";
+  return "incomplete";
   }
 
 function program9(depth0,data) {
   
   
-  return "show-progress";
+  return "incrementalMarking";
   }
 
 function program11(depth0,data) {
   
   
-  return "hide-progress";
+  return "not-incrementalMarking";
   }
 
 function program13(depth0,data) {
   
-  var buffer = "", stack1;
-  buffer += "\r\n	    ";
-  stack1 = helpers.each.call(depth0, depth0.components, {hash:{},inverse:self.noop,fn:self.program(14, program14, data),data:data});
-  if(stack1 || stack1 === 0) { buffer += stack1; }
-  buffer += "\r\n	";
-  return buffer;
-  }
-function program14(depth0,data) {
   
-  var buffer = "", stack1;
-  buffer += "\r\n	            <a class=\"learnerassistant-page-level-progress-item ";
-  if (stack1 = helpers.assessmentPageLevelProgressMark) { stack1 = stack1.call(depth0, {hash:{},data:data}); }
-  else { stack1 = depth0.assessmentPageLevelProgressMark; stack1 = typeof stack1 === functionType ? stack1.apply(depth0) : stack1; }
-  buffer += escapeExpression(stack1)
-    + " ";
-  stack1 = helpers['if'].call(depth0, depth0._isInteractionsComplete, {hash:{},inverse:self.program(3, program3, data),fn:self.program(1, program1, data),data:data});
-  if(stack1 || stack1 === 0) { buffer += stack1; }
-  buffer += "\" href=\"#\" data-learnerassistant-page-level-progress-id=\"";
-  if (stack1 = helpers._id) { stack1 = stack1.call(depth0, {hash:{},data:data}); }
-  else { stack1 = depth0._id; stack1 = typeof stack1 === functionType ? stack1.apply(depth0) : stack1; }
-  buffer += escapeExpression(stack1)
-    + "\"><span class=\"answered icon icon-plus\"></span><span class=\"unanswered icon icon-minus\"></span><span class=\"incorrect icon icon-cross\"></span><span class=\"correct icon icon-tick\"></span></a>\r\n	    ";
-  return buffer;
+  return "show-progress";
   }
 
-function program16(depth0,data) {
+function program15(depth0,data) {
   
-  var buffer = "", stack1;
-  buffer += "\r\n		";
-  stack1 = helpers.each.call(depth0, depth0.components, {hash:{},inverse:self.noop,fn:self.program(17, program17, data),data:data});
-  if(stack1 || stack1 === 0) { buffer += stack1; }
-  buffer += "\r\n	";
-  return buffer;
+  
+  return "hide-progress";
   }
+
 function program17(depth0,data) {
   
   var buffer = "", stack1;
-  buffer += "\r\n	        ";
-  stack1 = helpers['if'].call(depth0, depth0._isVisible, {hash:{},inverse:self.program(20, program20, data),fn:self.program(18, program18, data),data:data});
-  if(stack1 || stack1 === 0) { buffer += stack1; }
-  buffer += "<span class=\"answered icon icon-plus\"></span><span class=\"unanswered icon icon-minus\"></span><span class=\"incorrect icon icon-cross\"></span><span class=\"correct icon icon-tick\"></span>";
-  stack1 = helpers['if'].call(depth0, depth0._isVisible, {hash:{},inverse:self.program(24, program24, data),fn:self.program(22, program22, data),data:data});
-  if(stack1 || stack1 === 0) { buffer += stack1; }
   buffer += "\r\n	    ";
+  stack1 = helpers.each.call(depth0, depth0.components, {hash:{},inverse:self.noop,fn:self.program(18, program18, data),data:data});
+  if(stack1 || stack1 === 0) { buffer += stack1; }
+  buffer += "\r\n	";
   return buffer;
   }
 function program18(depth0,data) {
@@ -1175,7 +1048,46 @@ function program18(depth0,data) {
   else { stack1 = depth0.assessmentPageLevelProgressMark; stack1 = typeof stack1 === functionType ? stack1.apply(depth0) : stack1; }
   buffer += escapeExpression(stack1)
     + " ";
-  stack1 = helpers['if'].call(depth0, depth0._isInteractionsComplete, {hash:{},inverse:self.program(3, program3, data),fn:self.program(1, program1, data),data:data});
+  stack1 = helpers['if'].call(depth0, depth0._isComplete, {hash:{},inverse:self.program(7, program7, data),fn:self.program(5, program5, data),data:data});
+  if(stack1 || stack1 === 0) { buffer += stack1; }
+  buffer += "\" href=\"#\" data-learnerassistant-page-level-progress-id=\"";
+  if (stack1 = helpers._id) { stack1 = stack1.call(depth0, {hash:{},data:data}); }
+  else { stack1 = depth0._id; stack1 = typeof stack1 === functionType ? stack1.apply(depth0) : stack1; }
+  buffer += escapeExpression(stack1)
+    + "\"><span class=\"answered icon icon-radio-checked\"></span><span class=\"unanswered icon icon-radio-unchecked\"></span><span class=\"incorrect icon icon-cross\"></span><span class=\"correct icon icon-tick\"></span></a>\r\n	    ";
+  return buffer;
+  }
+
+function program20(depth0,data) {
+  
+  var buffer = "", stack1;
+  buffer += "\r\n		";
+  stack1 = helpers.each.call(depth0, depth0.components, {hash:{},inverse:self.noop,fn:self.program(21, program21, data),data:data});
+  if(stack1 || stack1 === 0) { buffer += stack1; }
+  buffer += "\r\n	";
+  return buffer;
+  }
+function program21(depth0,data) {
+  
+  var buffer = "", stack1;
+  buffer += "\r\n	        ";
+  stack1 = helpers['if'].call(depth0, depth0._isVisible, {hash:{},inverse:self.program(24, program24, data),fn:self.program(22, program22, data),data:data});
+  if(stack1 || stack1 === 0) { buffer += stack1; }
+  buffer += "<span class=\"answered icon icon-radio-checked\"></span><span class=\"unanswered icon icon-radio-unchecked\"></span><span class=\"incorrect icon icon-cross\"></span><span class=\"correct icon icon-tick\"></span>";
+  stack1 = helpers['if'].call(depth0, depth0._isVisible, {hash:{},inverse:self.program(28, program28, data),fn:self.program(26, program26, data),data:data});
+  if(stack1 || stack1 === 0) { buffer += stack1; }
+  buffer += "\r\n	    ";
+  return buffer;
+  }
+function program22(depth0,data) {
+  
+  var buffer = "", stack1;
+  buffer += "\r\n	            <a class=\"learnerassistant-page-level-progress-item ";
+  if (stack1 = helpers.assessmentPageLevelProgressMark) { stack1 = stack1.call(depth0, {hash:{},data:data}); }
+  else { stack1 = depth0.assessmentPageLevelProgressMark; stack1 = typeof stack1 === functionType ? stack1.apply(depth0) : stack1; }
+  buffer += escapeExpression(stack1)
+    + " ";
+  stack1 = helpers['if'].call(depth0, depth0._isComplete, {hash:{},inverse:self.program(7, program7, data),fn:self.program(5, program5, data),data:data});
   if(stack1 || stack1 === 0) { buffer += stack1; }
   buffer += "\" href=\"#\" data-learnerassistant-page-level-progress-id=\"";
   if (stack1 = helpers._id) { stack1 = stack1.call(depth0, {hash:{},data:data}); }
@@ -1185,96 +1097,271 @@ function program18(depth0,data) {
   return buffer;
   }
 
-function program20(depth0,data) {
+function program24(depth0,data) {
   
   
   return " <span>";
   }
 
-function program22(depth0,data) {
+function program26(depth0,data) {
   
   
   return "</a>";
   }
 
-function program24(depth0,data) {
+function program28(depth0,data) {
   
   
   return "</span>\r\n	        ";
   }
 
   buffer += "<div class=\"learnerassistant-page-level-progress-inner ";
-  stack1 = helpers['if'].call(depth0, depth0.isComplete, {hash:{},inverse:self.program(3, program3, data),fn:self.program(1, program1, data),data:data});
+  stack1 = helpers['if'].call(depth0, depth0.hideUserAnswer, {hash:{},inverse:self.program(3, program3, data),fn:self.program(1, program1, data),data:data});
   if(stack1 || stack1 === 0) { buffer += stack1; }
   buffer += " ";
-  stack1 = helpers['if'].call(depth0, depth0.incrementalMarking, {hash:{},inverse:self.program(7, program7, data),fn:self.program(5, program5, data),data:data});
+  stack1 = helpers['if'].call(depth0, depth0.isComplete, {hash:{},inverse:self.program(7, program7, data),fn:self.program(5, program5, data),data:data});
   if(stack1 || stack1 === 0) { buffer += stack1; }
   buffer += " ";
-  stack1 = helpers['if'].call(depth0, depth0.showProgress, {hash:{},inverse:self.program(11, program11, data),fn:self.program(9, program9, data),data:data});
+  stack1 = helpers['if'].call(depth0, depth0.incrementalMarking, {hash:{},inverse:self.program(11, program11, data),fn:self.program(9, program9, data),data:data});
   if(stack1 || stack1 === 0) { buffer += stack1; }
-  buffer += "\">\r\n	";
-  stack1 = helpers['if'].call(depth0, depth0.showInvisible, {hash:{},inverse:self.program(16, program16, data),fn:self.program(13, program13, data),data:data});
+  buffer += " ";
+  stack1 = helpers['if'].call(depth0, depth0.showProgress, {hash:{},inverse:self.program(15, program15, data),fn:self.program(13, program13, data),data:data});
+  if(stack1 || stack1 === 0) { buffer += stack1; }
+  buffer += "\">\r\n	<a href=\"#\" class=\"learnerassistant-page-level-progress-info icon-feedback icon clickstyle\"></a>\r\n	";
+  stack1 = helpers['if'].call(depth0, depth0.showInvisible, {hash:{},inverse:self.program(20, program20, data),fn:self.program(17, program17, data),data:data});
   if(stack1 || stack1 === 0) { buffer += stack1; }
   buffer += "\r\n</div>";
+  return buffer;
+  });
+
+this["Handlebars"]["templates"]["learnerassistant-ProgressDrawer"] = Handlebars.template(function (Handlebars,depth0,helpers,partials,data) {
+  this.compilerInfo = [4,'>= 1.0.0'];
+helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
+  var buffer = "", stack1, stack2, functionType="function", escapeExpression=this.escapeExpression, self=this;
+
+function program1(depth0,data) {
+  
+  var buffer = "", stack1;
+  buffer += "\r\n    <div class=\"learnerassistant-progress-item drawer-item\">\r\n        <a class=\"learnerassistant-progress-item-title clearfix drawer-item-open\" href=\"#\" data-learnerassistant-progress-id=\"";
+  if (stack1 = helpers._id) { stack1 = stack1.call(depth0, {hash:{},data:data}); }
+  else { stack1 = depth0._id; stack1 = typeof stack1 === functionType ? stack1.apply(depth0) : stack1; }
+  buffer += escapeExpression(stack1)
+    + "\">\r\n    	<h5 class=\"learnerassistant-progress-item-title-inner\" aria-label=\"";
+  if (stack1 = helpers.title) { stack1 = stack1.call(depth0, {hash:{},data:data}); }
+  else { stack1 = depth0.title; stack1 = typeof stack1 === functionType ? stack1.apply(depth0) : stack1; }
+  if(stack1 || stack1 === 0) { buffer += stack1; }
+  buffer += "\">\r\n        ";
+  if (stack1 = helpers.title) { stack1 = stack1.call(depth0, {hash:{},data:data}); }
+  else { stack1 = depth0.title; stack1 = typeof stack1 === functionType ? stack1.apply(depth0) : stack1; }
+  if(stack1 || stack1 === 0) { buffer += stack1; }
+  buffer += "\r\n        </h5>\r\n        <div class=\"learnerassistant-progress-indicator learnerassistant-progress-indicator-";
+  stack1 = helpers['if'].call(depth0, depth0._isInteractionsComplete, {hash:{},inverse:self.program(4, program4, data),fn:self.program(2, program2, data),data:data});
+  if(stack1 || stack1 === 0) { buffer += stack1; }
+  buffer += "\">\r\n            <span class=\"icon icon-book complete\"></span>\r\n            <span class=\"icon icon-flag incomplete\"></span>\r\n            <!--<div class=\"learnerassistant-progress-indicator-bar\">\r\n            </div>-->\r\n        </div>\r\n        </a>\r\n    </div>\r\n    ";
+  return buffer;
+  }
+function program2(depth0,data) {
+  
+  
+  return "complete";
+  }
+
+function program4(depth0,data) {
+  
+  
+  return "incomplete";
+  }
+
+  buffer += "<div class=\"la-drawer-title\"><h5>";
+  stack2 = ((stack1 = ((stack1 = depth0.settings),stack1 == null || stack1 === false ? stack1 : stack1._drawerTitle)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1);
+  if(stack2 || stack2 === 0) { buffer += stack2; }
+  buffer += "</h5></div>\r\n<div class=\"learnerassistant-progress-inner\" role=\"progressbar\">\r\n    ";
+  stack2 = helpers.each.call(depth0, depth0.associatedLearning, {hash:{},inverse:self.noop,fn:self.program(1, program1, data),data:data});
+  if(stack2 || stack2 === 0) { buffer += stack2; }
+  buffer += "\r\n</div>";
+  return buffer;
+  });
+
+this["Handlebars"]["templates"]["learnerassistant-TopNavigationView"] = Handlebars.template(function (Handlebars,depth0,helpers,partials,data) {
+  this.compilerInfo = [4,'>= 1.0.0'];
+helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
+  var buffer = "", stack1, functionType="function", self=this;
+
+function program1(depth0,data) {
+  
+  var stack1, stack2;
+  stack2 = ((stack1 = ((stack1 = depth0.settings),stack1 == null || stack1 === false ? stack1 : stack1._certificateTitleText)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1);
+  if(stack2 || stack2 === 0) { return stack2; }
+  else { return ''; }
+  }
+
+function program3(depth0,data) {
+  
+  var stack1;
+  stack1 = helpers['if'].call(depth0, depth0.isResultsShown, {hash:{},inverse:self.program(6, program6, data),fn:self.program(4, program4, data),data:data});
+  if(stack1 || stack1 === 0) { return stack1; }
+  else { return ''; }
+  }
+function program4(depth0,data) {
+  
+  var stack1, stack2;
+  stack2 = ((stack1 = ((stack1 = depth0.settings),stack1 == null || stack1 === false ? stack1 : stack1._resultsTitle)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1);
+  if(stack2 || stack2 === 0) { return stack2; }
+  else { return ''; }
+  }
+
+function program6(depth0,data) {
+  
+  var stack1, stack2;
+  stack2 = ((stack1 = ((stack1 = depth0.settings),stack1 == null || stack1 === false ? stack1 : stack1._guidedLearningTitle)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1);
+  if(stack2 || stack2 === 0) { return stack2; }
+  else { return ''; }
+  }
+
+  buffer += "<div class=\"title-bar clickstyle\" data-clickstyle-group=\"tutor-icons\"><a href=\"#\" class=\"guided-learning-item icon icon-feedback\"></a><span class=\"title\">";
+  stack1 = helpers['if'].call(depth0, depth0.isCertificateShown, {hash:{},inverse:self.program(3, program3, data),fn:self.program(1, program1, data),data:data});
+  if(stack1 || stack1 === 0) { buffer += stack1; }
+  buffer += "</span></div>\r\n<span class=\"guided-learning-item mobile-only close icon icon-cross\"><span>";
+  return buffer;
+  });
+
+this["Handlebars"]["templates"]["learnerassistant-certificateView"] = Handlebars.template(function (Handlebars,depth0,helpers,partials,data) {
+  this.compilerInfo = [4,'>= 1.0.0'];
+helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
+  var buffer = "", stack1, stack2, functionType="function", escapeExpression=this.escapeExpression;
+
+
+  buffer += "<div class=\"la-certificate-inner block-inner\">\r\n	<div class=\"la-content-container\">\r\n		\r\n		<div class=\"begin-instructions\">\r\n			<div class=\"begin-instructions-inner\">\r\n				<h4 class=\"title\">";
+  stack2 = ((stack1 = ((stack1 = ((stack1 = depth0.settings),stack1 == null || stack1 === false ? stack1 : stack1._certificate)),stack1 == null || stack1 === false ? stack1 : stack1.title)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1);
+  if(stack2 || stack2 === 0) { buffer += stack2; }
+  buffer += "</h4>\r\n				<div class=\"body\"><span class=\"score\">";
+  stack2 = ((stack1 = ((stack1 = ((stack1 = depth0.settings),stack1 == null || stack1 === false ? stack1 : stack1._certificate)),stack1 == null || stack1 === false ? stack1 : stack1.youScored)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1);
+  if(stack2 || stack2 === 0) { buffer += stack2; }
+  buffer += " ";
+  stack2 = ((stack1 = ((stack1 = depth0.data),stack1 == null || stack1 === false ? stack1 : stack1.scoreAsPercent)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1);
+  if(stack2 || stack2 === 0) { buffer += stack2; }
+  buffer += "</span>";
+  stack2 = ((stack1 = ((stack1 = ((stack1 = depth0.settings),stack1 == null || stack1 === false ? stack1 : stack1._certificate)),stack1 == null || stack1 === false ? stack1 : stack1.body)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1);
+  if(stack2 || stack2 === 0) { buffer += stack2; }
+  buffer += "</div>\r\n			</div>\r\n		</div>\r\n	\r\n		<div class=\"la-content\">\r\n			<div class=\"certificateLaunch component\">\r\n				<div class=\"wrapper\">\r\n					<img id=\"background-image\" src=\""
+    + escapeExpression(((stack1 = ((stack1 = ((stack1 = depth0.settings),stack1 == null || stack1 === false ? stack1 : stack1._certificateGraphics)),stack1 == null || stack1 === false ? stack1 : stack1._imageURL)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
+    + "\" class=\"hidden\"/>\r\n					<div class='wrapper' class=\"hidden\">\r\n						<div class=\"canvas-text hidden\"><!-- used to grab the CSS style. remove hidden to for style --></div>\r\n						<div class=\"canvas-container hidden\"></div>\r\n						<div class=\"image-container hidden\"></div>\r\n					</div>\r\n				</div>\r\n			</div>\r\n		</div>\r\n	</div>\r\n</div>";
   return buffer;
   });
 
 this["Handlebars"]["templates"]["learnerassistant-navigationView"] = Handlebars.template(function (Handlebars,depth0,helpers,partials,data) {
   this.compilerInfo = [4,'>= 1.0.0'];
 helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
-  var buffer = "", stack1, stack2, self=this, functionType="function", escapeExpression=this.escapeExpression;
+  var buffer = "", stack1, stack2, functionType="function", escapeExpression=this.escapeExpression, self=this;
 
 function program1(depth0,data) {
   
   
-  return "is-resultsshown";
+  return "is-inreview";
   }
 
 function program3(depth0,data) {
   
   
-  return "not-resultsshown";
+  return "not-inreview";
   }
 
 function program5(depth0,data) {
   
   
-  return "is-reviewed";
+  return "is-resultsshown";
   }
 
 function program7(depth0,data) {
   
   
-  return "not-reviewed";
+  return "not-resultsshown";
   }
 
 function program9(depth0,data) {
   
   
+  return "is-reviewed";
+  }
+
+function program11(depth0,data) {
+  
+  
+  return "not-reviewed";
+  }
+
+function program13(depth0,data) {
+  
+  
+  return "is-certificateshown";
+  }
+
+function program15(depth0,data) {
+  
+  
+  return "not-certificateshown";
+  }
+
+function program17(depth0,data) {
+  
+  var buffer = "", stack1;
+  buffer += "\r\n\r\n\r\n		<button id=\"learnerassistant-print\" class=\"buttons-action\" tabindex=\"0\"><span class=\"mobile-only icon icon-printer\"></span><span class=\"not-mobile\">"
+    + escapeExpression(((stack1 = ((stack1 = ((stack1 = depth0.settings),stack1 == null || stack1 === false ? stack1 : stack1._certificateButtons)),stack1 == null || stack1 === false ? stack1 : stack1._print)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
+    + "</span></button>\r\n		<button id=\"learnerassistant-end\" class=\"buttons-action not-mobile\" tabindex=\"0\"><span class=\"mobile-only icon icon-cross\"></span><span class=\"not-mobile\">"
+    + escapeExpression(((stack1 = ((stack1 = ((stack1 = depth0.settings),stack1 == null || stack1 === false ? stack1 : stack1._certificateButtons)),stack1 == null || stack1 === false ? stack1 : stack1._end)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
+    + "</span></button>\r\n\r\n		";
+  return buffer;
+  }
+
+function program19(depth0,data) {
+  
+  var buffer = "", stack1, stack2;
+  buffer += "\r\n\r\n		<button id=\"learnerassistant-finish\" class=\"buttons-action\" ";
+  stack1 = helpers.unless.call(depth0, depth0.isInteractionsComplete, {hash:{},inverse:self.noop,fn:self.program(20, program20, data),data:data});
+  if(stack1 || stack1 === 0) { buffer += stack1; }
+  buffer += " tabindex=\"0\"><span class=\"mobile-only icon icon-tick\"></span><span class=\"not-mobile\">"
+    + escapeExpression(((stack1 = ((stack1 = ((stack1 = depth0.settings),stack1 == null || stack1 === false ? stack1 : stack1._guidedLearningButtons)),stack1 == null || stack1 === false ? stack1 : stack1._finish)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
+    + "</span></button>\r\n		<button id=\"learnerassistant-revision\" class=\"buttons-action\" tabindex=\"0\"><span class=\"mobile-only icon icon-triangle-right\"></span><span class=\"not-mobile\">"
+    + escapeExpression(((stack1 = ((stack1 = ((stack1 = depth0.settings),stack1 == null || stack1 === false ? stack1 : stack1._guidedLearningButtons)),stack1 == null || stack1 === false ? stack1 : stack1._start)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
+    + "</span></button>\r\n		<button id=\"learnerassistant-continue\" class=\"buttons-action\" tabindex=\"0\"><span class=\"mobile-only icon icon-triangle-right\"></span><span class=\"not-mobile\">"
+    + escapeExpression(((stack1 = ((stack1 = ((stack1 = depth0.settings),stack1 == null || stack1 === false ? stack1 : stack1._guidedLearningButtons)),stack1 == null || stack1 === false ? stack1 : stack1._continue)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
+    + "</span></button>\r\n		<button id=\"learnerassistant-end\" class=\"buttons-action not-mobile\" tabindex=\"0\"><span class=\"mobile-only icon icon-cross\"></span><span class=\"not-mobile\">"
+    + escapeExpression(((stack1 = ((stack1 = ((stack1 = depth0.settings),stack1 == null || stack1 === false ? stack1 : stack1._guidedLearningButtons)),stack1 == null || stack1 === false ? stack1 : stack1._end)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
+    + "</span></button>\r\n		<button id=\"learnerassistant-next\" class=\"buttons-action\" ";
+  stack2 = helpers.unless.call(depth0, depth0.isInteractionsComplete, {hash:{},inverse:self.noop,fn:self.program(20, program20, data),data:data});
+  if(stack2 || stack2 === 0) { buffer += stack2; }
+  buffer += " tabindex=\"0\"><span class=\"mobile-only icon icon-triangle-right\"></span><span class=\"not-mobile\">"
+    + escapeExpression(((stack1 = ((stack1 = ((stack1 = depth0.settings),stack1 == null || stack1 === false ? stack1 : stack1._guidedLearningButtons)),stack1 == null || stack1 === false ? stack1 : stack1._next)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
+    + "</span></button>\r\n\r\n		";
+  return buffer;
+  }
+function program20(depth0,data) {
+  
+  
   return "disabled";
   }
 
-  buffer += "<div class=\"learnerassistant-navigationView-inner block-inner\">\r\n	<div class=\"buttongroup ";
-  stack1 = helpers['if'].call(depth0, depth0.isResultsShown, {hash:{},inverse:self.program(3, program3, data),fn:self.program(1, program1, data),data:data});
+  buffer += "<div class=\"learnerassistant-navigationView-inner block-inner\">\r\n	<a href=\"#\" class=\"learnerassistant-page-level-progress-info icon-feedback icon clickstyle\" data-clickstyle-group=\"tutor-icons\"></a>\r\n	<div class=\"buttongroup ";
+  stack1 = helpers['if'].call(depth0, depth0.isInReview, {hash:{},inverse:self.program(3, program3, data),fn:self.program(1, program1, data),data:data});
   if(stack1 || stack1 === 0) { buffer += stack1; }
   buffer += " ";
-  stack2 = helpers['if'].call(depth0, ((stack1 = depth0.options),stack1 == null || stack1 === false ? stack1 : stack1._isReviewComplete), {hash:{},inverse:self.program(7, program7, data),fn:self.program(5, program5, data),data:data});
+  stack1 = helpers['if'].call(depth0, depth0.isResultsShown, {hash:{},inverse:self.program(7, program7, data),fn:self.program(5, program5, data),data:data});
+  if(stack1 || stack1 === 0) { buffer += stack1; }
+  buffer += " ";
+  stack2 = helpers['if'].call(depth0, ((stack1 = depth0.options),stack1 == null || stack1 === false ? stack1 : stack1._isReviewComplete), {hash:{},inverse:self.program(11, program11, data),fn:self.program(9, program9, data),data:data});
   if(stack2 || stack2 === 0) { buffer += stack2; }
-  buffer += "\">\r\n		<button id=\"learnerassistant-revision\" class=\"buttons-action\" tabindex=\"0\">"
-    + escapeExpression(((stack1 = ((stack1 = ((stack1 = depth0.settings),stack1 == null || stack1 === false ? stack1 : stack1._buttons)),stack1 == null || stack1 === false ? stack1 : stack1._start)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
-    + "</button>\r\n		<button id=\"learnerassistant-next\" class=\"buttons-action\" ";
-  stack2 = helpers.unless.call(depth0, depth0.isInteractionsComplete, {hash:{},inverse:self.noop,fn:self.program(9, program9, data),data:data});
+  buffer += " ";
+  stack2 = helpers['if'].call(depth0, depth0.isCertificateShown, {hash:{},inverse:self.program(15, program15, data),fn:self.program(13, program13, data),data:data});
   if(stack2 || stack2 === 0) { buffer += stack2; }
-  buffer += " tabindex=\"0\">"
-    + escapeExpression(((stack1 = ((stack1 = ((stack1 = depth0.settings),stack1 == null || stack1 === false ? stack1 : stack1._buttons)),stack1 == null || stack1 === false ? stack1 : stack1._next)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
-    + "</button>\r\n		<button id=\"learnerassistant-finish\" class=\"buttons-action\" ";
-  stack2 = helpers.unless.call(depth0, depth0.isInteractionsComplete, {hash:{},inverse:self.noop,fn:self.program(9, program9, data),data:data});
+  buffer += "\">\r\n		";
+  stack2 = helpers['if'].call(depth0, depth0.isCertificateShown, {hash:{},inverse:self.program(19, program19, data),fn:self.program(17, program17, data),data:data});
   if(stack2 || stack2 === 0) { buffer += stack2; }
-  buffer += " tabindex=\"0\">"
-    + escapeExpression(((stack1 = ((stack1 = ((stack1 = depth0.settings),stack1 == null || stack1 === false ? stack1 : stack1._buttons)),stack1 == null || stack1 === false ? stack1 : stack1._finish)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
-    + "</button>\r\n	</div>\r\n	<div class=\"learnerassistant-navigation-completion\" role=\"progressbar\">\r\n		<div class=\"learnerassistant-navigation-bar\" style=\"width:"
+  buffer += "\r\n	</div>\r\n\r\n	<div class=\"learnerassistant-navigation-completion-container ";
+  stack2 = helpers['if'].call(depth0, depth0.isCertificateShown, {hash:{},inverse:self.program(15, program15, data),fn:self.program(13, program13, data),data:data});
+  if(stack2 || stack2 === 0) { buffer += stack2; }
+  buffer += "\">\r\n		<div class=\"learnerassistant-navigation-completion\" role=\"progressbar\">\r\n			<div class=\"learnerassistant-navigation-bar\" style=\"width:"
     + escapeExpression(((stack1 = ((stack1 = depth0.options),stack1 == null || stack1 === false ? stack1 : stack1._percentageReviewedAssociateLearning)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
-    + "%\">\r\n		</div>\r\n	</div>\r\n</div>";
+    + "%\">\r\n			</div>\r\n		</div>\r\n	</div>\r\n</div>";
   return buffer;
   });
 
@@ -1295,32 +1382,28 @@ function program1(depth0,data) {
 function program2(depth0,data) {
   
   var buffer = "", stack1;
-  buffer += "\r\n					<div class=\"row clearfix\">\r\n						<div id=\"status\" class=\"col table-threetooone\">\r\n							<div class=\"table-threetoone-inner\">\r\n								<div class=\"cell\"><div class=\"cell-inner\">";
+  buffer += "\r\n					<div class=\"la-content-bank-row row clearfix\">\r\n						<div id=\"status\" class=\"col\">\r\n							<div class=\"col-inner\">\r\n								<div class=\"cell\"><div class=\"cell-inner\">";
   stack1 = helpers['if'].call(depth0, depth0._isReviewComplete, {hash:{},inverse:self.program(5, program5, data),fn:self.program(3, program3, data),data:data});
   if(stack1 || stack1 === 0) { buffer += stack1; }
-  buffer += "</div></div>\r\n							</div>\r\n						</div>\r\n						<div id=\"question\" class=\"col table-threetooone\">\r\n							<div class=\"table-threetoone-inner\">\r\n								<div class=\"cell\"><div class=\"cell-inner\"><span class=\"mobile-only icon icon-question\"></span>";
+  buffer += "</div></div>\r\n							</div>\r\n						</div>\r\n						<div id=\"question\" class=\"col\">\r\n							<div class=\"col-inner\">\r\n								<div class=\"cell\"><div class=\"cell-inner\"><span class=\"mobile-only icon icon-question\"></span>";
   if (stack1 = helpers.title) { stack1 = stack1.call(depth0, {hash:{},data:data}); }
   else { stack1 = depth0.title; stack1 = typeof stack1 === functionType ? stack1.apply(depth0) : stack1; }
   buffer += escapeExpression(stack1)
-    + "</div></div>\r\n							</div>\r\n						</div>\r\n						<div id=\"tutorialcontent\" class=\"col table-threetooone\">\r\n							<div class=\"table-threetoone-inner\">\r\n								<div class=\"cell\"><div class=\"cell-inner\"><span class=\"mobile-only icon icon-eye\"></span>";
-  if (stack1 = helpers._countUnreviewedAssociatedLearning) { stack1 = stack1.call(depth0, {hash:{},data:data}); }
-  else { stack1 = depth0._countUnreviewedAssociatedLearning; stack1 = typeof stack1 === functionType ? stack1.apply(depth0) : stack1; }
-  buffer += escapeExpression(stack1)
-    + " left or alternatively you're at ";
+    + "</div></div>\r\n							</div>\r\n						</div>\r\n						<div id=\"tutorialcontent\" class=\"col\">\r\n							<div class=\"col-inner\">\r\n								<div class=\"cell\"><div class=\"cell-inner\"><span class=\"mobile-only icon icon-eye\"></span>";
   if (stack1 = helpers._countReviewedAssociatedLearning) { stack1 = stack1.call(depth0, {hash:{},data:data}); }
   else { stack1 = depth0._countReviewedAssociatedLearning; stack1 = typeof stack1 === functionType ? stack1.apply(depth0) : stack1; }
-  buffer += escapeExpression(stack1)
-    + "/";
+  if(stack1 || stack1 === 0) { buffer += stack1; }
+  buffer += "/";
   if (stack1 = helpers._countTotalAssociatedLearning) { stack1 = stack1.call(depth0, {hash:{},data:data}); }
   else { stack1 = depth0._countTotalAssociatedLearning; stack1 = typeof stack1 === functionType ? stack1.apply(depth0) : stack1; }
-  buffer += escapeExpression(stack1)
-    + "</div></div>\r\n							</div>\r\n						</div>\r\n					</div>\r\n				";
+  if(stack1 || stack1 === 0) { buffer += stack1; }
+  buffer += " reviewed</div></div>\r\n							</div>\r\n						</div>\r\n					</div>\r\n				";
   return buffer;
   }
 function program3(depth0,data) {
   
   var buffer = "", stack1, options;
-  buffer += "<span class=\"mobile-only icon icon-flag\"></span><span class=\"icon icon-star\"></span><span>";
+  buffer += "<span class=\"mobile-only icon icon-book\"></span><span class=\"icon icon-book not-mobile\"></span><span>";
   options = {hash:{},data:data};
   buffer += escapeExpression(((stack1 = helpers.learnerAssistantSettings || depth0.learnerAssistantSettings),stack1 ? stack1.call(depth0, "settings._results._reviewed", options) : helperMissing.call(depth0, "learnerAssistantSettings", "settings._results._reviewed", options)))
     + "</span>";
@@ -1330,7 +1413,7 @@ function program3(depth0,data) {
 function program5(depth0,data) {
   
   var buffer = "", stack1, options;
-  buffer += "<span class=\"mobile-only icon icon-flag\"></span><span class=\"icon icon-star-hollow not-mobile\"></span><span>";
+  buffer += "<span class=\"mobile-only icon icon-flag\"></span><span class=\"icon icon-flag not-mobile\"></span><span>";
   options = {hash:{},data:data};
   buffer += escapeExpression(((stack1 = helpers.learnerAssistantSettings || depth0.learnerAssistantSettings),stack1 ? stack1.call(depth0, "settings._results._toReview", options) : helperMissing.call(depth0, "learnerAssistantSettings", "settings._results._toReview", options)))
     + "</span>";
@@ -1340,26 +1423,67 @@ function program5(depth0,data) {
 function program7(depth0,data) {
   
   
-  return "\r\n					<div class=\"row clearfix\">\r\n						<div id=\"status\" class=\"col table-threetooone\">\r\n							<div class=\"table-threetoone-inner\">\r\n								<div class=\"not-mobile cell\"><div class=\"cell-inner\"><span class=\"mobile-only icon icon-flag\"></span>-</div></div>\r\n							</div>\r\n						</div>\r\n						<div id=\"question\" class=\"col table-threetooone\">\r\n							<div class=\"table-threetoone-inner\">\r\n								<div class=\"cell\"><div class=\"cell-inner\"><span class=\"icon icon-question\"></span>-</div></div>\r\n							</div>\r\n						</div>\r\n						<div id=\"tutorialcontent\" class=\"col table-threetooone\">\r\n							<div class=\"table-threetoone-inner\">\r\n								<div class=\"cell\"><div class=\"cell-inner\"><span class=\"icon icon-eye\"></span>-</div></div>\r\n							</div>\r\n						</div>\r\n					</div>\r\n				";
+  return "\r\n					<div class=\"la-content-bank-row row clearfix\">\r\n						<div id=\"status\" class=\"col\">\r\n							<div class=\"col-inner\">\r\n								<div class=\"not-mobile cell\"><div class=\"cell-inner\"><span class=\"mobile-only icon icon-flag\"></span>-</div></div>\r\n							</div>\r\n						</div>\r\n						<div id=\"question\" class=\"col\">\r\n							<div class=\"col-inner\">\r\n								<div class=\"cell\"><div class=\"cell-inner\"><span class=\"icon icon-question\"></span>-</div></div>\r\n							</div>\r\n						</div>\r\n						<div id=\"tutorialcontent\" class=\"col\">\r\n							<div class=\"col-inner\">\r\n								<div class=\"cell\"><div class=\"cell-inner\"><span class=\"icon icon-eye\"></span>-</div></div>\r\n							</div>\r\n						</div>\r\n					</div>\r\n				";
   }
 
-  buffer += "<div class=\"learnerassistant-resultsView-inner block-inner\">\r\n	<div class=\"learnerassistant-banner\">\r\n		<span class=\"banner-guided\">\r\n			<span><h5>Guided Learning</h5></span>\r\n		</span>\r\n	</div>\r\n	<div class=\"learnerassistant-resultsView-filter-container\">\r\n	</div>\r\n	<div class=\"content-container\">\r\n		\r\n		<div class=\"begin-instructions\">\r\n			<div class=\"begin-instructions-inner\">\r\n				<h4 class=\"title\">"
-    + escapeExpression(((stack1 = ((stack1 = ((stack1 = depth0.settings),stack1 == null || stack1 === false ? stack1 : stack1._start)),stack1 == null || stack1 === false ? stack1 : stack1.title)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
-    + "</h4>\r\n				<div class=\"body\">"
-    + escapeExpression(((stack1 = ((stack1 = ((stack1 = depth0.settings),stack1 == null || stack1 === false ? stack1 : stack1._start)),stack1 == null || stack1 === false ? stack1 : stack1.body)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
-    + "</div>\r\n			</div>\r\n		</div>\r\n	\r\n		<div class=\"content\">\r\n			<div class=\"row-content-header clearfix\">\r\n				\r\n				<div id=\"status\" class=\"col not-mobile table-threetooone\">\r\n					<div class=\"table-threetoone-inner\">\r\n					<span class=\"icon icon-flag\"></span><span>\r\n						<div class=\"cell col-header\"><div class=\"cell-inner\">";
+  buffer += "<div class=\"la-results-inner block-inner\">\r\n	<div class=\"la-content-container\">\r\n		\r\n		<div class=\"begin-instructions\">\r\n			<div class=\"begin-instructions-inner\">\r\n				<h4 class=\"title\">";
+  stack2 = ((stack1 = ((stack1 = ((stack1 = depth0.settings),stack1 == null || stack1 === false ? stack1 : stack1._start)),stack1 == null || stack1 === false ? stack1 : stack1.title)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1);
+  if(stack2 || stack2 === 0) { buffer += stack2; }
+  buffer += "</h4>\r\n				<div class=\"body\"><span class=\"score\">";
+  stack2 = ((stack1 = ((stack1 = ((stack1 = depth0.settings),stack1 == null || stack1 === false ? stack1 : stack1._start)),stack1 == null || stack1 === false ? stack1 : stack1.youScored)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1);
+  if(stack2 || stack2 === 0) { buffer += stack2; }
+  buffer += " ";
+  stack2 = ((stack1 = ((stack1 = depth0.data),stack1 == null || stack1 === false ? stack1 : stack1.scoreAsPercent)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1);
+  if(stack2 || stack2 === 0) { buffer += stack2; }
+  buffer += "</span>";
+  stack2 = ((stack1 = ((stack1 = ((stack1 = depth0.settings),stack1 == null || stack1 === false ? stack1 : stack1._start)),stack1 == null || stack1 === false ? stack1 : stack1.body)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1);
+  if(stack2 || stack2 === 0) { buffer += stack2; }
+  buffer += "</div>\r\n			</div>\r\n		</div>\r\n	\r\n		<div class=\"la-content\">\r\n			<div class=\"la-content-header-row row clearfix not-mobile\">\r\n				\r\n				<div id=\"status\" class=\"col\">\r\n					<div class=\"col-inner\">\r\n					<span class=\"icon icon-flag\"></span><span>\r\n						<div class=\"cell col-header\"><div class=\"cell-inner content-header-text\">";
   stack2 = ((stack1 = ((stack1 = ((stack1 = depth0.settings),stack1 == null || stack1 === false ? stack1 : stack1._results)),stack1 == null || stack1 === false ? stack1 : stack1._status)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1);
   if(stack2 || stack2 === 0) { buffer += stack2; }
-  buffer += "</span></div></div>\r\n					</div>\r\n				</div>\r\n				\r\n				<div id=\"question\" class=\"col not-mobile table-threetooone\">\r\n					<span class=\"icon icon-question\"></span>\r\n					<div class=\"table-threetoone-inner\">\r\n						<div class=\"cell col-header\"><div class=\"cell-inner\"><span>";
+  buffer += "</span></div></div>\r\n					</div>\r\n				</div>\r\n				\r\n				<div id=\"question\" class=\"col\">\r\n					<span class=\"icon icon-question\"></span>\r\n					<div class=\"col-inner\">\r\n						<div class=\"cell col-header\"><div class=\"cell-inner content-header-text\"><span>";
   stack2 = ((stack1 = ((stack1 = ((stack1 = depth0.settings),stack1 == null || stack1 === false ? stack1 : stack1._results)),stack1 == null || stack1 === false ? stack1 : stack1._bank)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1);
   if(stack2 || stack2 === 0) { buffer += stack2; }
-  buffer += "</span></div></div>\r\n					</div>\r\n				</div>\r\n				\r\n				<div id=\"tutorialcontent\" class=\"col not-mobile table-threetooone\">\r\n					<span class=\"icon icon-eye\"></span>\r\n					<div class=\"table-threetoone-inner\">\r\n						<div class=\"cell col-header\"><div class=\"cell-inner\"><span>";
+  buffer += "</span></div></div>\r\n					</div>\r\n				</div>\r\n				\r\n				<div id=\"tutorialcontent\" class=\"col\">\r\n					<span class=\"icon icon-eye\"></span>\r\n					<div class=\"col-inner\">\r\n						<div class=\"cell col-header\"><div class=\"cell-inner content-header-text\"><span>";
   stack2 = ((stack1 = ((stack1 = ((stack1 = depth0.settings),stack1 == null || stack1 === false ? stack1 : stack1._results)),stack1 == null || stack1 === false ? stack1 : stack1._associateLearnings)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1);
   if(stack2 || stack2 === 0) { buffer += stack2; }
   buffer += "</span></div></div>\r\n					</div>\r\n				</div>\r\n				\r\n			</div>\r\n			";
   stack2 = helpers['with'].call(depth0, depth0.options, {hash:{},inverse:self.noop,fn:self.program(1, program1, data),data:data});
   if(stack2 || stack2 === 0) { buffer += stack2; }
   buffer += "\r\n		</div>\r\n	</div>\r\n</div>";
+  return buffer;
+  });
+
+this["Handlebars"]["templates"]["bookmarking"] = Handlebars.template(function (Handlebars,depth0,helpers,partials,data) {
+  this.compilerInfo = [4,'>= 1.0.0'];
+helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
+  var buffer = "", stack1, stack2, functionType="function", self=this;
+
+function program1(depth0,data) {
+  
+  var buffer = "", stack1;
+  buffer += "\r\n                <div class=\"bookmarking-title\">\r\n                    <h5 class=\"bookmarking-title-inner\">\r\n                    ";
+  if (stack1 = helpers.title) { stack1 = stack1.call(depth0, {hash:{},data:data}); }
+  else { stack1 = depth0.title; stack1 = typeof stack1 === functionType ? stack1.apply(depth0) : stack1; }
+  if(stack1 || stack1 === 0) { buffer += stack1; }
+  buffer += "\r\n                    </h5>\r\n                </div>\r\n                ";
+  return buffer;
+  }
+
+  buffer += "\r\n<div class=\"bookmarking\" role=\"dialog\">\r\n    <div class=\"bookmarking-content\">\r\n        <div class=\"bookmarking-inner\">\r\n                ";
+  stack1 = helpers['if'].call(depth0, depth0.title, {hash:{},inverse:self.noop,fn:self.program(1, program1, data),data:data});
+  if(stack1 || stack1 === 0) { buffer += stack1; }
+  buffer += "\r\n            <div class=\"bookmarking-body\">\r\n                <div class=\"bookmarking-body-inner\">";
+  if (stack1 = helpers.message) { stack1 = stack1.call(depth0, {hash:{},data:data}); }
+  else { stack1 = depth0.message; stack1 = typeof stack1 === functionType ? stack1.apply(depth0) : stack1; }
+  if(stack1 || stack1 === 0) { buffer += stack1; }
+  buffer += "</div>\r\n            </div>\r\n            <a href=\"#\" class=\"button yes clearfix\"><span>";
+  stack2 = ((stack1 = ((stack1 = depth0._buttons),stack1 == null || stack1 === false ? stack1 : stack1.yes)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1);
+  if(stack2 || stack2 === 0) { buffer += stack2; }
+  buffer += "</span></a>\r\n            <a href=\"#\" class=\"button no clearfix\"><span>";
+  stack2 = ((stack1 = ((stack1 = depth0._buttons),stack1 == null || stack1 === false ? stack1 : stack1.no)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1);
+  if(stack2 || stack2 === 0) { buffer += stack2; }
+  buffer += "</span></a>\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n<div class=\"bookmarking-shadow\"></div>";
   return buffer;
   });
 
@@ -1561,34 +1685,6 @@ function program10(depth0,data) {
   return buffer;
   });
 
-this["Handlebars"]["templates"]["trickle-button"] = Handlebars.template(function (Handlebars,depth0,helpers,partials,data) {
-  this.compilerInfo = [4,'>= 1.0.0'];
-helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
-  var buffer = "", stack1, stack2, functionType="function", self=this;
-
-function program1(depth0,data) {
-  
-  var buffer = "", stack1, stack2;
-  buffer += "\r\n      ";
-  stack2 = ((stack1 = ((stack1 = depth0._trickle),stack1 == null || stack1 === false ? stack1 : stack1.button)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1);
-  if(stack2 || stack2 === 0) { buffer += stack2; }
-  buffer += "\r\n    ";
-  return buffer;
-  }
-
-function program3(depth0,data) {
-  
-  
-  return "\r\n      Continue\r\n    ";
-  }
-
-  buffer += "\r\n<a href=\"#\" class=\"trickle-button\">\r\n  <h6>\r\n    ";
-  stack2 = helpers['if'].call(depth0, ((stack1 = depth0._trickle),stack1 == null || stack1 === false ? stack1 : stack1.button), {hash:{},inverse:self.program(3, program3, data),fn:self.program(1, program1, data),data:data});
-  if(stack2 || stack2 === 0) { buffer += stack2; }
-  buffer += "\r\n  </h6>\r\n</a>\r\n";
-  return buffer;
-  });
-
 this["Handlebars"]["templates"]["tutor"] = Handlebars.template(function (Handlebars,depth0,helpers,partials,data) {
   this.compilerInfo = [4,'>= 1.0.0'];
 helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
@@ -1615,6 +1711,53 @@ function program1(depth0,data) {
   else { stack2 = depth0.feedbackMessage; stack2 = typeof stack2 === functionType ? stack2.apply(depth0) : stack2; }
   if(stack2 || stack2 === 0) { buffer += stack2; }
   buffer += "</div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n<div class=\"tutor-shadow\"></div>\r\n";
+  return buffer;
+  });
+
+this["Handlebars"]["templates"]["footer"] = Handlebars.template(function (Handlebars,depth0,helpers,partials,data) {
+  this.compilerInfo = [4,'>= 1.0.0'];
+helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
+  var buffer = "", stack1, stack2, self=this, functionType="function", escapeExpression=this.escapeExpression;
+
+function program1(depth0,data) {
+  
+  
+  return "display-none";
+  }
+
+function program3(depth0,data) {
+  
+  
+  return "disabled=\"disabled\"";
+  }
+
+  buffer += "<div class=\"block-inner footer-inner\">\n	<button id=\"root\" class=\"button ";
+  stack2 = helpers['if'].call(depth0, ((stack1 = ((stack1 = ((stack1 = depth0.config),stack1 == null || stack1 === false ? stack1 : stack1._buttons)),stack1 == null || stack1 === false ? stack1 : stack1._root)),stack1 == null || stack1 === false ? stack1 : stack1._isHidden), {hash:{},inverse:self.noop,fn:self.program(1, program1, data),data:data});
+  if(stack2 || stack2 === 0) { buffer += stack2; }
+  buffer += "\">"
+    + escapeExpression(((stack1 = ((stack1 = ((stack1 = ((stack1 = depth0.config),stack1 == null || stack1 === false ? stack1 : stack1._buttons)),stack1 == null || stack1 === false ? stack1 : stack1._root)),stack1 == null || stack1 === false ? stack1 : stack1.text)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
+    + "</button>\n	<button id=\"previous\" class=\"button ";
+  stack2 = helpers['if'].call(depth0, ((stack1 = ((stack1 = ((stack1 = depth0.config),stack1 == null || stack1 === false ? stack1 : stack1._buttons)),stack1 == null || stack1 === false ? stack1 : stack1._previous)),stack1 == null || stack1 === false ? stack1 : stack1._isHidden), {hash:{},inverse:self.noop,fn:self.program(1, program1, data),data:data});
+  if(stack2 || stack2 === 0) { buffer += stack2; }
+  buffer += "\" ";
+  stack2 = helpers['if'].call(depth0, ((stack1 = depth0.state),stack1 == null || stack1 === false ? stack1 : stack1.isFirstPage), {hash:{},inverse:self.noop,fn:self.program(3, program3, data),data:data});
+  if(stack2 || stack2 === 0) { buffer += stack2; }
+  buffer += ">"
+    + escapeExpression(((stack1 = ((stack1 = ((stack1 = ((stack1 = depth0.config),stack1 == null || stack1 === false ? stack1 : stack1._buttons)),stack1 == null || stack1 === false ? stack1 : stack1._previous)),stack1 == null || stack1 === false ? stack1 : stack1.text)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
+    + "</button>\n	<button id=\"up\" class=\"button ";
+  stack2 = helpers['if'].call(depth0, ((stack1 = ((stack1 = ((stack1 = depth0.config),stack1 == null || stack1 === false ? stack1 : stack1._buttons)),stack1 == null || stack1 === false ? stack1 : stack1._up)),stack1 == null || stack1 === false ? stack1 : stack1._isHidden), {hash:{},inverse:self.noop,fn:self.program(1, program1, data),data:data});
+  if(stack2 || stack2 === 0) { buffer += stack2; }
+  buffer += "\">"
+    + escapeExpression(((stack1 = ((stack1 = ((stack1 = ((stack1 = depth0.config),stack1 == null || stack1 === false ? stack1 : stack1._buttons)),stack1 == null || stack1 === false ? stack1 : stack1._up)),stack1 == null || stack1 === false ? stack1 : stack1.text)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
+    + "</button>\n	<button id=\"next\" class=\"button ";
+  stack2 = helpers['if'].call(depth0, ((stack1 = ((stack1 = ((stack1 = depth0.config),stack1 == null || stack1 === false ? stack1 : stack1._buttons)),stack1 == null || stack1 === false ? stack1 : stack1._next)),stack1 == null || stack1 === false ? stack1 : stack1._isHidden), {hash:{},inverse:self.noop,fn:self.program(1, program1, data),data:data});
+  if(stack2 || stack2 === 0) { buffer += stack2; }
+  buffer += "\" ";
+  stack2 = helpers['if'].call(depth0, ((stack1 = depth0.state),stack1 == null || stack1 === false ? stack1 : stack1.isLastPage), {hash:{},inverse:self.noop,fn:self.program(3, program3, data),data:data});
+  if(stack2 || stack2 === 0) { buffer += stack2; }
+  buffer += ">"
+    + escapeExpression(((stack1 = ((stack1 = ((stack1 = ((stack1 = depth0.config),stack1 == null || stack1 === false ? stack1 : stack1._buttons)),stack1 == null || stack1 === false ? stack1 : stack1._next)),stack1 == null || stack1 === false ? stack1 : stack1.text)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
+    + "</button>\n</div>";
   return buffer;
   });
 
@@ -1836,7 +1979,7 @@ function program3(depth0,data) {
   
   var buffer = "", stack1;
   buffer += "\r\n				   <img src=\""
-    + escapeExpression(((stack1 = ((stack1 = ((stack1 = depth0._coverMenu),stack1 == null || stack1 === false ? stack1 : stack1._indicatorGraphic)),stack1 == null || stack1 === false ? stack1 : stack1._isComplete)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
+    + escapeExpression(((stack1 = ((stack1 = ((stack1 = depth0._coverMenu),stack1 == null || stack1 === false ? stack1 : stack1._indicatorGraphic)),stack1 == null || stack1 === false ? stack1 : stack1._isPassed)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
     + "\"/>\r\n				 ";
   return buffer;
   }
@@ -1845,7 +1988,7 @@ function program5(depth0,data) {
   
   var buffer = "", stack1;
   buffer += "\r\n				 	<img src=\""
-    + escapeExpression(((stack1 = ((stack1 = ((stack1 = depth0._coverMenu),stack1 == null || stack1 === false ? stack1 : stack1._indicatorGraphic)),stack1 == null || stack1 === false ? stack1 : stack1._isVisited)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
+    + escapeExpression(((stack1 = ((stack1 = ((stack1 = depth0._coverMenu),stack1 == null || stack1 === false ? stack1 : stack1._indicatorGraphic)),stack1 == null || stack1 === false ? stack1 : stack1._isFailed)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
     + "\"/>\r\n				 ";
   return buffer;
   }
@@ -1931,7 +2074,11 @@ function program18(depth0,data) {
   if (stack2 = helpers.title) { stack2 = stack2.call(depth0, {hash:{},data:data}); }
   else { stack2 = depth0.title; stack2 = typeof stack2 === functionType ? stack2.apply(depth0) : stack2; }
   if(stack2 || stack2 === 0) { buffer += stack2; }
-  buffer += "</span>\r\n	</a>\r\n</div>";
+  buffer += "</span>\r\n		<div class=\"menu-item-indicator-tooltip\"><span>";
+  if (stack2 = helpers.title) { stack2 = stack2.call(depth0, {hash:{},data:data}); }
+  else { stack2 = depth0.title; stack2 = typeof stack2 === functionType ? stack2.apply(depth0) : stack2; }
+  if(stack2 || stack2 === 0) { buffer += stack2; }
+  buffer += "</span></div>\r\n	</a>\r\n</div>";
   return buffer;
   });
 
@@ -1951,7 +2098,7 @@ function program1(depth0,data) {
   stack1 = helpers['if'].call(depth0, depth0._isVisited, {hash:{},inverse:self.noop,fn:self.program(2, program2, data),data:data});
   if(stack1 || stack1 === 0) { buffer += stack1; }
   buffer += "\" aria-label=\""
-    + escapeExpression(((stack1 = ((stack1 = ((stack1 = depth0._accessibility),stack1 == null || stack1 === false ? stack1 : stack1._ariaLabels)),stack1 == null || stack1 === false ? stack1 : stack1.menuViewButton)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
+    + escapeExpression(((stack1 = ((stack1 = depth0._coverMenu),stack1 == null || stack1 === false ? stack1 : stack1.menuViewButton)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
     + "\">\r\n		";
   if (stack2 = helpers.linkText) { stack2 = stack2.call(depth0, {hash:{},data:data}); }
   else { stack2 = depth0.linkText; stack2 = typeof stack2 === functionType ? stack2.apply(depth0) : stack2; }
@@ -1968,7 +2115,7 @@ function program2(depth0,data) {
 function program4(depth0,data) {
   
   var buffer = "", stack1, stack2;
-  buffer += "\r\n	<div class=\"menu-item-assement-details\">\r\n		<div class=\"menu-item-assement-details-inner\">\r\n			<div><b>Assessment Info:</b></div>\r\n			<div><b>Completion status:</b> ";
+  buffer += "\r\n	<div class=\"menu-item-assement-details\">\r\n		<div class=\"menu-item-assement-details-inner\">\r\n			<div><b>Assessment Summary:</b></div>\r\n			<div><b>Completion status:</b> ";
   stack2 = helpers['if'].call(depth0, ((stack1 = depth0._assessment),stack1 == null || stack1 === false ? stack1 : stack1.isComplete), {hash:{},inverse:self.program(7, program7, data),fn:self.program(5, program5, data),data:data});
   if(stack2 || stack2 === 0) { buffer += stack2; }
   buffer += " </div>\r\n			";
@@ -2013,7 +2160,11 @@ function program13(depth0,data) {
   return "Not Passed";
   }
 
-  buffer += "<div class=\"menu-item-inner\">\r\n	<div class=\"menu-item-title\">\r\n		<h2 class=\"menu-item-title-inner\">";
+  buffer += "<div class=\"menu-item-inner\">\r\n	<div class=\"course-item-title\">\r\n		<h2 class=\"course-item-title-inner\"><span>";
+  if (stack1 = helpers.coursetitle) { stack1 = stack1.call(depth0, {hash:{},data:data}); }
+  else { stack1 = depth0.coursetitle; stack1 = typeof stack1 === functionType ? stack1.apply(depth0) : stack1; }
+  if(stack1 || stack1 === 0) { buffer += stack1; }
+  buffer += "</span></h2>\r\n	</div>\r\n	<div class=\"menu-item-title\">\r\n		<h2 class=\"menu-item-title-inner\">";
   if (stack1 = helpers.title) { stack1 = stack1.call(depth0, {hash:{},data:data}); }
   else { stack1 = depth0.title; stack1 = typeof stack1 === functionType ? stack1.apply(depth0) : stack1; }
   if(stack1 || stack1 === 0) { buffer += stack1; }
@@ -2038,7 +2189,7 @@ function program13(depth0,data) {
 this["Handlebars"]["templates"]["cover"] = Handlebars.template(function (Handlebars,depth0,helpers,partials,data) {
   this.compilerInfo = [4,'>= 1.0.0'];
 helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
-  var buffer = "", stack1, functionType="function", self=this, escapeExpression=this.escapeExpression;
+  var buffer = "", stack1, stack2, functionType="function", self=this, escapeExpression=this.escapeExpression;
 
 function program1(depth0,data) {
   
@@ -2071,7 +2222,15 @@ function program3(depth0,data) {
   buffer += "\r\n			<a href=\"#\" class=\"menu-reveal-items\" role=\"button\" aria-label=\""
     + escapeExpression(((stack1 = ((stack1 = ((stack1 = depth0._accessibility),stack1 == null || stack1 === false ? stack1 : stack1._ariaRegions)),stack1 == null || stack1 === false ? stack1 : stack1.coverFlowMenuStart)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
     + "\">Start</a>\r\n		</div>\r\n	</div>\r\n	<div class=\"menu-item-container\" role=\"menu\">\r\n		<div class=\"menu-item-container-inner clearfix\">\r\n		"
-    + "\r\n		</div>\r\n		<div class=\"menu-item-indicator-container\">		\r\n			<div class=\"menu-item-indicator-container-inner clearfix\">\r\n				"
+    + "\r\n		</div>\r\n		<div class=\"menu-item-indicator-container\">		\r\n			<div class=\"menu-item-indicator-container-inner clearfix\">\r\n				<div class=\"menu-item-indicator item-intro-indicator\" role=\"button\" aria-label=\"\">\r\n					<a href=\"#\" class=\"menu-item-indicator-graphic menu-item-intro\">\r\n						<img src=\""
+    + escapeExpression(((stack1 = ((stack1 = ((stack1 = depth0._coverMenu),stack1 == null || stack1 === false ? stack1 : stack1._introItemGraphic)),stack1 == null || stack1 === false ? stack1 : stack1.src)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
+    + "\"/>\r\n						<span class=\"menu-item-indicator-title\">";
+  stack2 = ((stack1 = ((stack1 = ((stack1 = depth0._coverMenu),stack1 == null || stack1 === false ? stack1 : stack1._introItemGraphic)),stack1 == null || stack1 === false ? stack1 : stack1.title)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1);
+  if(stack2 || stack2 === 0) { buffer += stack2; }
+  buffer += "</span>\r\n						<div class=\"menu-item-indicator-tooltip\"><span>";
+  stack2 = ((stack1 = ((stack1 = ((stack1 = depth0._coverMenu),stack1 == null || stack1 === false ? stack1 : stack1._introItemGraphic)),stack1 == null || stack1 === false ? stack1 : stack1.title)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1);
+  if(stack2 || stack2 === 0) { buffer += stack2; }
+  buffer += "</span></div>\r\n					</a>\r\n				</div>\r\n				"
     + "\r\n			</div>\r\n		</div>\r\n		<a href=\"#\" class=\"menu-item-control menu-item-control-left icon-controls-left icon\" role=\"button\" aria-label=\""
     + escapeExpression(((stack1 = ((stack1 = ((stack1 = depth0._accessibility),stack1 == null || stack1 === false ? stack1 : stack1._ariaLabels)),stack1 == null || stack1 === false ? stack1 : stack1.previous)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
     + "\"></a>\r\n		<a href=\"#\" class=\"menu-item-control menu-item-control-right icon-controls-right icon\" role=\"button\" aria-label=\""

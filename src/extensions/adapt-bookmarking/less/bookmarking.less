@@ -1,0 +1,44 @@
+.bookmarking-dialog {
+
+    .bookmarking {
+        position: fixed;
+        top: 50%;
+        width:100%;
+        background-color: @inverted-background-color;
+        color: @inverted-foreground-color;
+        z-index: 550;
+        .ie8 & {
+            left:0px;
+        }
+        a {
+            outline: none;
+            text-decoration: none;
+        }
+    }
+
+    .bookmarking-content {
+        .responsive-layout
+        .ie8 & {
+            max-width: @ie8-max-width;
+            margin:0 auto;
+        }
+    }
+
+    .bookmarking-inner {
+        padding: @item-padding;
+        padding-bottom: (@navigation-padding*2);
+    }
+
+    .bookmarking-shadow {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: 549;
+        .no-opacity & {
+            background-image:@transparency-fallback-png;
+        }
+        background-color: @transparency;
+    }
+}

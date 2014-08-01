@@ -14,8 +14,9 @@ Kineo will continue to update this branch to improve features and address bug fi
 
 
 ## Upcoming updates
-* Banked Assessment extension
-* Guided Learning extension
 * AA accessibility
-* Final certificate (on quiz passed)
-* SCORM tracking of flagged learning data
+* Iron out minor cross-compatibilty issues
+* Update generic notifications wording
+
+### Versioning
+Kineo will track versions in the [bower.json](https://github.com/cgkineo/kineo-essentials-source/blob/master/bower.json). 

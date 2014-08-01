@@ -1,0 +1,58 @@
+/*
+* adapt-bottomnavigation
+* License - http://github.com/adaptlearning/adapt_framework/LICENSE
+* Maintainers - Oliver Foster <oliver.foster@kineo.com>
+*/
+
+@bottomnavigation-height: 60px;
+
+.body-wrapper-bottomnavigation {
+	#wrapper {
+		margin-bottom: @bottomnavigation-height;
+	}
+	.extension-trickle {
+		.trickle-button.trickle-button-show {
+			bottom:@bottomnavigation-height;
+		}
+	}
+	#bottomnavigation {
+		display: none;
+		width:100%;
+		background-color: white;
+		height: @bottomnavigation-height;
+		bottom: 0px;
+		position: fixed;
+		border-top: 1px solid #3eb4e4;
+		z-index: 300;
+		@media all and (max-width:@device-width-small) {
+			left:50%;
+			max-width: 400px;
+			margin-left: -200px;
+		}
+		@media all and (max-width:400px) {
+			left:0;
+			max-width: 400px;
+			margin-left: 0;
+		}
+	}
+}
+
+@media all and (max-width:(@device-width-medium - 1px)) {
+    @bottomnavigation-height-mobile: 0px;
+	.body-wrapper-bottomnavigation.hidden-mobile {
+		#wrapper {
+			margin-bottom: @bottomnavigation-height-mobile;
+		}
+		.extension-trickle {
+			.trickle-button.trickle-button-show {
+				bottom:@bottomnavigation-height-mobile;
+			}
+		}
+		#bottomnavigation {
+			height: @bottomnavigation-height-mobile;
+		}
+	}
+
+}
+
+

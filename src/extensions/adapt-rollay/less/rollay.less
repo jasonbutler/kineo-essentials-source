@@ -1,0 +1,35 @@
+/*
+* adapt-rollay
+* License - http://github.com/adaptlearning/adapt_framework/LICENSE
+* Maintainers - Oliver Foster <oliver.foster@kineo.com>
+*/
+
+#rollay {
+	display: none;
+	width:100%;
+	background-color: white;
+	bottom: 0px;
+	position: fixed;
+	overflow: hidden;
+	z-index: 1;
+	@media all and (max-width:@device-width-small) {
+		left:50%;
+		max-width: 400px;
+		margin-left: -200px;
+	}
+	@media all and (max-width:400px) {
+		left:0;
+		max-width: 400px;
+		margin-left: 0;
+	}
+}
+
+.body-wrapper-bottomnavigation {
+	#rollay {
+		margin-bottom: 50px;
+	}
+}
+
+.stop-scroll { 
+	overflow: hidden;
+}

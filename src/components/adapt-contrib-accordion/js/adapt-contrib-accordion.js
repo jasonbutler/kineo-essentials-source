@@ -4,6 +4,11 @@ define(function(require) {
 
   var Accordion = ComponentView.extend({
 
+    preRender: function() {
+      _.each(this.model.get('_items'), function(item) {
+        item._isVisited = false;
+      });
+    },
     postRender: function() {
       this.setReadyStatus();
     },

@@ -1,0 +1,21 @@
+{{! Maintainers - Dan Ghost}}
+<div class="bookmarking" role="dialog">
+    <div class="bookmarking-content">
+        <div class="bookmarking-inner">
+                {{#if title}}
+                <div class="bookmarking-title">
+                    <h5 class="bookmarking-title-inner">
+                    {{{title}}}
+                    </h5>
+                </div>
+                {{/if}}
+            <div class="bookmarking-body">
+                <div class="bookmarking-body-inner">{{{message}}}</div>
+            </div>
+            <a href="#" class="button yes clearfix"><span>{{{_buttons.yes}}}</span></a>
+            <a href="#" class="button no clearfix"><span>{{{_buttons.no}}}</span></a>
+        </div>
+    </div>
+</div>
+
+<div class="bookmarking-shadow"></div>

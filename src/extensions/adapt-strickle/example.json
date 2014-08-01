@@ -1,0 +1,12 @@
+// To go in the contentObject.json file
+//enables trickle on the page
+"_strickle": {
+    "_isEnabled": true
+},
+
+
+//To got in the component.json file
+//skips trickle on the component
+"_strickle": {
+    "_isEnabled": false
+}

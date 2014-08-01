@@ -93,11 +93,9 @@ define(function(require) {
       if(this.data._tracking._shouldSubmitScore) {
         scormWrapper.setScore(event.scoreAsPercent, 0, 100);
       }
-      if (event.isPass) {
-        Adapt.course.set('_isAssessmentPassed', event.isPass);
-        //this.persistSuspendData();
-      } else {
-        var onAssessmentFailure = this.data._reporting._onQuizFailure;
+     
+      if(!event.isPass) {
+        var onAssessmentFailure = this.data._reporting._onAssessmentFailure;
         if (onAssessmentFailure !== "" && onAssessmentFailure !== "incomplete") {
           scormWrapper.setStatus(onAssessmentFailure);
         }
@@ -114,30 +112,6 @@ define(function(require) {
       if(this.get('_sessionID') !== questionView.model.get('_sessionID')) {
           questionView.model.set('_isEnabledOnRevisit', true);
       }
-    },
-
-    repopulateCompletionData: function() {
-      var suspendData = this.get('_suspendData');
-
-      if (suspendData.spoor.completion !== "") {
-        this.restoreProgress(suspendData);
-      }
-    },
-
-    restoreProgress: function(suspendData) {
-      if (suspendData.spoor.completion === "courseComplete") {
-        Adapt.course.set('_isComplete', true);
-        Adapt.course.setOnChildren('_isComplete', true);
-      } else {
-        _.each(this.get('_blockCompletionArray'), function(blockCompletion, blockTrackingId) {
-          if (blockCompletion === 1) {
-            this.markBlockAsComplete({block: Adapt.blocks.findWhere({_trackingId: blockTrackingId}), includeChildren: true});
-          }
-        }, this);
-      }
-      Adapt.course.set('_isAssessmentPassed', suspendData.spoor._isAssessmentPassed);
-      this.set('_suspendData', suspendData);
-      this.sendCompletionString();
     },
 		
     persistSuspendData: function(){
