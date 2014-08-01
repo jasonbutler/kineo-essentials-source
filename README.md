@@ -15,6 +15,8 @@ Kineo will continue to update this branch to improve features and address bug fi
 
 ## Upcoming updates
 * AA accessibility
+* Iron out minor cross-compatibilty issues
+* Update generic notifications wording
 
 ### Versioning
 Kineo will track versions in the [bower.json](https://github.com/cgkineo/kineo-essentials-source/blob/master/bower.json). 
