@@ -3,9 +3,9 @@
 		{{#if _isComplete}}
 			{{#if _assessment}}
 				{{#if _assessment.isPassed}}
-				   <img src="{{_coverMenu._indicatorGraphic._isComplete}}"/>
+				   <img src="{{_coverMenu._indicatorGraphic._isPassed}}"/>
 				 {{else}}
-				 	<img src="{{_coverMenu._indicatorGraphic._isVisited}}"/>
+				 	<img src="{{_coverMenu._indicatorGraphic._isFailed}}"/>
 				 {{/if}}
 			{{else}}
 				<img src="{{_coverMenu._indicatorGraphic._isComplete}}"/>
@@ -26,5 +26,6 @@
 			{{/if}}
 		{{/if}}
 		<span class="menu-item-indicator-title">{{{title}}}</span>
+		<div class="menu-item-indicator-tooltip"><span>{{{title}}}</span></div>
 	</a>
 </div>

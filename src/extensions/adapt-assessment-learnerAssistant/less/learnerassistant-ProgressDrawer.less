@@ -1,0 +1,122 @@
+@media all and (min-width:@device-width-medium) {
+    .mobile-only {
+        display: none !important;
+    }
+}
+@media all and (max-width:(@device-width-medium - 1px)) {
+    .not-mobile {
+        display: none !important;
+    }
+}
+
+.la-drawer-title {
+    position: absolute;
+    top: 16px;
+    padding-left: 11px;
+}
+
+.learnerassistant-progress-item-title {
+    background-color: @guided-bar-button-color;
+    color: @guided-bar-button-text-color;
+    border-bottom: @guided-bar-button-border;
+    .no-touch &:hover {
+        background-color: @guided-bar-icon-hover-color!important;
+        color: @guided-bar-button-text-hover-color!important;
+    }
+	text-decoration: none;
+	padding:@item-padding;
+	display:block;
+	&.disabled {
+		background-color:@item-disabled-color;
+		color:@item-text-disabled-color;
+        .no-touch &:hover{
+            background-color:@item-disabled-color!important;
+            color:@item-text-disabled-color!important;
+        }
+	}
+    .drawer-item-open {
+        padding:@drawer-item-padding;
+        display:block;
+    }
+    .no-touch &:hover {
+        background-color:@drawer-item-hover-color;
+        color:@drawer-item-text-hover-color;
+        .learnerassistant-progress-indicator-complete {
+            .learnerassistant-progress-indicator-bar {
+                background-color:@item-color;
+            }
+        }
+    }
+}
+
+.learnerassistant-progress-item-title-inner {
+	float:left;
+	width:80%;
+}
+
+.learnerassistant-progress-indicator {
+	width: 14%;
+    margin-left:4%;
+    display: inline-block;
+	overflow:hidden;
+    .icon {
+        padding-left: 15px;
+    }
+    &.learnerassistant-progress-indicator-complete {
+        .complete {
+            display: block;
+        }
+        .incomplete {
+            display: none;
+        }
+    }
+    &.learnerassistant-progress-indicator-incomplete {
+        .complete {
+            display: none;
+        }
+        .incomplete {
+            display: block;
+        }
+    }
+}
+
+
+
+
+.learnerassistant-progress-indicator-bar {
+	width:0%;
+}
+
+.learnerassistant-progress-navigation {
+	padding:(@navigation-padding+6px);
+	@media all and (max-width:(@device-width-medium - 1px)) {
+        padding:(@navigation-padding-mobile+6px);
+    }
+	float:right;
+	display:inline-block;
+	.no-touch &:hover {
+		.learnerassistant-progress-navigation-completion {
+			background-color: darken(@background-color, 20%);
+		}
+		.learnerassistant-progress-navigation-bar {
+		    background-color: darken(@primary-color, 10%);
+		}
+	}
+}
+
+.learnerassistant-progress-navigation-completion {
+    width: 100px;
+    height: 8px;
+    background-color: darken(@background-color, 10%);
+    overflow: hidden;
+    border: 2px solid @background-color;
+    position: relative;
+    border-radius: 5px;
+}
+
+.learnerassistant-progress-navigation-bar {
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: @primary-color;
+}

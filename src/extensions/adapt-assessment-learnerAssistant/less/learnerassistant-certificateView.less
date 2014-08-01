@@ -1,0 +1,177 @@
+@la-border-color : #a0a0a1;
+@instructions-bg-color : #FFF;
+@content-header-bg-color : #605E5D;
+@icon-color : #0088c2;
+
+.hidden {
+    display: none !important;
+}
+
+//padding-left
+.la-certificate {
+    
+    position:absolute;
+    top:0px;
+    bottom:0px;
+    width:100%;
+    overflow-y: auto;
+    background-image: url("../../course/en/images/int14002_essentials_guided_learning_bkg.jpg");
+    background-position: center top;
+    background-size: cover;
+    background-repeat: repeat; 
+
+    .la-certificate-inner {
+
+         width: 100%;
+         /*max-width: 1440px;*/
+         margin: auto;          
+                      	
+    }
+}
+
+//CONTENT
+.la-certificate .la-certificate-inner .la-content-container {
+
+    .begin-instructions {
+
+        margin:0px auto;
+        max-width: @device-width-large;
+        padding: @component-body-padding;
+        padding-bottom:0px;
+
+        .begin-instructions-inner {
+
+            background-color: @instructions-bg-color ;
+
+            h4 {
+                font-size: 28px;
+                font-weight: 700;
+                line-height: 38px;
+                padding:30px 30px 0px;
+            }
+
+            .body {
+                padding:30px;
+            }
+        }
+    }    
+
+    .la-content {
+
+        margin: 0 auto;
+        max-width: @device-width-large;
+        padding: @component-body-padding; 
+    }    
+     
+}
+
+
+//DESKTOP
+@media all and (min-width:@device-width-medium) {
+    .la-certificate {    
+        .mobile-only {
+            display: none;
+        }
+    }
+}
+
+//TABLET/MOBILE
+@media all and (max-width:(@device-width-medium - 1px)) {
+    .la-certificate {    
+        .la-certificate-inner{
+            max-width: 699px;
+        }
+        
+        .not-mobile {
+            display: none !important;
+        } 
+    }
+}
+
+//MOBILE
+@media all and (max-width:(@device-width-small - 1px)) {
+    .la-certificate { 
+
+       .la-certificate-inner{
+            max-width: 400px;
+        } 
+    }
+}
+
+
+.certificateLaunch {
+    .wrapper {  width:100%; margin: 0px auto; position:relative;    }
+
+    .canvas-container { 
+        width: 100%;
+        height: 841px;
+    }
+
+    .canvas-text {
+        /*font-family: 'AmaticSC-Regular';*/
+        font-size: 18pt;
+        color: #cf3239;
+    }
+
+    #composite-image {
+        margin: auto;
+    }
+
+    .hidden {
+        display: none !important;
+    }
+
+
+    .image-container {
+        max-width:100%;
+        display:block;
+        margin:auto;
+        img {
+            width: 1654px;
+            max-width:100%;
+            display:block;
+        }
+    }
+
+    @media print {
+        .print { display:none; }
+        .wrapper { margin: 0 auto; }
+    }
+}
+
+.ie9 {
+    .certificateLaunch-print {
+        .image-container {
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
+@media screen {
+    .Internet.Explorer  {
+        .certificateLaunch-print {
+            .image-container {
+                img {
+                    width: auto;
+                    heigth: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media print {
+    .Internet.Explorer  {
+        .certificateLaunch-print {
+            .image-container {
+                img {
+                    width: auto;
+                    height: auto;
+                }
+            }
+        }
+    }
+}

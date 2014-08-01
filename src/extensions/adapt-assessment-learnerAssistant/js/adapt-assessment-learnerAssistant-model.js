@@ -51,7 +51,8 @@ define(function(require) {
 					interactionEventsAttached: false,
 				},
 				isComplete: false,
-				isResultsShown: false
+				isResultsShown: false,
+				isInReview: false
 			},
 			reset: function() {
 				var options = this.get('options');
@@ -149,26 +150,19 @@ define(function(require) {
 						var finishAssocLearning = [];
 						_.each(question._associatedLearning, function (item) {
 							var type = orderBy.indexOf(item._id.substr(0, item._id.indexOf("-")));
-							if (type > 2) throw "Cannot have assocaited learning at component level!";
-							if (type == 2) {
+							if (type == 3) {
 								var parent = Adapt.findById(Adapt.findById(item._id).get("_parentId"));
-								if (typeof parent.get("_articleReveal") !== "undefined") return;
 								finishAssocLearning.push(item);
 							} else {
 								var model = Adapt.findById(item._id );
-								var descendents = model.findDescendants("blocks");//.toJSON();
-								descendents = new Backbone.Collection(descendents.filter(function(model) {
-									var parent = Adapt.findById(model.get("_parentId"));
-									if (typeof parent.get("_articleReveal") !== "undefined") return;
-									var kids = model.getChildren();
-									if (kids.filter(function(item) { 
+								var descendents = model.findDescendants("components");//.toJSON();
+								if (descendents.filter(function(item) { 
 										if (typeof item.get("_isVisible") === false) return false; 
+										if (typeof item.get("_isAvailable") === false) return false; 
 										if (typeof item.get("_learningassistentProgress ") != "undefined" && item.get("_learningassistentProgress ")._isEnabled === false) return;
 										if (typeof item.get("_pageLevelProgress") == "undefined") return false;
 										return item.get("_pageLevelProgress")._isEnabled; 
 									} ).length === 0) return false;
-									return true;
-								}));
 								descendents = descendents.toJSON();
 								finishAssocLearning = finishAssocLearning.concat(descendents);
 							}
@@ -176,10 +170,6 @@ define(function(require) {
 						question._associatedLearning = _.uniq(finishAssocLearning, function(a,b) {  
 							return a._id;  
 						});
-						_.each(question._associatedLearning, function(item) {
-							if (item._id == "b-30") console.log("REVEAL!");
-						});
-						var i = 0;
 					});
 				}
 			},
@@ -237,6 +227,7 @@ define(function(require) {
 
 					var banks = this.get('options').banks;
 
+
 					assocLearn.sort(function(a, to) {
 						//SORTED BY ELEMENT GRAVITY (PAGE, ARTICLE, BLOCK, COMPONENT) THEN BY ID A-Z
 						var typea = orderBy.indexOf(a._id.substr(0, a._id.indexOf("-")));
@@ -249,28 +240,36 @@ define(function(require) {
 						if (a._id > to._id) return 1;
 						return 0;
 					});
-					console.log("Associated learning order:");
-					console.log(assocLearn);
 
-					var newBankOrder = {};
-					var order = 0;
-					_.each(banks, function(bank) {
-						bank.order = _.values(banks).length;
-					});
-					_.each(assocLearn, function(assoc) {
-						if (typeof newBankOrder["b" + assoc._quizBankID] == "undefined") {
-							newBankOrder["b"+assoc._quizBankID] = true;
-							bank = _.findWhere(banks, { _quizBankID: assoc._quizBankID});
-							bank.order = order;
-							order++;
+					if (settings._sortResultsBanksBy!== undefined) {
+
+						switch (settings._sortResultsBanksBy) {
+						case "mostInBank":
+							var mostInBank = _.countBy(assocLearn, function(item) { return item._quizBankID; }); 
+
+							var newBankOrder = {};
+							var order = 0;
+							_.each(banks, function(bank) {
+								bank.order = mostInBank[bank._quizBankID]; //_.values(banks).length;
+							});
+							_.each(assocLearn, function(assoc) {
+								if (typeof newBankOrder["b" + assoc._quizBankID] == "undefined") {
+									newBankOrder["b"+assoc._quizBankID] = true;
+									bank = _.findWhere(banks, { _quizBankID: assoc._quizBankID});
+									bank.order = order;
+									order++;
+								}
+							});
+
+							banks.sort(function(a,b) {
+								return b.order-a.order;
+							});
+							break
+						case "id":
+						default:
+							break;
 						}
-					});
-
-					banks.sort(function(a,b) {
-						return a.order-b.order;
-					});
-					console.log("Bank order:");
-					console.log(banks);
+					}					
 
 					this.set("associatedLearning", assocLearn);
 				}
@@ -376,11 +375,16 @@ define(function(require) {
 				var options = this.get('options');
 				_.each(options.associatedLearning, function(assoc) {
 					var element = Adapt.findById(assoc._id);
-					element.getChildren().each(function(child) {
-						if (child.get("_id").substr(0,2) == "co") {
-							console.log("WARNING: Learning Assistant: Cannot track interactions with MENU items for associated learning entries. Page, article, block and component are OK, possibly add menu's pages as associated learning entries instead?");
-						}
-					});
+					var type = orderBy.indexOf(assoc._id.substr(0, assoc._id.indexOf("-")));
+					if (type == orderBy.length - 1) return;
+					var children = element.getChildren();
+					if (children) {
+						children.each(function(child) {
+							if (child.get("_id").substr(0,2) == "co") {
+								console.log("WARNING: Learning Assistant: Cannot track interactions with MENU items for associated learning entries. Page, article, block and component are OK, possibly add menu's pages as associated learning entries instead?");
+							}
+						});
+					}
 				});
 			}
 		}

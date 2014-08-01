@@ -1,0 +1,14 @@
+{
+  "name": "adapt-scroll-event",
+  "homepage": "",
+  "authors": [
+    ""
+  ],
+  "description": "",
+  "main": "/js/adapt-scroll-event.js",
+  "keywords": [
+    "adapt-plugin",
+    "adapt-extension"
+  ],
+  "license": "GPLv3"
+}

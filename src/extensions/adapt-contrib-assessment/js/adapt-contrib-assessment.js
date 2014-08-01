@@ -83,4 +83,43 @@ define(function(require) {
         if(assessmentArticle != undefined) initQuizData(assessmentArticle);
 	});
 
+	Adapt.on('componentView:preRender', function(componentView) {
+
+		var componentId = componentView.model.get('_id');
+		var blockId = componentView.model.get("_parentId");
+		var articleId = Adapt.findById(blockId).get("_parentId");
+		var article = Adapt.findById(articleId);
+
+		if (typeof article.get("_assessment") === "undefined" || article.get("_assessment")._isEnabled !== true) return;
+
+		if (article.get("_assessment")._hideUserAnswer) componentView.model.set("_hideUserAnswer", true);
+
+		if (article.get("_assessment")._hideButtonsOnComplete) {
+
+			componentView.listenTo(componentView.model, "change:_isComplete", function(model, value) {
+				if (!value) return;
+				var buttons = this.$el.find(".buttons");
+				buttons.css("height", buttons.height() + "px");
+				buttons.find(".buttons-inner").hide();
+			});
+
+		}
+    });	
+
+    Adapt.on('componentView:postRender', function(componentView) {
+
+		var componentId = componentView.model.get('_id');
+		var blockId = componentView.model.get("_parentId");
+		var articleId = Adapt.findById(blockId).get("_parentId");
+		var article = Adapt.findById(articleId);
+
+		if (typeof article.get("_assessment") === "undefined" || article.get("_assessment")._isEnabled !== true) return;
+
+		if (!article.get("_assessment")._canShowFeedback) {
+
+			componentView.$el.find(".buttons").addClass("hide-feedback");
+
+		}
+    });	
+
 })

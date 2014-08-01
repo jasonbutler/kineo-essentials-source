@@ -231,6 +231,7 @@ define(function(require) {
             var questionModel = this.getQuestionModel();
 
             this.set('lastAttemptScoreAsPercent', questionModel.scoreAsPercent)
+            Adapt.course.set('_isAssessmentPassed', questionModel.isPass);
 
             this.setFeedbackMessage();
             console.log("this.getFeedbackBand()",this.getFeedbackBand());

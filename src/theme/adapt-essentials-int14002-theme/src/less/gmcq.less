@@ -1,0 +1,29 @@
+.gmcq-component {
+
+    .gmcq-item-inner {
+        padding: 19px 25px 18px;
+    }
+
+    .gmcq-item-state {
+        left: 30px;
+    }
+
+}
+
+.no-touch {
+
+    .gmcq-component {
+
+        .gmcq-widget {
+            &:not(.disabled) {
+                .gmcq-item label:hover {
+						.gmcq-item-state {
+							.gmcq-answer-icon {
+								color:@item-text-hover-color;
+							}
+					}
+                }
+            }
+        }
+    }
+}

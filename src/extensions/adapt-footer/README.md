@@ -1,0 +1,4 @@
+adapt-footer
+================
+
+Page footer

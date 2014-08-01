@@ -20,7 +20,8 @@ define(function(require) {
 		{
 			//EVENTS
 			events: {
-				'click a.learnerassistant-page-level-progress-item': 'onScrollToPageElement'
+				'click a.learnerassistant-page-level-progress-item': 'onScrollToPageElement',
+				'click .learnerassistant-page-level-progress-info': 'onIconClick'
 			},
 			onScrollToPageElement: function(event) {
 				event.preventDefault();
@@ -28,6 +29,17 @@ define(function(require) {
 				var $currentComponent = $(currentComponentSelector);
 				$(window).scrollTo($currentComponent, {offset:{top:-$('.navigation').height()}});
 				Adapt.trigger('page:scrollTo', currentComponentSelector);
+			},
+			onIconClick: function(event) {
+				event.preventDefault();
+				var alertObject = {
+				    title: this.parent.model.get('settings')._quizProgressTutorButton.title,
+				    body: this.parent.model.get('settings')._quizProgressTutorButton.body,
+				    confirmText: this.parent.model.get('settings')._quizProgressTutorButton.button,
+				    _showIcon: false
+				};
+
+				Adapt.trigger('notify:alert', alertObject);
 			}
 		},
 		{
@@ -44,6 +56,7 @@ define(function(require) {
 		    	var assessmentPageLevelProgress = this.parent.model.get("settings")._assessmentPageLevelProgress;
 		    	var incrementalMarking = assessmentPageLevelProgress._incrementalMarking;
 		    	var isComplete = this.parent.model.get('isComplete');
+		    	var hideUserAnswer = this.parent.model.get('hideUserAnswer');
 		    	this.parent.pagelevelprogress.incrementalMarking = incrementalMarking;
 		    	var showInvisible = assessmentPageLevelProgress._showInvisible;
 		    	var showProgress = assessmentPageLevelProgress._showProgress;
@@ -59,7 +72,8 @@ define(function(require) {
 		        	incrementalMarking:incrementalMarking,
 		        	showInvisible:showInvisible,
 		        	showProgress:showProgress,
-		        	isComplete:isComplete
+		        	isComplete:isComplete,
+		        	hideUserAnswer: hideUserAnswer
 		        };
 
 		        this.constructor.prototype.render.call(this);

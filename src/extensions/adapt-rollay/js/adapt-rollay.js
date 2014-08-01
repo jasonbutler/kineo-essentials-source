@@ -23,7 +23,7 @@ define(function(require) {
 		initialize: function() {
 			this.model = new Backbone.Model(Adapt.course.get("_rollay"));
 			if (typeof this.model.get("_duration") == "undefined") this.model.set("_duration",{ show:200, hide:200 });
-
+			this.model.set("forceShow", false);
 			Adapt.trigger("rollay:initialised");
 		},
 		setCustomView: function(rollayView) {
@@ -43,7 +43,8 @@ define(function(require) {
 		render: function() {
 			if (typeof this.view.reRender == "function") this.view.reRender();
 		},
-		show: function(duration) {
+		show: function(duration, callback) {
+			if (typeof duration == "function") callback = duration;
 			if (!visibility.hidden) return;
 			Adapt.trigger("popup:opened");
 			this.render();
@@ -53,21 +54,26 @@ define(function(require) {
 				this.$el.css({top: $(window).height() + "px", display: "block" });
 				this.$el.animate({ top: visibility.top + "px" }, {duration:duration, start: function() {
 					visibility.hidden = false;
-					Adapt.trigger("rollay:opened");
+					Adapt.trigger("rollay:opening");
 				}, complete: function() {
 					visibility.scrollTop = $("body").scrollTop();
 					$("body").css({ "height": $(window).height() + "px" }).addClass("stop-scroll");
+					Adapt.trigger("rollay:opened");
+					callback();
 				}});
 			} else {
+				Adapt.trigger("rollay:opening");
 				this.$el.css({top: visibility.top + "px", display: "block" });
 				visibility.hidden = false;
 				visibility.scrollTop = $("body").scrollTop();
 				$("body").css({ "height": $(window).height() + "px" }).addClass("stop-scroll");
 				Adapt.trigger("rollay:opened");
+				callback();
 			}
 			
 		},
-		hide: function(duration) {
+		hide: function(duration, callback) {
+			if (typeof duration == "function") callback = duration;
 			if (visibility.hidden) return;
 			if (typeof duration == "undefined") duration = this.model.get("_duration").hide;
 			var rollay = this;
@@ -76,14 +82,19 @@ define(function(require) {
 				Adapt.trigger("popup:closed");
 				Adapt.trigger("rollay:closed");
 				rollay.$el.css({ display: "none" });
+				$("body").css("height", "auto");
+				callback();
 			}
-			$("body").css("height", null);
+			$("body").css("height", "auto");
 			$("body").removeClass("stop-scroll");
 			$("body").scrollTop(visibility.scrollTop);
 			if (duration > 0) {
 				this.$el.css({ top: visibility.top + "px" });
-				this.$el.animate({ top: $(window).height() + "px" }, {duration:duration, complete: finished});
+				this.$el.animate({ top: $(window).height() + "px" }, {duration:duration, start: function() {
+					Adapt.trigger("rollay:closing");
+				}, complete: finished});
 			} else {
+				Adapt.trigger("rollay:closing");
 				this.$el.css({ top: $(window).height() + "px" });
 				finished();
 			}
@@ -96,11 +107,13 @@ define(function(require) {
 
 	//some other popup is open
 	Adapt.on("drawer:opened", function () { 
+		if (Adapt.rollay.model.get("forceShow")) return;
 		Adapt.rollay.hide.call(Adapt.rollay); 
 	});
 
 	//back button clicked
 	Adapt.on("navigation:backButton",  function () { 
+		if (Adapt.rollay.model.get("forceShow")) return;
 		Adapt.rollay.hide.call(Adapt.rollay); 
 	});
 

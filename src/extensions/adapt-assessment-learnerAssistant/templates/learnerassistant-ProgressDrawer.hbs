@@ -1,0 +1,18 @@
+<div class="la-drawer-title"><h5>{{{settings._drawerTitle}}}</h5></div>
+<div class="learnerassistant-progress-inner" role="progressbar">
+    {{#each associatedLearning}}
+    <div class="learnerassistant-progress-item drawer-item">
+        <a class="learnerassistant-progress-item-title clearfix drawer-item-open" href="#" data-learnerassistant-progress-id="{{_id}}">
+    	<h5 class="learnerassistant-progress-item-title-inner" aria-label="{{{title}}}">
+        {{{title}}}
+        </h5>
+        <div class="learnerassistant-progress-indicator learnerassistant-progress-indicator-{{#if _isInteractionsComplete}}complete{{else}}incomplete{{/if}}">
+            <span class="icon icon-book complete"></span>
+            <span class="icon icon-flag incomplete"></span>
+            <!--<div class="learnerassistant-progress-indicator-bar">
+            </div>-->
+        </div>
+        </a>
+    </div>
+    {{/each}}
+</div>

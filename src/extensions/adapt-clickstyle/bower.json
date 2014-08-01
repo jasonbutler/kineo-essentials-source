@@ -1,0 +1,14 @@
+{
+  "name": "adapt-clickstyle",
+  "homepage": "https://github.com/cgkineo/adapt-clickstyle",
+  "authors": [
+    "Oliver Foster <oliver.foster@kineo.com"
+  ],
+  "description": "%description",
+  "main": "/js/adapt-clickstyle.js",
+  "keywords": [
+    "adapt-plugin",
+    "adapt-extension"
+  ],
+  "license": "GPLv3"
+}

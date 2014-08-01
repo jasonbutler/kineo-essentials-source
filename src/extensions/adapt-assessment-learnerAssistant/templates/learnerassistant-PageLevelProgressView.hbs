@@ -1,12 +1,13 @@
-<div class="learnerassistant-page-level-progress-inner {{#if isComplete}}complete{{else}}incomplete{{/if}} {{#if incrementalMarking}}incrementalMarking{{else}}not-incrementalMarking{{/if}} {{#if showProgress}}show-progress{{else}}hide-progress{{/if}}">
+<div class="learnerassistant-page-level-progress-inner {{#if hideUserAnswer}}hide-useranswer{{else}}show-useranswer{{/if}} {{#if isComplete}}complete{{else}}incomplete{{/if}} {{#if incrementalMarking}}incrementalMarking{{else}}not-incrementalMarking{{/if}} {{#if showProgress}}show-progress{{else}}hide-progress{{/if}}">
+	<a href="#" class="learnerassistant-page-level-progress-info icon-feedback icon clickstyle"></a>
 	{{#if showInvisible}}
 	    {{#each components}}
-	            <a class="learnerassistant-page-level-progress-item {{assessmentPageLevelProgressMark}} {{#if _isInteractionsComplete}}complete{{else}}incomplete{{/if}}" href="#" data-learnerassistant-page-level-progress-id="{{_id}}"><span class="answered icon icon-plus"></span><span class="unanswered icon icon-minus"></span><span class="incorrect icon icon-cross"></span><span class="correct icon icon-tick"></span></a>
+	            <a class="learnerassistant-page-level-progress-item {{assessmentPageLevelProgressMark}} {{#if _isComplete}}complete{{else}}incomplete{{/if}}" href="#" data-learnerassistant-page-level-progress-id="{{_id}}"><span class="answered icon icon-radio-checked"></span><span class="unanswered icon icon-radio-unchecked"></span><span class="incorrect icon icon-cross"></span><span class="correct icon icon-tick"></span></a>
 	    {{/each}}
 	{{else}}
 		{{#each components}}
 	        {{#if _isVisible}}
-	            <a class="learnerassistant-page-level-progress-item {{assessmentPageLevelProgressMark}} {{#if _isInteractionsComplete}}complete{{else}}incomplete{{/if}}" href="#" data-learnerassistant-page-level-progress-id="{{_id}}">{{else}} <span>{{/if}}<span class="answered icon icon-plus"></span><span class="unanswered icon icon-minus"></span><span class="incorrect icon icon-cross"></span><span class="correct icon icon-tick"></span>{{#if _isVisible}}</a>{{else}}</span>
+	            <a class="learnerassistant-page-level-progress-item {{assessmentPageLevelProgressMark}} {{#if _isComplete}}complete{{else}}incomplete{{/if}}" href="#" data-learnerassistant-page-level-progress-id="{{_id}}">{{else}} <span>{{/if}}<span class="answered icon icon-radio-checked"></span><span class="unanswered icon icon-radio-unchecked"></span><span class="incorrect icon icon-cross"></span><span class="correct icon icon-tick"></span>{{#if _isVisible}}</a>{{else}}</span>
 	        {{/if}}
 	    {{/each}}
 	{{/if}}

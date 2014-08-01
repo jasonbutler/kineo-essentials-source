@@ -1,0 +1,6 @@
+<div class="block-inner footer-inner">
+	<button id="root" class="button {{#if config._buttons._root._isHidden}}display-none{{/if}}">{{config._buttons._root.text}}</button>
+	<button id="previous" class="button {{#if config._buttons._previous._isHidden}}display-none{{/if}}" {{#if state.isFirstPage}}disabled="disabled"{{/if}}>{{config._buttons._previous.text}}</button>
+	<button id="up" class="button {{#if config._buttons._up._isHidden}}display-none{{/if}}">{{config._buttons._up.text}}</button>
+	<button id="next" class="button {{#if config._buttons._next._isHidden}}display-none{{/if}}" {{#if state.isLastPage}}disabled="disabled"{{/if}}>{{config._buttons._next.text}}</button>
+</div>

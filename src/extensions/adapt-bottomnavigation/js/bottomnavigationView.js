@@ -31,6 +31,7 @@ define(function(require) {
 	BottomNavigationView.prototype.template = null;
 	//BottomNavigationView.prototype.render - uses handlebars to render the template at instance.template, passing the instance.model as the template context
 	BottomNavigationView.prototype.render = function() {
+		if (this.template === null) return this;
 		if (typeof this.template == "undefined") throw "No template property found on BottomNavigationView instance!";
 		if (typeof Handlebars.templates[this.template] == "undefined")  throw "Template not found on BottomNavigationView instance: " + this.template;
 		var template = Handlebars.templates[this.template];

@@ -60,8 +60,8 @@
         "_classes":"menu-link-component",
         "_layout":"full",
         "title":"Menu Link",
-        "displayTitle":"Menu Link",
-        "body":"Menu link body text. All components take this form of a title and body - except a blank component.<br>This component you're reading is a text component. All components take this form of a title and body - except a blank component. However it's important to realise that title and body attributes are not needed.<br/><br/><a href='#/id/co-02' class='button'>Menu</a>",
+        "displayTitle":"",
+        "body":"<a href='#/id/co-02' class='button intro-page-menu-button'>Go to menu</a>",
         "instruction":"",
         "_pageLevelProgress": {
             "_isEnabled": true
@@ -72,10 +72,10 @@
         "_parentId":"b-05",
         "_type":"component",
         "_component":"text",
-        "_classes":"header-text",
+        "_classes":"",
         "_layout":"left",
-        "title":"The hidden Enemy",
-        "displayTitle":"The hidden Enemy",
+        "title":"BACTERIA",
+        "displayTitle":"",
         "body":"This component you're reading is a text component. All components take this form of a title and body - except a blank component.<br>This component you're reading is a text component. All components take this form of a title and body - except a blank component. However it's important to realise that title and body attributes are not needed.",
         "instruction":"",
         "_pageLevelProgress": {
@@ -113,7 +113,7 @@
         "title": "FATTAM",
         "displayTitle": "FATTAM",
         "body": "We live in a multi-device world. The growth of internet enabled devices such as smartphones, tablets and laptops means that increasingly we have to deliver learning solutions that work on all devices. This is not as simple as a desktop and mobile solution; what is required is a multi-device solution.",
-        "instruction":"Click the icons below for more.",
+        "instruction":"Select the icons to find out more",
         "_graphic": {
             "src": "course/en/images/fattam.png",
             "alt": "This is a hot spot graphic of Fattam containing two hot spot links."
@@ -124,9 +124,10 @@
                 "body": "With the advent of modern browsers, frameworks, developments in HTML 5 and responsive design approaches we're now able to create engaging learning that will work, regardless of the device being used.<br><br>In addition, Libraries such as Backbone, Underscore and Handlebars have rapidly sped up development and enabled the production of fast single page applications (SPAs) that improve the user experience.",
                 "_graphic": {
                     "src": "course/en/images/chicken.png",
-                    "alt": "Hot graphic pop-up pin one. Select here to open."
+                    "alt": ""
                 },
-                "strapline": "Introduction",
+                "pinAlt": "Introduction. Select here to open.",
+                "strapline": "Introduction. Handling raw chicken.",
                 "_top": 58,
                 "_left": 23
             },
@@ -135,8 +136,9 @@
                 "body": "Responsive elearning Design takes its inspiration from Responsive Web Design; an approach to design that ensures a single version of a website (or an elearning course created as a web app) can provide a viewing experience optimised to complement a variety of different devices, from desktop monitor to smartphone.This tailored viewing experience is achieved by:<ul><li>providing dynamic layouts which allow for the resizing of onscreen elements to make the most of the space available (fluid grid concept)</li></ul>",
                 "_graphic": {
                     "src": "course/en/images/chicken.png",
-                    "alt": "Hot graphic pop-up pin two. Select here to open."
+                    "alt": "What is responsive elearning? Handling raw chicken."
                 },
+                "pinAlt": "What is responsive elearning? Select here to open.",
                 "strapline": "What is responsive elearning?",
                 "_top": 60,
                 "_left": 80
@@ -207,7 +209,7 @@
         "title": "CLEANING TERMS",
         "displayTitle": "CLEANING TERMS",
         "body": "Here are some reasons why we think scrolling is perfectly fine – and even desirable:",
-        "instruction":"Select the headings below to reveal the text.",
+        "instruction":"Select the headings to find out more",
         "_items": [
             {
                 "alt": "Your learners already do it",
@@ -270,7 +272,7 @@
         "displayTitle": "REVEALED COMPONENT",
         "body": "This is optional body text. Select the play button to start the video.",
         "instruction": "",
-        "_setCompletionOn":"inview",
+        "_setCompletionOn":"play",
         "_pageLevelProgress": {
             "_isEnabled": true
         },
@@ -292,7 +294,7 @@
         "title": "A DAY IN THE LIFE",
         "displayTitle": "A DAY IN THE LIFE",
         "body": "Find out what’s on the roadmap for 2014 for Adapt Learning.",
-        "instruction":"",
+        "instruction":"Select the arrows to navigate.<span class='mobile-instruction'></span>",
         "_items": [
             {
                 "title": "Improvements",
@@ -340,7 +342,7 @@
         "title": "CLEANING TERMS",
         "displayTitle": "CLEANING TERMS",
         "body": "How can anyone get involved with Adapt?",
-        "instruction":"Select the correct answers below.",
+        "instruction":"Choose one or more options and select Submit.",
         "_items": [
             {
                 "text": "Sign up to the community site",
@@ -390,7 +392,7 @@
         "title": "GMCQ",
         "displayTitle": "GMCQ",
         "body": "Which of the following options would you consider to be correct?",
-        "instruction": "",
+        "instruction": "Choose an image and select Submit.",
         "_pageLevelProgress": {
             "_isEnabled": true
         },
@@ -441,13 +443,13 @@
         "_layout": "right",
         "_type": "component",
         "_component": "matching",
-        "_attempts": 2,
+        "_attempts": 1,
         "_isRandom":true,
         "_questionWeight":10,
         "title": "Matching",
         "displayTitle": "MATCHING",
         "body": "Basically what you need to do is match the questions below with the drop down box option.",
-        "instruction":"",
+        "instruction":"Choose an option from each drop down list and select Submit.",
         "_pageLevelProgress": {
             "_isEnabled": true
         },
@@ -533,7 +535,7 @@
         "title": "Slider type component",
         "displayTitle":"SLIDER TYPE COMPONENT",
         "body":"Question text here",
-        "instruction": "",
+        "instruction": "Drag the slider to make your choice and select Submit.",
         "_attempts": 2,
         "_questionWeight":1,
         "_showNumber": true,
@@ -599,7 +601,7 @@
       "title": "DID YOU KNOW?",
       "displayTitle": "DID YOU KNOW?",
       "body": "This is optional body text. Select the headings below to reveal the text.",
-      "instruction": "",
+      "instruction": "Select the headings to find out more",
       "_pageLevelProgress": {
             "_isEnabled": true
         },
@@ -660,9 +662,9 @@
         "_component":"text",
         "_classes":"component-background",
         "_layout":"full",
-        "title":"Quiz intro",
-        "displayTitle":"Quiz intro",
-        "body":"This component you're reading is a text component. All components take this form of a title and body - except a blank component. However it's important to realise that title and body attributes are not needed. <br><br>Take for instance the media component opposite or below on a smaller device - has no body attribute. Instead of the HTML being rendered Adapt simply doesn't render it. The title attribute is simply a break tag to push the media component level with the opposite component.",
+        "title":"Test your knowledge",
+        "displayTitle":"Test your knowledge",
+        "body":"Use this space to introduce the assessment, the subject matter to be tested, the number if questions and so on.",
         "instruction":"",
         "_pageLevelProgress": {
             "_isEnabled": false,
@@ -670,6 +672,9 @@
         },
         "_learningassistentProgress": {
             "_isEnabled":false
+        },
+        "_strickle": {
+            "_isEnabled": false
         }
     },
     {
@@ -722,7 +727,7 @@
             "_isEnabled": false,
             "_useAssessment": true
         },
-        "_associatedLearning": ["co-05"]
+        "_associatedLearning": ["b-55"]
     },
     {
         "_id":"c-90",
@@ -738,7 +743,7 @@
         "title": "Bank 1 Question 2",
         "displayTitle": "Bank 1 Question 2",
         "body": "How can anyone get involved with Adapt?",
-        "instruction":"Select the correct answers below.",
+        "instruction":"Choose one or more options and select Submit.",
         "_items": [
             {
                 "text": "Option 1 (correct)",
@@ -774,7 +779,7 @@
             "_isEnabled": false,
             "_useAssessment": true
         },
-        "_associatedLearning": ["a-05"]
+        "_associatedLearning": ["b-25"]
     },
     {
         "_id":"c-95",
@@ -790,7 +795,7 @@
         "title": "Bank 1 Question 3",
         "displayTitle": "Bank 1 Question 3",
         "body": "How can anyone get involved with Adapt?",
-        "instruction":"Select the correct answers below.",
+        "instruction":"Choose one or more options and select Submit.",
         "_items": [
             {
                 "text": "Option 1 (correct)",
@@ -826,7 +831,7 @@
             "_isEnabled": false,
             "_useAssessment": true
         },
-        "_associatedLearning": ["a-10"]
+        "_associatedLearning": ["b-30"]
     },
     {
         "_id":"c-105",
@@ -878,7 +883,7 @@
             "_isEnabled": false,
             "_useAssessment": true
         },
-        "_associatedLearning": ["a-20"]
+        "_associatedLearning": ["b-30"]
     },
     {
         "_id":"c-115",
@@ -930,7 +935,7 @@
             "_isEnabled": false,
             "_useAssessment": true
         },
-        "_associatedLearning": ["b-05"]
+        "_associatedLearning": ["b-40"]
     },
     {
         "_id":"c-125",
@@ -982,7 +987,7 @@
             "_isEnabled": false,
             "_useAssessment": true
         },
-        "_associatedLearning": ["b-10"]
+        "_associatedLearning": ["b-55"]
     },
     {
         "_id":"c-135",
@@ -1034,7 +1039,7 @@
             "_isEnabled": false,
             "_useAssessment": true
         },
-        "_associatedLearning": ["b-15"]
+        "_associatedLearning": ["b-25"]
     },
     {
         "_id":"c-145",
@@ -1138,7 +1143,7 @@
             "_isEnabled": false,
             "_useAssessment": true
         },
-         "_associatedLearning": ["a-05"]
+         "_associatedLearning": ["b-30"]
     },
     {
         "_id":"c-165",
@@ -1190,7 +1195,7 @@
             "_isEnabled": false,
             "_useAssessment": true
         },
-         "_associatedLearning": ["a-10"]
+         "_associatedLearning": ["b-40"]
     },
     {
         "_id":"c-175",
@@ -1242,7 +1247,7 @@
             "_isEnabled": false,
             "_useAssessment": true
         },
-         "_associatedLearning": ["a-20"]
+         "_associatedLearning": ["b-55"]
     },
     {
         "_id":"c-185",
@@ -1294,7 +1299,7 @@
             "_isEnabled": false,
             "_useAssessment": true
         },
-        "_associatedLearning": ["a-20"]
+        "_associatedLearning": ["b-40"]
     },
     {
         "_id":"c-195",
@@ -1346,7 +1351,7 @@
             "_isEnabled": false,
             "_useAssessment": true
         },
-        "_associatedLearning": ["a-20"]
+        "_associatedLearning": ["b-30"]
     },
     {
         "_id":"c-205",
@@ -1710,26 +1715,6 @@
             "_isEnabled": false,
             "_useAssessment": true
         },
-        "_associatedLearning": ["co-05"]
-    },
-    {
-        "_id":"c-275",
-        "_parentId":"b-160",
-        "_type":"component",
-        "_component":"results",
-        "_classes":"component-background",
-        "_layout":"full",
-        "title":"Results",
-        "displayTitle":"Results",
-        "body":"This component you're reading is a results component. The feedback itself comes from the _assessment object in articles.json.",
-        "instruction":"",
-        "_linkToAssociatedLearning": false,
-        "_pageLevelProgress": {
-            "_isEnabled": false,
-            "_useAssessment": true
-        },
-        "_learningassistentProgress": {
-            "_isEnabled":false
-        }
+        "_associatedLearning": ["b-25","b-40"]
     }
 ]

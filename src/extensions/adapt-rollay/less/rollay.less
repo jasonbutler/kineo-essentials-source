@@ -9,11 +9,19 @@
 	width:100%;
 	background-color: white;
 	bottom: 0px;
-	left: 0px;
-	right:0px;
 	position: fixed;
 	overflow: hidden;
 	z-index: 1;
+	@media all and (max-width:@device-width-small) {
+		left:50%;
+		max-width: 400px;
+		margin-left: -200px;
+	}
+	@media all and (max-width:400px) {
+		left:0;
+		max-width: 400px;
+		margin-left: 0;
+	}
 }
 
 .body-wrapper-bottomnavigation {

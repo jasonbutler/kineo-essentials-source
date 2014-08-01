@@ -2,18 +2,22 @@
 // ============
 // description: Add this class to the first block at the top of each page
 
-.header {
+.header > .article-inner {
 	width: 100%;
-	height: 648px;
 	background-image: url(assets/bg_1.png);
 	background-position: top;
-	background-repeat: repeat;
+	background-repeat: no-repeat;
 	.graphic-component {
 		width: 40%;
 		padding-top: 0;
 		text-align: center;
 	}
 }
+
+.header .block {
+	min-height: 600px;
+}
+
 @media all and (max-width: 800px) {
 	.graphic-component {
 		margin: auto;
@@ -27,40 +31,76 @@
 
 // description: Add this class to the header block text component
 
-.header-text {
-	width: 60%;
-	color: @white;
-	background-color: transparent;
-	@media all and (max-width: 800px) {
-		width: 100%;
+.header {
+	.article-title {
+		max-width: 900px !important;
+		padding:100px 40px 0px 40px;
+		width:auto;
+			@media all and (max-width: 520px) {
+				padding-top:50px;
+			}
+		h2 {
+			display: block;
+			line-height: 18px;
+			font-size: 12px;
+			text-transform: uppercase;
+			font-weight: @font-weight-bold;
+			color:@white;
+			margin-left:10px;
+			@media all and (max-width: 800px) {
+				margin:0 auto;
+				text-align: center;
+			}
+		}
+		h2 span {
+			background: @black;
+    		padding: 3px 0px;
+			box-shadow: 10px 0 0 @black, -10px 0 0 @black;
+		}
 	}
-	.text-title-inner, .text-body-inner {
-		padding-left: 0;
-		padding-top: 10px;
-		font-weight: @font-weight-light;
-		@media all and (max-width: 800px) {
-			width: 100%;
-			text-align: center;
+	.block.nth-child-1 {
+		.text-component {
+			width: 60%;
+			color: @white;
+			background-color: transparent;
+			@media all and (max-width: 800px) {
+				width: 100%;
+			}
+			.text-title-inner, .text-body-inner {
+				padding-left: 0;
+				padding-top: 10px;
+				font-weight: @font-weight-light;
+				font-size:15px;
+				line-height: 22px;
+				@media all and (max-width: 800px) {
+					width: 100%;
+					text-align: center;
+				}
+			}
 		}
 	}
 }
 
 // description: Add this class to the first block at the top of each page
 
-.header-block-title {
-	.block-title-inner {
-		padding: 100px 10px 0px 0px;
-		text-align: left;
-		font-size: 72px;
-		color: @white;
-		@media all and (max-width: 800px) {
-			text-align: center;
-			padding-bottom: 10px;
-			padding-top: 40px;
-
-		}
-		@media all and (max-width: 380px) {
-			font-size: 52px;
+.header {
+	.block.nth-child-1 {
+		.block-inner  {
+		padding-top: 0px;
+			.block-title-inner {
+				clear:both;
+				padding: 10px 10px 0px 0px;
+				text-align: left;
+				font-size: 45px;
+				color: @white;
+				margin-left: -2px;
+				@media all and (max-width: 800px) {
+					text-align: center;
+					padding-bottom: 10px;
+					padding-top: 15px;
+					margin-left: 0px;
+				}
+			}
 		}
 	}
 }

@@ -19,11 +19,11 @@
         "_reporting": {
             "_comment": "Your options here are 'completed', 'passed', 'failed', and 'incomplete'",
             "_onTrackingCriteriaMet": "completed",
-            "_onQuizFailure": "incomplete"
+            "_onAssessmentFailure": "incomplete"
         }
     },
     "_inspector": {
-        "_isEnabled": false,
+        "_isEnabled": true,
         "_tracUrl": ""
     }
 }

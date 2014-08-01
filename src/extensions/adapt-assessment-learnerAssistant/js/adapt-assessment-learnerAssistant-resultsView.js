@@ -12,18 +12,18 @@ define(function(require) {
 	var LearnerassistantResultsView = RollayView.extend(
 		{
 			//UI
-			className : "learnerassistant-resultsView",
+			className : "la-results",
 			template : "learnerassistant-resultsView",
 			postRender: function() {
 				//update filter buttons
-				this.$el.find(".learnerassistant-resultsView-filter a").removeClass("selected");
-				this.$el.find(".learnerassistant-resultsView-filter a[data-filter='" + this.model.get("options").filter + "']").addClass("selected");
+				this.$el.find(".la-results-filter a").removeClass("selected");
+				this.$el.find(".la-results-filter a[data-filter='" + this.model.get("options").filter + "']").addClass("selected");
 			}
 		},
 		{
 			//INTERACTION
 			events : {
-				'click .learnerassistant-close': 'onCloseClick'
+				'click .la-close': 'onCloseClick'
 			},
 			onCloseClick: function(event) {
 				event.preventDefault();
@@ -35,4 +35,4 @@ define(function(require) {
 
 
 	return LearnerassistantResultsView;
-})
+});

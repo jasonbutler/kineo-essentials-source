@@ -11,7 +11,8 @@ define(function(require) {
         events:{
             "click .menu-reveal-items":"revealItems",
             "click .menu-item-control-left":"navigateLeft",
-            "click .menu-item-control-right":"navigateRight"
+            "click .menu-item-control-right":"navigateRight",
+            "click .menu-item-intro": "navigateToIntro"
         },
 
         preRender: function() {
@@ -88,7 +89,7 @@ define(function(require) {
 
             this.$('.menu-item-container-inner').css({
                 width:width * this.model.getChildren().length + "px",
-                height:height
+                height: (height -$(".menu-item-indicator-container").height()) +"px"
             });
             
 
@@ -110,18 +111,9 @@ define(function(require) {
         },
 
         setupIndicatorLayout: function() {
-            this.$(".menu-item-indicator-container").css({
-                marginLeft: -(this.$(".menu-item-indicator-container").width() / 2) + "px"
-            });
-            this.setupItemInnerLayout();
-        },
-
-        setupItemInnerLayout: function() {
-            var height = $(window).height() - $(".navigation").height();
-            this.$(".menu-item-inner").css({
-                height: height - $(".menu-item-indicator-container").height() + "px",
-                overflow: "auto"
-            });
+            // this.$(".menu-item-indicator-container").css({
+            //     marginLeft: -(this.$(".menu-item-indicator-container").width() / 2) + "px"
+            // });
         },
 
         setupNavigation: function() {
@@ -140,6 +132,11 @@ define(function(require) {
             this.model.set({_coverIndex:index});
             Adapt.trigger("cover:navigate", this.model.get("_coverIndex"));
             this.configureNavigationControls(index);
+        },
+
+        navigateToIntro: function(event) {
+            if(event) event.preventDefault();
+            Adapt.navigateToElement(Adapt.course.get("_locationIds")._intro, "contentObjects");
         },
 
      // if html has a class of accessibility hide menu controls and set tabindex -1 on menu controls and item indicators
@@ -238,7 +235,7 @@ define(function(require) {
             });
         },
 
-        setBackgroundImage: function() {
+        setBackgroundImage: function() {            
             $(".menu-item-" + this.model.get("_id")).css({
                 backgroundImage:"url(" + this.model.get("_coverMenu")._backgroundGraphic.src + ")"
             });
@@ -276,17 +273,18 @@ define(function(require) {
         },
 
         postRender: function() {
-
+            console.log(this.model)
             var width;
             var maxRowLength = 6;
+            var numItems = this.options.siblingsLength + 1
 
-            if (this.options.siblingsLength <= maxRowLength) {
-                width = 100 / this.options.siblingsLength;
+            if ( numItems <= maxRowLength) {
+                width = 100 / numItems;
             } else {
                 width = 100 / maxRowLength;
             }
-            
-            this.$el.css({
+
+            $(".menu-item-indicator").css({
                 width: width + "%"
             });
 
@@ -298,11 +296,11 @@ define(function(require) {
 
         onItemClicked: function(event) {
             if (event) event.preventDefault();
-            Adapt.trigger("indicator:clicked", this.$el.index());
+            Adapt.trigger("indicator:clicked", this.$el.index() - 1);
         },
 
         handleNavigation: function(index) {
-            if (this.$el.index() == index) {
+            if (this.$el.index() == index + 1) {
                 this.$el.addClass("selected");
             } else {
                 this.$el.removeClass("selected");

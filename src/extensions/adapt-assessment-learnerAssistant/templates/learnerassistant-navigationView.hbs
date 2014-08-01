@@ -1,11 +1,27 @@
 <div class="learnerassistant-navigationView-inner block-inner">
-	<div class="buttongroup {{#if isResultsShown}}is-resultsshown{{else}}not-resultsshown{{/if}} {{#if options._isReviewComplete}}is-reviewed{{else}}not-reviewed{{/if}}">
-		<button id="learnerassistant-revision" class="buttons-action" tabindex="0">{{settings._buttons._start}}</button>
-		<button id="learnerassistant-next" class="buttons-action" {{#unless isInteractionsComplete}}disabled{{/unless}} tabindex="0">{{settings._buttons._next}}</button>
-		<button id="learnerassistant-finish" class="buttons-action" {{#unless isInteractionsComplete}}disabled{{/unless}} tabindex="0">{{settings._buttons._finish}}</button>
+	<a href="#" class="learnerassistant-page-level-progress-info icon-feedback icon clickstyle" data-clickstyle-group="tutor-icons"></a>
+	<div class="buttongroup {{#if isInReview}}is-inreview{{else}}not-inreview{{/if}} {{#if isResultsShown}}is-resultsshown{{else}}not-resultsshown{{/if}} {{#if options._isReviewComplete}}is-reviewed{{else}}not-reviewed{{/if}} {{#if isCertificateShown}}is-certificateshown{{else}}not-certificateshown{{/if}}">
+		{{#if isCertificateShown}}
+
+
+		<button id="learnerassistant-print" class="buttons-action" tabindex="0"><span class="mobile-only icon icon-printer"></span><span class="not-mobile">{{settings._certificateButtons._print}}</span></button>
+		<button id="learnerassistant-end" class="buttons-action not-mobile" tabindex="0"><span class="mobile-only icon icon-cross"></span><span class="not-mobile">{{settings._certificateButtons._end}}</span></button>
+
+		{{else}}
+
+		<button id="learnerassistant-finish" class="buttons-action" {{#unless isInteractionsComplete}}disabled{{/unless}} tabindex="0"><span class="mobile-only icon icon-tick"></span><span class="not-mobile">{{settings._guidedLearningButtons._finish}}</span></button>
+		<button id="learnerassistant-revision" class="buttons-action" tabindex="0"><span class="mobile-only icon icon-triangle-right"></span><span class="not-mobile">{{settings._guidedLearningButtons._start}}</span></button>
+		<button id="learnerassistant-continue" class="buttons-action" tabindex="0"><span class="mobile-only icon icon-triangle-right"></span><span class="not-mobile">{{settings._guidedLearningButtons._continue}}</span></button>
+		<button id="learnerassistant-end" class="buttons-action not-mobile" tabindex="0"><span class="mobile-only icon icon-cross"></span><span class="not-mobile">{{settings._guidedLearningButtons._end}}</span></button>
+		<button id="learnerassistant-next" class="buttons-action" {{#unless isInteractionsComplete}}disabled{{/unless}} tabindex="0"><span class="mobile-only icon icon-triangle-right"></span><span class="not-mobile">{{settings._guidedLearningButtons._next}}</span></button>
+
+		{{/if}}
 	</div>
-	<div class="learnerassistant-navigation-completion" role="progressbar">
-		<div class="learnerassistant-navigation-bar" style="width:{{options._percentageReviewedAssociateLearning}}%">
+
+	<div class="learnerassistant-navigation-completion-container {{#if isCertificateShown}}is-certificateshown{{else}}not-certificateshown{{/if}}">
+		<div class="learnerassistant-navigation-completion" role="progressbar">
+			<div class="learnerassistant-navigation-bar" style="width:{{options._percentageReviewedAssociateLearning}}%">
+			</div>
 		</div>
 	</div>
 </div>

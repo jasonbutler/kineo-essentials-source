@@ -37,7 +37,7 @@ define(function(require) {
             this.setupDefaultSettings();
             // Blank method for setting up questions before rendering
             this.setupQuestion();
-            
+            console.log(this.model.get("instruction"))
         },
 
         // Used in the question view to disabled the question when _isEnabled has been set to false
@@ -293,7 +293,7 @@ define(function(require) {
 
             if (isComplete) {
                 this.setCompletionStatus();
-                this.$('.component-widget').addClass('complete show-user-answer');
+                this.$('.component-widget').addClass('complete' + (this.model.get('_hideUserAnswer') ? '' : ' show-user-answer' ) );
                 // GM - added this line for Kineo
                 Adapt.trigger('questionView:complete', this);
             }
@@ -443,7 +443,7 @@ define(function(require) {
 
         setQuestionAsHideCorrect: function() {
             this.$(".component-widget")
-                .addClass("submitted show-user-answer")
+                .addClass("submitted" + (this.model.get('_hideUserAnswer') ? '' : ' show-user-answer' ) )
                 .removeClass("show-correct-answer");
         },
 

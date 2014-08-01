@@ -1,8 +1,8 @@
 {
     "_id": "course",
     "_type": "course",
-    "title": "Welcome to Adapt Learning - v1.1.0",
-    "displayTitle": "Welcome to Adapt Learning - v1.1.0",
+    "title": "Kineo Essentials P101 Build v1.0",
+    "displayTitle": "Kineo Essentials P101 Build v1.0",
     "body": "This release is aimed at developers who want to get involved with the Adapt Open Source initiative. Select a menu option below to find out more.",
     "_buttons": {
         "submit": "Submit",
@@ -26,8 +26,7 @@
             "next": "Next",
             "done": "Done",
             "menuItem": "Menu item. Select to view.",
-            "accessibilityToggleButton": "By selecting this button you can set whether accessibility is turned on or off",
-            "menuViewButton": "Select here to view page"
+            "accessibilityToggleButton": "By selecting this button you can set whether accessibility is turned on or off"
         },
         "_ariaRegions": {
             "accordion": "Accordion component - This component is an accordion comprised of collapsible content panels containing display text. Select the item titles to toggle the visibility of these content panels.",
@@ -73,7 +72,7 @@
                 "_type": "document",
                 "title": "Button idea",
                 "description": "Click here to see a proposed button idea",
-                "_link": "course/en/pdf/adapt-framework-prototypes-buttons.pdf"
+                "_link": "course/en/pdf/examplepdf.pdf"
             },
             {
                 "_type": "media",
@@ -89,7 +88,7 @@
             }
         ]
     },
-    "_banks" : {
+    "_banks": {
         "1": {
             "title": "Bank1 - Learning outcome etc."
         },
@@ -108,33 +107,120 @@
     },
     "_learnerassistant": {
         "_showAllBankQuestions": false,
-        "_before" : {
-            "title": "Almost there!",
-            "body": "You have some material you need to brush up on!",
-            "button": "Look at revision"
+        "_sortResultsBanksBy": "mostInBank",
+        "_guidedLearningTitle": "Revision Mode",
+        "_resultsTitle": "Results",
+        "_certificateTitle": "Certificate",
+        "_drawerTitle": "Subjects for Revision",
+        "_certificateGraphics": {
+            "_imageURL": "assets/background-image.png",
+            "_textFont": "18pt sans-serif",
+            "_textColor": "#CF3239",
+            "_titleText": {
+                "_top": "458",
+                "_left": "387.5",
+                "_maxwidth": "300"
+            },
+            "_userText": {
+                "_top": "550",
+                "_left": "387.5",
+                "_maxwidth": "300"
+            },
+            "_dateText": {
+                "_top": "620",
+                "_left": "387.5",
+                "_maxwidth": "300"
+            }
         },
-        "_start" : {
-            "title": "Welcome to Guided Learning",
-            "body": "Description of what you need to acheive"
+        "_quizProgressTutorButton": {
+            "_show": true,
+            "title": "Revision Mode",
+            "body": "The circle icons at the bottom of the screen will fill as you progress through the assessment. Once you’ve completed all the questions you’ll receive feedback on how you did.",
+            "button": "OK"
         },
-        "_end" : {
+        "_resultsTutorButton": {
+            "_show": true,
+            "title": "Revision mode",
+            "body": "Once you begin your revision, click on me again to see your progress",
+            "button": "OK"
+        },
+        "_certificateTutorButton": {
+            "_show": true,
+            "title": "Revision mode",
+            "body": "Click Back to Menu to go back to the menu or Print to print your certificate",
+            "button": "OK"
+        },
+        "_quitGuidedLearning": {
+            "_show": true,
+            "title": "Leave revision mode",
+            "body": "Are you sure you would like to leave?",
+            "buttons": {
+                "yes": "Leave",
+                "no": "Stay"
+            }
+        },
+        "_quitCertificate": {
+            "_show": true,
+            "title": "Leave Certificate",
+            "body": "Are you sure you would like to leave?",
+            "buttons": {
+                "yes": "Leave",
+                "no": "Stay"
+            }
+        },
+        "_beforeCertificate": {
+            "_show": true,
+            "title": "Congratulations!",
+            "body": "You scored 100% in the assessment. Select <b>Show certificate</b> to view your certificate of completion.",
+            "button": "Show certificate"
+        },
+        "_certificate": {
             "title": "Congratulations",
-            "body": "You have completed your review. Please retake the quiz!",
-            "button": "Take Quiz"
+            "body": "%. Your certificate is below",
+            "youScored": "You scored"
         },
-        "_buttons": {
+        "_beforeRevision": {
+            "_show": true,
+            "title": "Almost there!",
+            "body": "You’ve completed the assessment, but you haven’t scored enough to pass just yet. Let’s see your score and what you need to revise.",
+            "button": "See results"
+        },
+        "_start": {
+            "title": "Welcome to your results",
+            "body": "%. Take a look at the revision plan we’ve drawn up for you below. It highlights the subjects that we recommend you review again so that you can have another go at the <b>Test your knowledge assessment</b>. To review the subjects, either select the <b>Launch revision mode</b> button at the bottom of the screen, or select the progress bar in the bottom right. Once you’ve reviewed a subject you’ll see that the flag icon in the revision plan will change to a book, showing that you’ve completed that subject.",
+            "youScored": "You scored"
+        },
+        "_beginRevision": {
+            "_show": true,
+            "title": "Ready to revise?",
+            "body": "We’re about to take you on a guided learning journey through the course. Complete the components that appear in view, then select <b>Next</b> to move on to the next one. Alternatively, move through the components in the order you wish by choosing them from the progress bar. You can select the mortarboard icon to move back to the results panel at any point, or, if you want to stop revising, select <b>Quit revision mode</b>.",
+            "button": "OK"
+        },
+        "_endRevision": {
+            "_show": true,
+            "title": "Time to try again",
+            "body": "Now you’ve completed revision mode we’ll take you back to the randomised questions so you can retake the assessment.",
+            "button": "Take assessment"
+        },
+        "_guidedLearningButtons": {
             "_next": "Next",
-            "_start": "Begin Revision",
+            "_start": "Launch revision mode",
+            "_continue": "Continue Revision",
+            "_end": "Quit revision mode",
             "_finish": "Finish"
         },
-        "_results": {
-            "_status": "Status",
-            "_bank": "Learning outcomes",
-            "_associateLearnings": "Sections to complete",
-            "_toReview": "Flagged for review",
-            "_reviewed": "Completed"
+        "_certificateButtons": {
+            "_end": "Back to Menu",
+            "_print": "Print"
         },
-         "_assessmentPageLevelProgress": {
+        "_results": {
+            "_status": "Your status",
+            "_bank": "Subjects for revision",
+            "_associateLearnings": "Subjects to revise",
+            "_toReview": "Flagged for review",
+            "_reviewed": "Reviewed"
+        },
+        "_assessmentPageLevelProgress": {
             "_incrementalMarking": false,
             "_showInvisible": true,
             "_showProgress": true
@@ -146,14 +232,14 @@
             "hide": 200
         }
     },
-     "_bottomnavigation": {
+    "_bottomnavigation": {
         "_duration": {
             "show": 200,
             "hide": 200
         },
         "_showMenu": false
     },
-     "_search": {
+    "_search": {
         "title": "",
         "description": "Type in search words and enter",
         "noResultsMessage": "Sorry, no results were found"
@@ -161,5 +247,15 @@
     "_locationIds": {
         "_intro": "co-01",
         "_menu": "co-02"
+    },
+    "_bookmarking": {
+        "_isEnabled": true,
+        "_level": "component",
+        "title": "Bookmarking",
+        "message": "Whould you like to continue where you left off?",
+        "_buttons": {
+            "yes": "Yes",
+            "no": "No"
+        }
     }
 }

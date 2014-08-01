@@ -53,6 +53,10 @@
 
     .notify-popup-content-inner {
         padding-left:80px;
+        .notify-popup-title-inner {
+            font-size: (@font-size*1.5);
+            line-height: ((@font-size*1.5) + @font-extra-line-height);
+        }  
         @media all and (max-width:(@device-width-medium - 1px)) {
             padding-left:0px;
         }

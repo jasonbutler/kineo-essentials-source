@@ -9,7 +9,7 @@ define(function(require) {
 	var Adapt = require('coreJS/adapt');
 	var Backbone = require('backbone');
 	
-	var bottomnavigation = $('<div>').attr("id","bottomnavigation");
+	var bottomnavigation = $('<div>').attr("id","bottomnavigation").addClass("hidden-mobile");
 	var visibility = {
 			height: 0,
 			hidden: true
@@ -22,11 +22,6 @@ define(function(require) {
 		initialize: function() {
 			this.model = new Backbone.Model(Adapt.course.get("_bottomnavigation"));
 			if (typeof this.model.get("_duration") == "undefined") this.model.set("_duration",{ show:200, hide:200 });
-			if (typeof this.model.get("_showMenu") == "undefined") this.model.set("_showMenu",false);
-
-			if (this.model.get("_showMenu")) {
-				this.show();
-			}			
 
 			visibility.height = parseInt(this.$el.css("height"));
 
@@ -40,10 +35,14 @@ define(function(require) {
 			bottomnavigationView.delegateEvents();
 		},
 		onResize: function() {
-			
+			visibility.height = parseInt(this.$el.css("height"));
 		},
 		render: function() {
 			if (typeof this.view.reRender == "function") this.view.reRender();
+		},
+		showMobile: function(bool) {
+			if (bool) $("body").removeClass("hidden-mobile");
+			else $("body").addClass("hidden-mobile");
 		},
 		show: function(duration) {
 			if (!visibility.hidden) return;
@@ -53,17 +52,18 @@ define(function(require) {
 			var bottomnavigation = this;
 
 			if (duration > 0 ) {
-				$("body").addClass("body-wrapper-bottomnavigation");
+				$("body").addClass("body-wrapper-bottomnavigation").addClass("hidden-mobile");
 				this.$el.css({"height": "0px", "display": "block"});
 				this.$el.animate({ height: visibility.height + "px" }, {duration:duration, start: function() {
 					
 				}, complete: function() {
 					visibility.hidden = false;
+					bottomnavigation.$el.css("height", "");
 					Adapt.trigger("bottomnavigation:opened");
 				}});
 			} else {
 				$("body").addClass("body-wrapper-bottomnavigation");
-				this.$el.css({height: visibility.height + "px", display: "block" });
+				this.$el.css({height: "", display: "block" });
 				visibility.hidden = false;
 				Adapt.trigger("bottomnavigation:opened");
 			}
@@ -81,6 +81,7 @@ define(function(require) {
 				Adapt.trigger("popup:closed");
 				Adapt.trigger("bottomnavigation:closed");
 				bottomnavigation.$el.hide();
+				bottomnavigation.$el.css("height", "");
 			}
 			$("body").removeClass("body-wrapper-bottomnavigation");
 			if (duration > 0) {
