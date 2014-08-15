@@ -95,8 +95,7 @@ define(function(require) {
 		if (article.get("_assessment")._hideUserAnswer) componentView.model.set("_hideUserAnswer", true);
 
 		if (article.get("_assessment")._hideButtonsOnComplete) {
-
-			componentView.listenTo(componentView.model, "change:_isComplete", function(model, value) {
+			componentView.listenTo(componentView.model, "change:_isInteractionsComplete", function(model, value) {
 				if (!value) return;
 				var buttons = this.$el.find(".buttons");
 				buttons.css("height", buttons.height() + "px");

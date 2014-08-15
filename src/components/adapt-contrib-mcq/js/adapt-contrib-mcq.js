@@ -5,9 +5,9 @@ define(function(require) {
     var Mcq = QuestionView.extend({
 
         events: {
-            'focus .mcq-item input':'onItemFocus',
-            'blur .mcq-item input':'onItemBlur',
-            'change .mcq-item input':'onItemSelected'
+            'focus .component-item input':'onItemFocus',
+            'blur .component-item input':'onItemBlur',
+            'change .component-item input':'onItemSelected'
         },
 
         resetQuestionOnRevisit: function() {
@@ -67,7 +67,7 @@ define(function(require) {
 
         onItemSelected: function(event) {
             if(this.model.get('_isEnabled') && !this.model.get('_isSubmitted')){
-                var selectedItemObject = this.model.get('_items')[$(event.currentTarget).parent('.mcq-item').index()];
+                var selectedItemObject = this.model.get('_items')[$(event.currentTarget).parent('.component-item').index()];
                 this.toggleItemSelected(selectedItemObject, event);
             }
         },
@@ -193,7 +193,7 @@ define(function(require) {
         // Normally done through ticks and crosses by adding classes
         showMarking: function() {
             _.each(this.model.get('_items'), function(item, i) {
-                var $item = this.$('.mcq-item').eq(i);
+                var $item = this.$('.component-item').eq(i);
                 $item.addClass(item._isCorrect ? 'correct' : 'incorrect');
             }, this);
         },
@@ -222,8 +222,8 @@ define(function(require) {
         },
 
         resetItems: function() { 
-            this.$('.mcq-item label').removeClass('selected');
-            this.$('.mcq-item').removeClass('correct incorrect');
+            this.$('.component-item label').removeClass('selected');
+            this.$('.component-item').removeClass('correct incorrect');
             this.$('input').prop('checked', false);
             this.model.set({
                 _selectedItems: [],

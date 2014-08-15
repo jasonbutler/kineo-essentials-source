@@ -1,0 +1,15 @@
+{
+  "name": "adapt-hotgrid",
+  "version": "0.0.1",
+  "homepage": "",
+  "authors": [
+    ""
+  ],
+  "description": "Please enter a description about your component here. This is what will get shown when registered with the Adapt registry so make it good",
+  "main": "/js/adapt-hotgrid.js",
+  "keywords": [
+    "adapt-plugin",
+    "adapt-component"
+  ],
+  "license": "GPLv3"
+}

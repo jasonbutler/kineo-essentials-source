@@ -44,7 +44,10 @@ define(function(require) {
 			if (typeof this.view.reRender == "function") this.view.reRender();
 		},
 		show: function(duration, callback) {
-			if (typeof duration == "function") callback = duration;
+			if (typeof duration == "function") {
+				callback = duration;
+				duration = undefined;
+			}
 			if (!visibility.hidden) return;
 			Adapt.trigger("popup:opened");
 			this.render();
@@ -73,7 +76,10 @@ define(function(require) {
 			
 		},
 		hide: function(duration, callback) {
-			if (typeof duration == "function") callback = duration;
+			if (typeof duration == "function") {
+				callback = duration;
+				duration = undefined;
+			}
 			if (visibility.hidden) return;
 			if (typeof duration == "undefined") duration = this.model.get("_duration").hide;
 			var rollay = this;

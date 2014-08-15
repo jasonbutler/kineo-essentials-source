@@ -94,10 +94,14 @@ define(function(require) {
 				if (component.length ===0) continue;
 				component.find("button,a,input,select").attr("tabindex","-1");
 			}
+
 			var blockId = this.children[this.currentIndex].get("_parentId");
+			var postSiblings = strickle.pageView.$el.find("."+blockId + " ~ *");
+			if (this.currentIndex < this.children.length -1) postSiblings.find("button,a,input,select").attr("tabindex", "-1");
+			else postSiblings.find("button,a,input,select").attr("tabindex", "");
+
 			var articleId = Adapt.findById(blockId).get("_parentId");
-			var article = Adapt.findById(articleId);
-			var postSiblings = strickle.pageView.$el.find("."+article.get("_id") + " ~ *");
+			var postSiblings = strickle.pageView.$el.find("."+articleId + " ~ *");
 			if (this.currentIndex < this.children.length -1) postSiblings.find("button,a,input,select").attr("tabindex", "-1");
 			else postSiblings.find("button,a,input,select").attr("tabindex", "");
 		}

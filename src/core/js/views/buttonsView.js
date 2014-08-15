@@ -68,10 +68,15 @@ define(function() {
             var isComplete = this.model.get('_isComplete');
             var attemptsLeft = (this.model.get('_attemptsLeft')) ? this.model.get('_attemptsLeft') : this.model.get('_attempts')
             var isCorrect = this.model.get('_isCorrect');
+            var isSubmitted = this.model.get('_isSubmitted');
             var shouldDisplayAttempts = this.model.get('_shouldDisplayAttempts');
             var attemptsString;
 
-            if (!isComplete && attemptsLeft != 0) {
+            if (!isSubmitted && attemptsLeft != 0) {
+                var $icon = this.$('.buttons-marking-icon');
+                $icon.removeClass('icon-tick');
+                $icon.removeClass('icon-cross');
+                $icon.addClass('display-none');
                 attemptsString = attemptsLeft + " ";
                 if (attemptsLeft > 1) {
                     attemptsString += this.model.get('_buttons').remainingAttempts;

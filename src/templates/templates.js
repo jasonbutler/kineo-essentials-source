@@ -99,7 +99,7 @@ function program5(depth0,data) {
 this["Handlebars"]["templates"]["accordion"] = Handlebars.template(function (Handlebars,depth0,helpers,partials,data) {
   this.compilerInfo = [4,'>= 1.0.0'];
 helpers = this.merge(helpers, Handlebars.helpers); partials = this.merge(partials, Handlebars.partials); data = data || {};
-  var buffer = "", stack1, stack2, self=this, functionType="function", escapeExpression=this.escapeExpression;
+  var buffer = "", stack1, stack2, functionType="function", escapeExpression=this.escapeExpression, self=this;
 
 function program1(depth0,data) {
   
@@ -119,13 +119,27 @@ function program1(depth0,data) {
   if (stack1 = helpers.body) { stack1 = stack1.call(depth0, {hash:{},data:data}); }
   else { stack1 = depth0.body; stack1 = typeof stack1 === functionType ? stack1.apply(depth0) : stack1; }
   if(stack1 || stack1 === 0) { buffer += stack1; }
-  buffer += "\r\n                </div>\r\n            </div>\r\n        </div>\r\n        ";
+  buffer += "\r\n                </div>\r\n                ";
+  stack1 = helpers['if'].call(depth0, depth0._graphic, {hash:{},inverse:self.noop,fn:self.program(4, program4, data),data:data});
+  if(stack1 || stack1 === 0) { buffer += stack1; }
+  buffer += "\r\n            </div>\r\n        </div>\r\n        ";
   return buffer;
   }
 function program2(depth0,data) {
   
   
   return "visited";
+  }
+
+function program4(depth0,data) {
+  
+  var buffer = "", stack1;
+  buffer += "\r\n                <div class=\"accordion-full-width-graphic\">\r\n                     <img src=\""
+    + escapeExpression(((stack1 = ((stack1 = depth0._graphic),stack1 == null || stack1 === false ? stack1 : stack1.src)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
+    + "\" alt=\""
+    + escapeExpression(((stack1 = ((stack1 = depth0._graphic),stack1 == null || stack1 === false ? stack1 : stack1.alt)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
+    + "\"/>\r\n                </div>\r\n                ";
+  return buffer;
   }
 
   buffer += "<div class=\"accordion-inner component-inner\" role=\"region\" aria-label=\""
@@ -945,6 +959,113 @@ function program15(depth0,data) {
   stack2 = self.invokePartial(partials.buttons, 'buttons', depth0, helpers, partials, data);
   if(stack2 || stack2 === 0) { buffer += stack2; }
   buffer += "\r\n        </div>\r\n    </div>\r\n</div>";
+  return buffer;
+  });
+
+this["Handlebars"]["templates"]["hotgrid"] = Handlebars.template(function (Handlebars,depth0,helpers,partials,data) {
+  this.compilerInfo = [4,'>= 1.0.0'];
+helpers = this.merge(helpers, Handlebars.helpers); partials = this.merge(partials, Handlebars.partials); data = data || {};
+  var buffer = "", stack1, functionType="function", escapeExpression=this.escapeExpression, self=this;
+
+function program1(depth0,data) {
+  
+  var buffer = "", stack1, stack2;
+  buffer += "\r\n    			<div class=\"hotgrid-grid-item\">\r\n                    ";
+  stack2 = helpers['if'].call(depth0, ((stack1 = depth0._graphic),stack1 == null || stack1 === false ? stack1 : stack1.hasImageStates), {hash:{},inverse:self.program(4, program4, data),fn:self.program(2, program2, data),data:data});
+  if(stack2 || stack2 === 0) { buffer += stack2; }
+  buffer += "                                        \r\n    			</div>\r\n    			";
+  return buffer;
+  }
+function program2(depth0,data) {
+  
+  var buffer = "", stack1;
+  buffer += " \r\n        				<a href=\"#\" class=\"hotgrid-item-image hotgrid-item-states-image\">    					                          \r\n                            <img src=\""
+    + escapeExpression(((stack1 = ((stack1 = depth0._graphic),stack1 == null || stack1 === false ? stack1 : stack1.src)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
+    + "\" alt=\""
+    + escapeExpression(((stack1 = ((stack1 = depth0._graphic),stack1 == null || stack1 === false ? stack1 : stack1.alt)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
+    + "\" title=\""
+    + escapeExpression(((stack1 = ((stack1 = depth0._graphic),stack1 == null || stack1 === false ? stack1 : stack1.title)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
+    + "\"/>\r\n                            <img src=\""
+    + escapeExpression(((stack1 = ((stack1 = depth0._graphic),stack1 == null || stack1 === false ? stack1 : stack1.srcHover)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
+    + "\" class=\"hotgrid-item-image-hover\" alt=\""
+    + escapeExpression(((stack1 = ((stack1 = depth0._graphic),stack1 == null || stack1 === false ? stack1 : stack1.alt)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
+    + "\" title=\""
+    + escapeExpression(((stack1 = ((stack1 = depth0._graphic),stack1 == null || stack1 === false ? stack1 : stack1.title)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
+    + "\" >\r\n                            <img src=\""
+    + escapeExpression(((stack1 = ((stack1 = depth0._graphic),stack1 == null || stack1 === false ? stack1 : stack1.srcVisited)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
+    + "\" class=\"hotgrid-item-image-visited\" alt=\""
+    + escapeExpression(((stack1 = ((stack1 = depth0._graphic),stack1 == null || stack1 === false ? stack1 : stack1.alt)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
+    + "\" title=\""
+    + escapeExpression(((stack1 = ((stack1 = depth0._graphic),stack1 == null || stack1 === false ? stack1 : stack1.title)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
+    + "\" >                                          \r\n        				</a>\r\n                        <div class=\"hotgrid-item-title\">"
+    + escapeExpression(((stack1 = ((stack1 = depth0._graphic),stack1 == null || stack1 === false ? stack1 : stack1.title)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
+    + "</div>   \r\n                    ";
+  return buffer;
+  }
+
+function program4(depth0,data) {
+  
+  var buffer = "", stack1;
+  buffer += "\r\n                        <a href=\"#\" class=\"hotgrid-item-image hotgrid-item-states-css\">\r\n                             <img src=\""
+    + escapeExpression(((stack1 = ((stack1 = depth0._graphic),stack1 == null || stack1 === false ? stack1 : stack1.src)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
+    + "\" class=\"\" alt=\""
+    + escapeExpression(((stack1 = ((stack1 = depth0._graphic),stack1 == null || stack1 === false ? stack1 : stack1.alt)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
+    + "\" title=\""
+    + escapeExpression(((stack1 = ((stack1 = depth0._graphic),stack1 == null || stack1 === false ? stack1 : stack1.title)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
+    + "\"/>\r\n                        </a>\r\n                        <div class=\"hotgrid-item-title\">"
+    + escapeExpression(((stack1 = ((stack1 = depth0._graphic),stack1 == null || stack1 === false ? stack1 : stack1.title)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
+    + "</div>\r\n                    ";
+  return buffer;
+  }
+
+function program6(depth0,data) {
+  
+  var buffer = "", stack1, stack2;
+  buffer += "\r\n    			<div class=\"hotgrid-content-item component-item\">\r\n                    <div class=\"hotgrid-item-graphic\">\r\n                            <img src=\""
+    + escapeExpression(((stack1 = ((stack1 = depth0._itemGraphic),stack1 == null || stack1 === false ? stack1 : stack1.src)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
+    + "\" alt=\""
+    + escapeExpression(((stack1 = ((stack1 = depth0._itemGraphic),stack1 == null || stack1 === false ? stack1 : stack1.alt)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
+    + "\"/>\r\n                    </div>  \r\n    				<div class=\"hotgrid-content-item-inner\">\r\n    					";
+  stack2 = helpers['if'].call(depth0, depth0.title, {hash:{},inverse:self.noop,fn:self.program(7, program7, data),data:data});
+  if(stack2 || stack2 === 0) { buffer += stack2; }
+  buffer += "\r\n    					";
+  stack2 = helpers['if'].call(depth0, depth0.body, {hash:{},inverse:self.noop,fn:self.program(9, program9, data),data:data});
+  if(stack2 || stack2 === 0) { buffer += stack2; }
+  buffer += "\r\n    				</div>\r\n    			</div>\r\n    			";
+  return buffer;
+  }
+function program7(depth0,data) {
+  
+  var buffer = "", stack1;
+  buffer += "\r\n    						<h5 class=\"hotgrid-content-item-title\">\r\n    							";
+  if (stack1 = helpers.title) { stack1 = stack1.call(depth0, {hash:{},data:data}); }
+  else { stack1 = depth0.title; stack1 = typeof stack1 === functionType ? stack1.apply(depth0) : stack1; }
+  buffer += escapeExpression(stack1)
+    + "\r\n    						</h5>\r\n    					";
+  return buffer;
+  }
+
+function program9(depth0,data) {
+  
+  var buffer = "", stack1;
+  buffer += "\r\n    						<div class=\"hotgrid-content-item-title\">\r\n    							";
+  if (stack1 = helpers.body) { stack1 = stack1.call(depth0, {hash:{},data:data}); }
+  else { stack1 = depth0.body; stack1 = typeof stack1 === functionType ? stack1.apply(depth0) : stack1; }
+  buffer += escapeExpression(stack1)
+    + "\r\n    						</div>\r\n    					";
+  return buffer;
+  }
+
+  buffer += "<div class=\"component-inner hotgrid-inner\">\r\n    ";
+  stack1 = self.invokePartial(partials.component, 'component', depth0, helpers, partials, data);
+  if(stack1 || stack1 === 0) { buffer += stack1; }
+  buffer += "\r\n    <div class=\"component-widget hotgrid-widget\">\r\n\r\n    	<div class=\"hotgrid-grid\">\r\n    		<div class=\"hotgrid-grid-inner clearfix\">\r\n    			";
+  stack1 = helpers.each.call(depth0, depth0._items, {hash:{},inverse:self.noop,fn:self.program(1, program1, data),data:data});
+  if(stack1 || stack1 === 0) { buffer += stack1; }
+  buffer += "\r\n    		</div>\r\n    	</div>\r\n\r\n    	<div class=\"hotgrid-content\">\r\n    		<div class=\"content-popup-done clearfix\">\r\n	            <a href=\"#\" class=\"content-popup-icon-close icon icon-cross\"></a>\r\n	        </div>\r\n    		<div class=\"hotgrid-content-inner\">\r\n    			";
+  stack1 = helpers.each.call(depth0, depth0._items, {hash:{},inverse:self.noop,fn:self.program(6, program6, data),data:data});
+  if(stack1 || stack1 === 0) { buffer += stack1; }
+  buffer += "\r\n    		</div>\r\n    	</div>\r\n\r\n    </div>\r\n</div>";
   return buffer;
   });
 

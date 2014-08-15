@@ -15,6 +15,11 @@
                 <div class="accordion-item-body-inner">
                     {{{body}}}
                 </div>
+                {{#if _graphic}}
+                <div class="accordion-full-width-graphic">
+                     <img src="{{_graphic.src}}" alt="{{_graphic.alt}}"/>
+                </div>
+                {{/if}}
             </div>
         </div>
         {{/each}}

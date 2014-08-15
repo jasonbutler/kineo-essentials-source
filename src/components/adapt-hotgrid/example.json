@@ -1,0 +1,93 @@
+{
+        "_id":"c-05",
+        "_parentId":"b-05",
+        "_type":"component",
+        "_component":"hotgrid",
+        "_classes":"",
+        "_layout":"full",
+        "title":"Adapt Hotgrid",
+        "displayTitle":"Adapt Hotgrid",
+        "body":"List component body text. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis.",
+        "instruction":"",
+        "_columns":3,
+        "_items": [
+            {
+                "title": "Grid Item 1",
+                "body": "This is display text 1. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.",
+                "_graphic": {
+                    "src": "course/en/images/gmcq_01.png",
+                    "alt": "",
+                    "title": ""
+                },
+                 "_itemGraphic": {
+                    "src": "course/en/images/narrative_1.png",
+                    "alt": "alt text"
+                }
+            },
+            {
+                "title": "Grid Item 2",
+                "body": "This is display text 2. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.",
+                "_graphic": {
+                    "src": "course/en/images/gmcq_02.png",
+                    "alt": "",
+                    "title": ""
+                },
+                "_itemGraphic": {
+                    "src": "course/en/images/narrative_1.png",
+                    "alt": "alt text"
+                }
+            },
+            {
+                "title": "Grid Item 3",
+                "body": "This is display text 3. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut.",
+                "_graphic": {
+                    "src": "course/en/images/gmcq_03.png",
+                    "alt": "",
+                    "title": ""
+                },
+                 "_itemGraphic": {
+                    "src": "course/en/images/narrative_1.png",
+                    "alt": "alt text"
+                }
+            },
+            {
+                "title": "Grid Item 4",
+                "body": "This is display text 4. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.",
+                "_graphic": {
+                    "src": "course/en/images/gmcq_04.png",
+                    "alt": "",
+                    "title": ""
+                },
+                 "_itemGraphic": {
+                    "src": "course/en/images/narrative_1.png",
+                    "alt": "alt text"
+                }
+            },
+            {
+                "title": "Grid Item 5",
+                "body": "This is display text 5. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.",
+                "_graphic": {
+                    "src": "course/en/images/gmcq_05.png",
+                    "alt": "",
+                    "title": ""
+                },
+                 "_itemGraphic": {
+                    "src": "course/en/images/narrative_1.png",
+                    "alt": "alt text"
+                }
+            },
+            {
+                "title": "Grid Item 6",
+                "body": "This is display text 6. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.",
+                "_graphic": {
+                    "src": "course/en/images/gmcq_06.png",
+                    "alt": "",
+                    "title": ""
+                },
+                 "_itemGraphic": {
+                    "src": "course/en/images/narrative_1.png",
+                    "alt": "alt text"
+                }
+            }
+        ]
+    }

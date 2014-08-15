@@ -321,7 +321,7 @@ define(function(require) {
 			var settings = LearnerAssistant.model.get("settings");
 
 			//CHECK IF SHOWRESULTS REQUIRED
-			if (LearnerAssistant.model.get("isPass") && !LearnerAssistant.model.get("isReviewNeeded")) {
+			if (LearnerAssistant.model.get("isPass") ) { //&& !LearnerAssistant.model.get("isReviewNeeded")) {
 				//Adapt.trigger("learnerassistant:guidedlearningOff");
 				LearnerAssistant.model.set("isResultsShown", false);
 				LearnerAssistant.model.set("isCertificateShown", true);
@@ -332,7 +332,7 @@ define(function(require) {
 				} else {
 					var alertObject = {
 					    title: settings._beforeCertificate.title,
-					    body: settings._beforeCertificate.body,
+					    body: settings._beforeCertificate.youScored + LearnerAssistant.model.get("data").scoreAsPercent + settings._beforeCertificate.body,
 					    confirmText: settings._beforeCertificate.button,
 					    _callbackEvent: "learnerassistant:showCertificate",
 					    _showIcon: false

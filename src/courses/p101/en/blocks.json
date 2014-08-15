@@ -54,7 +54,7 @@
         "_id": "b-03",
         "_parentId": "a-04",
         "_type": "block",
-        "_classes": "beige-pattern-background menu-link-block",
+        "_classes": "beige-pattern-background",
         "title": "",
         "displayTitle": "",
         "body": "",
@@ -66,6 +66,23 @@
             ]
         },
         "_trackingId": 43
+    },
+    {
+        "_id": "b-04",
+        "_parentId": "a-04",
+        "_type": "block",
+        "_classes": "beige-pattern-background menu-link-block",
+        "title": "",
+        "displayTitle": "",
+        "body": "",
+        "_search": {
+            "keywords": [
+                "introduction",
+                "bacteria",
+                "objectives"
+            ]
+        },
+        "_trackingId": 44
     },
     {
         "_id": "b-05",
@@ -137,6 +154,24 @@
         "_parentId": "a-10",
         "_type": "block",
         "_classes": "kitchen-background cream-arrow",
+        "title": "COMMON CLEANING TERMS & MATERIALS",
+        "displayTitle": "",
+        "body": "",
+        "_search": {
+        "keywords": [
+            "cleaning",
+            "terms",
+            "materials",
+            "tutorial"
+        ]
+    },
+        "_trackingId": 4
+    },
+    {
+        "_id": "b-26",
+        "_parentId": "a-10",
+        "_type": "block",
+        "_classes": "beige-pattern-background",
         "title": "COMMON CLEANING TERMS & MATERIALS",
         "displayTitle": "",
         "body": "",
