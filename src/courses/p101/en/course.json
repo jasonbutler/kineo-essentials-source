@@ -171,7 +171,8 @@
         "_beforeCertificate": {
             "_show": true,
             "title": "Congratulations!",
-            "body": "You scored 100% in the assessment. Select <b>Show certificate</b> to view your certificate of completion.",
+            "body": "%",
+            "youScored": "You have passed the assessment with a score of ",
             "button": "Show certificate"
         },
         "_certificate": {
@@ -228,14 +229,14 @@
     },
     "_rollay": {
         "_duration": {
-            "show": 200,
+            "show": 500,
             "hide": 200
         }
     },
     "_bottomnavigation": {
         "_duration": {
-            "show": 200,
-            "hide": 200
+            "show": 100,
+            "hide": 100
         },
         "_showMenu": false
     },

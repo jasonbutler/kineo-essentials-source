@@ -1,0 +1,27 @@
+.full-span-gmcq {
+
+    .gmcq-item {
+        width: 25%;
+         &.even{
+            label{
+                margin-left:5%;
+                margin-right:5%;
+            }
+        }
+
+        &.odd{
+        
+            label{
+                margin-left:5%;
+                margin-right:5%;
+            }
+        }
+        @media all and (max-width:@device-width-medium) {
+            width: 50%;
+        }
+         @media all and (max-width:@device-width-small) {
+            width: 100%;
+        }
+ 
+    }
+}

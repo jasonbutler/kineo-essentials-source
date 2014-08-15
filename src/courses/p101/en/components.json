@@ -56,6 +56,73 @@
         "_id":"c-03",
         "_parentId":"b-03",
         "_type":"component",
+        "_component":"hotgrid",
+        "_classes":"component-background",
+        "_layout":"full",
+        "title":"Adapt Hotgrid",
+        "displayTitle":"ADAPT HOTGRID",
+        "body":"List component body text. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis.",
+        "instruction":"",
+        "_columns":4,
+        "_items": [
+            {
+                "title": "Grid Item 1",
+                "body": "This is display text 1. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.",
+                "_graphic": {
+                    "src": "course/en/images/icon1.png",
+                    "alt": "",
+                    "title": "Grid Item 1"
+                },
+                 "_itemGraphic": {
+                    "src": "course/en/images/icon1.png",
+                    "alt": "alt text"
+                }
+            },
+            {
+                "title": "Grid Item 2",
+                "body": "This is display text 2. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.",
+                "_graphic": {
+                    "src": "course/en/images/icon2.png",
+                    "alt": "",
+                    "title": "Grid Item 2"
+                },
+                "_itemGraphic": {
+                    "src": "course/en/images/icon2.png",
+                    "alt": "alt text"
+                }
+            },
+            {
+                "title": "Grid Item 3",
+                "body": "This is display text 3. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut.",
+                "_graphic": {
+                    "src": "course/en/images/icon3.png",
+                    "alt": "",
+                    "title": "Grid Item 3"
+                },
+                 "_itemGraphic": {
+                    "src": "course/en/images/icon3.png",
+                    "alt": "alt text"
+                }
+            },
+            {
+                "title": "Grid Item 4",
+                "body": "This is display text 4. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.",
+                "_graphic": {
+                    "src": "course/en/images/icon4.png",
+                    "alt": "",
+                    "title": "Grid Item 4"
+                },
+                 "_itemGraphic": {
+                    "src": "course/en/images/icon4.png",
+                    "alt": "alt text"
+                }
+            }
+        ]
+    },
+    {
+        "_id":"c-04",
+        "_parentId":"b-04",
+        "_type":"component",
         "_component":"text",
         "_classes":"menu-link-component",
         "_layout":"full",
@@ -262,6 +329,84 @@
         }
     },
     {
+        "_id":"c-41",
+        "_parentId":"b-26",
+        "_type":"component",
+        "_component":"gmcq",
+        "_classes":"component-background full-span-gmcq",
+        "_layout":"full",
+        "_attempts":1,
+        "_questionWeight":1,
+        "_isRandom":false,
+        "_selectable":1,
+        "title": "GMCQ",
+        "displayTitle": "GMCQ",
+        "body": "Which of the following options would you consider to be correct?",
+        "instruction": "Choose an image and select Submit.",
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        },
+        "_items": [
+            {
+                "text": "Option 1.",
+                "_shouldBeSelected":true,
+                "_graphic": {
+                    "alt": "Alt text for option 1",
+                    "large": "course/en/images/chicken.png",
+                    "medium": "course/en/images/chicken.png",
+                    "small": "course/en/images/chicken.png"
+                }
+            },
+            {
+                "text": "Option 2.",
+                "_shouldBeSelected":false,
+                "_graphic": {
+                    "alt": "Alt text for option 2",
+                    "large": "course/en/images/chicken.png",
+                    "medium": "course/en/images/chicken.png",
+                    "small": "course/en/images/chicken.png"
+                }
+            },
+            {
+                "text": "Option 3.",
+                "_shouldBeSelected":false,
+                "_graphic": {
+                    "alt": "Alt text for option 3",
+                    "large": "course/en/images/chicken.png",
+                    "medium": "course/en/images/chicken.png",
+                    "small": "course/en/images/chicken.png"
+                }
+            },
+            {
+                "text": "Option 4.",
+                "_shouldBeSelected":false,
+                "_graphic": {
+                    "alt": "Alt text for option 4",
+                    "large": "course/en/images/chicken.png",
+                    "medium": "course/en/images/chicken.png",
+                    "small": "course/en/images/chicken.png"
+                }
+            }
+        ],
+        "_feedback":{
+            "correct":"Congratulations, this is the correct feedback.",
+            "_incorrect": {
+                "notFinal": "",
+                "final": "Unfortunately this is the incorrect feedback."
+            },
+            "_partlyCorrect": {
+                "notFinal": "",
+                "final": "This is the partly correct feedback."
+            }
+        },
+        "_buttons":{
+            "submit":"",
+            "reset":"",
+            "showCorrectAnswer":"",
+            "hideCorrectAnswer":""
+        }
+    },
+    {
         "_id":"c-45",
         "_parentId":"b-30",
         "_type":"component",
@@ -324,6 +469,51 @@
                 "strapline": "2: Authoring Tool"
             }
         ],
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id":"c-52",
+        "_parentId":"b-40",
+        "_type":"component",
+        "_component":"slider",
+        "_classes":"component-background",
+        "_layout":"left",
+        "title": "Slider type component",
+        "displayTitle":"SLIDER",
+        "body":"Question text here",
+        "instruction": "Instruction text here.",
+        "_attempts": 2,
+        "_questionWeight":1,
+        "_showNumber": true,
+        "_showScaleIndicator": true,
+        "labelStart": "incomplete",
+        "labelEnd": "complete",
+        "_scaleStart": 1,
+        "_scaleEnd": 10,
+        "_correctAnswer": "",
+        "_correctRange": {
+            "_bottom": 4,
+            "_top": 9
+        },
+        "_buttons": {
+            "submit": "",
+            "reset": "",
+            "showCorrectAnswer": "",
+            "hideCorrectAnswer": ""
+        },
+        "_feedback": {
+            "correct": "This feedback will appear if you answered the question correctly.",
+            "_incorrect": {
+                "notFinal": "",
+                "final": "This feedback will appear if you answered the question incorrectly."
+            },
+            "_partlyCorrect": {
+                "notFinal": "",
+                "final": "This feedback will appear if you answered part of the question correctly."
+            }
+        },
         "_pageLevelProgress": {
             "_isEnabled": true
         }
@@ -526,50 +716,43 @@
         ]
       },
       {
-        "_id":"c-70",
-        "_parentId":"b-50",
-        "_type":"component",
-        "_component":"slider",
-        "_classes":"component-background",
-        "_layout":"right",
-        "title": "Slider type component",
-        "displayTitle":"SLIDER TYPE COMPONENT",
-        "body":"Question text here",
-        "instruction": "Drag the slider to make your choice and select Submit.",
-        "_attempts": 2,
-        "_questionWeight":1,
-        "_showNumber": true,
-        "_showScaleIndicator": true,
-        "labelStart": "incomplete",
-        "labelEnd": "complete",
-        "_scaleStart": 1,
-        "_scaleEnd": 10,
-        "_correctAnswer": "",
-        "_correctRange": {
-            "_bottom": 4,
-            "_top": 9
-        },
-        "_buttons": {
-            "submit": "",
-            "reset": "",
-            "showCorrectAnswer": "",
-            "hideCorrectAnswer": ""
-        },
-        "_feedback": {
-            "correct": "This feedback will appear if you answered the question correctly.",
-            "_incorrect": {
-                "notFinal": "",
-                "final": "This feedback will appear if you answered the question incorrectly."
-            },
-            "_partlyCorrect": {
-                "notFinal": "",
-                "final": "This feedback will appear if you answered part of the question correctly."
-            }
-        },
-        "_pageLevelProgress": {
+      "_id":"c-68",
+      "_parentId":"b-50",
+      "_type":"component",
+      "_component":"accordion",
+      "_classes":"component-background",
+      "_layout":"full",
+      "title": "DID YOU KNOW?",
+      "displayTitle": "DID YOU KNOW?",
+      "body": "This is optional body text. Select the headings below to reveal the text.",
+      "instruction": "Select the headings to find out more",
+      "_pageLevelProgress": {
             "_isEnabled": true
+        },
+      "_items": [
+        {
+          "alt": "Heading 1",
+          "title": "Heading 1",
+          "body": "This is display text 1.",
+          "_graphic": {
+                    "src": "course/en/images/large_kitchen.jpg",
+                    "alt": "",
+                    "title": ""
+                }
+        },
+        {
+          "alt": "Heading 2",
+          "title": "Heading 2",
+          "body": "This is display text 2.",
+          "_graphic": {
+                    "src": "course/en/images/bacteria-kitchen.png",
+                    "alt": "",
+                    "title": ""
+                }
         }
+      ]
     },
+      
     {
         "_id":"c-75",
         "_parentId":"b-55",

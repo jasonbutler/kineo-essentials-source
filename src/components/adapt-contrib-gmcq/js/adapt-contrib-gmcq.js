@@ -12,9 +12,9 @@ define(function(require) {
         events: function() {
 
             var events = {
-                'focus .gmcq-item input':'onItemFocus',
-                'blur .gmcq-item input':'onItemBlur',
-                'change .gmcq-item input':'onItemSelected'
+                'focus .component-item input':'onItemFocus',
+                'blur .component-item input':'onItemBlur',
+                'change .component-item input':'onItemSelected'
             }
 
             if ($('html').hasClass('ie8')) {
@@ -33,7 +33,7 @@ define(function(require) {
 
         onItemSelected: function(event) {
 
-            var selectedItemObject = this.model.get('_items')[$(event.currentTarget).parent('.gmcq-item').index()];
+            var selectedItemObject = this.model.get('_items')[$(event.currentTarget).parent('.component-item').index()];
             
             if(this.model.get('_isEnabled') && !this.model.get('_isSubmitted')){
                 this.toggleItemSelected(selectedItemObject, event);

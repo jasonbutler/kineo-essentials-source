@@ -2662,6 +2662,217 @@ a, button {-webkit-tap-highlight-color: rgba(0,0,0,0.2);}
         display: none;
     }
 }
+
+
+.item-states-css {
+
+	.default {
+
+	}
+	.hover {
+
+		img {
+			-webkit-filter: brightness(0.7);
+			-moz-filter: brightness(0.7);
+			-ms-filter: brightness(0.7);
+			-o-filter: brightness(0.7);
+			filter: brightness(0.7);
+		}		
+
+	}
+	.visited {
+
+		img {
+			-webkit-filter: grayscale(100%) !important;
+			-moz-filter: grayscale(100%) !important;
+			-ms-filter: grayscale(100%) !important;
+			-o-filter: grayscale(100%) !important;
+			filter: grayscale(100%) !important;
+			filter: gray !important; /* IE 6-9 */;
+			filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale")  !important; /* Firefox 3.5+ */
+		}			
+
+	}	
+
+}
+
+
+
+.item-states-image {
+
+	.default {
+
+		img.hotgrid-item-image-hover {
+			display: none;
+		}			
+		img.hotgrid-item-image-visited {
+			display:none;
+		}		
+
+	}
+	.hover {
+
+		> img {
+			display:none;
+		}
+		img.hotgrid-item-image-hover {
+			display: block;
+		}			
+		img.hotgrid-item-image-visited {
+			display:none;
+		}
+
+	}
+	.visited {
+
+		> img {
+			display:none;
+		}
+		img.hotgrid-item-image-hover {
+			display: none !important;
+		}			
+		img.hotgrid-item-image-visited {
+			display:block !important;
+		}		
+		
+	}
+}
+
+
+
+
+.hotgrid-item-normal-css {
+
+}
+
+.hotgrid-item-hover-css {
+	
+}
+
+.hotgrid-item-visted {
+	
+}
+
+
+	.hotgrid-component {
+
+	.hotgrid-widget {
+		position: relative;
+	}
+
+	.hotgrid-grid-item {
+		float:left;
+		text-align: center;
+		width:50%;
+		margin-bottom: 10px;
+
+		&.visited {
+
+			.hotgrid-item-states-image {
+				.item-states-image.visited;					
+			}
+			.hotgrid-item-states-css {
+				
+				.item-states-css.visited;
+			}		
+		}
+	}
+
+	.hotgrid-item-image {
+
+		// display: inline-block;
+
+		img {
+			transition: all 0.25s;
+		}		
+
+	 
+		&.hotgrid-item-states-image{
+
+			.item-states-image.default;
+		
+			.no-touch & {
+				&:hover {
+
+					.item-states-image.hover;
+				}
+			}											
+
+		}
+
+		&.hotgrid-item-states-css{
+			.no-touch & {
+				&:hover {
+					.item-states-css.hover;
+				}
+			}
+		}
+		// @media all and (max-width:@device-width-small) {
+		// 	padding: 10px;
+		// }
+	}
+
+	.hotgrid-content {
+		position: absolute;
+		top: 0;
+		width: auto;
+		margin: 40px;
+		overflow: hidden;
+		background-color: @secondary-color;
+		display:none;
+		@media all and (max-width:(@device-width-small)) {
+		 	margin:10px;
+		}
+
+	}
+
+	.hotgrid-content-item {
+		display:none;
+	}
+
+	.hotgrid-content-item-inner {
+		padding: 20px;
+		color: @white;
+		.hotgrid-content-item-title {
+			// padding-bottom: 20px;
+		}
+	}
+
+	.hotgrid-item-graphic {
+		width: auto;
+	    float: right;
+	    text-align: center;
+	    padding: 0 20px;
+	}
+
+	.content-popup-icon-close {
+		float:right;
+		color:@white;
+		padding: 10px;
+		font-size: 26px;
+		.no-touch & {
+			&:hover {
+				color:@grey;
+			}
+		}
+	}
+
+	.hotgrid-item-title {
+		color: white;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
 @article-reveal-max-width: 1440px;
 
 .article-reveal {
@@ -3584,7 +3795,7 @@ a, button {-webkit-tap-highlight-color: rgba(0,0,0,0.2);}
                 display: inline-block;
             }
         }
-        &.is-reviewed.is-certificateshown {
+        &.is-certificateshown {
             #learnerassistant-end {
                 display: inline-block;
             }
@@ -5655,6 +5866,33 @@ h6 {
     line-height: ((@font-size*1) + @font-extra-line-height);
     font-weight: @font-weight-light;
 }
+.full-span-gmcq {
+
+    .gmcq-item {
+        width: 25%;
+         &.even{
+            label{
+                margin-left:5%;
+                margin-right:5%;
+            }
+        }
+
+        &.odd{
+        
+            label{
+                margin-left:5%;
+                margin-right:5%;
+            }
+        }
+        @media all and (max-width:@device-width-medium) {
+            width: 50%;
+        }
+         @media all and (max-width:@device-width-small) {
+            width: 100%;
+        }
+ 
+    }
+}
 .gmcq-component {
 
     .gmcq-item-inner {
@@ -5814,8 +6052,65 @@ h6 {
 	.hotgraphic-widget img {
 		vertical-align: top !important;
 	}
-
+	
+	.hotgraphic-popup-toolbar {
+		background-color: @black;
+	}
+	
+	.hotgraphic-popup-arrow-l, .hotgraphic-popup-arrow-r {
+		color: @white;
+	}
+	
+	.hotgraphic-popup-count {
+		color: @white;
+	}
+	
+	.hotgraphic-popup-close {
+		color: @white;
+	}
+	
+	.hotgraphic-popup-inner {
+		background-color: @grey;
+	}
+	
+	.hotgraphic-item-body { 
+		color: @white;
+	}
+	
 }
+.hotgrid-component {
+	.hotgrid-title {
+		text-align: center;
+	}
+
+	.hotgrid-grid {
+		background-color: #2c2c2c;
+		.hotgrid-grid-inner {
+			padding: 50px 0;
+		}
+	}
+
+	.hotgrid-grid-item {
+
+	}
+
+	.hotgrid-content {
+		background-color: @grey;
+		.content-popup-done {
+			background-color: @black;
+		}
+
+		.hotgrid-item-graphic {
+			padding-top: 20px;
+			img {
+				@media all and (max-width:(@device-width-small)) {
+			 		display: none;
+				}
+			}
+		}
+	}
+}
+
 // Icons
 // =====
 
@@ -6557,14 +6852,6 @@ body {
 .no-touch .page-level-progress-item-title:hover .page-level-progress-indicator-complete .page-level-progress-indicator-bar {
 	background-color: darken(@red, 10%);
 }
-// recap block
-// ===========
-
-.recap-block {
-	.block-inner {
-		padding: 80px 40px;
-	}
-}
 // Resources
 // =========
 
@@ -6745,6 +7032,7 @@ body {
 // description: This over writes the existing tutor style
 
 .extension-tutor .tutor {
+	left: 0;
 	background-color: @grey!important;
 	color: @white!important;
 	.tutor-inner {
@@ -6765,6 +7053,7 @@ body {
 // ===========
 
 @primary-color: @red;
+@secondary-color: @black;
 
 @red: #ea0020;
 @black: #181914;
