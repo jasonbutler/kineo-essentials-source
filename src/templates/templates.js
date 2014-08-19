@@ -1852,12 +1852,12 @@ function program3(depth0,data) {
   return "disabled=\"disabled\"";
   }
 
-  buffer += "<div class=\"block-inner footer-inner\">\n	<button id=\"root\" class=\"button ";
+  buffer += "<div class=\"block-inner footer-inner\">\r\n	<button id=\"root\" class=\"button ";
   stack2 = helpers['if'].call(depth0, ((stack1 = ((stack1 = ((stack1 = depth0.config),stack1 == null || stack1 === false ? stack1 : stack1._buttons)),stack1 == null || stack1 === false ? stack1 : stack1._root)),stack1 == null || stack1 === false ? stack1 : stack1._isHidden), {hash:{},inverse:self.noop,fn:self.program(1, program1, data),data:data});
   if(stack2 || stack2 === 0) { buffer += stack2; }
   buffer += "\">"
     + escapeExpression(((stack1 = ((stack1 = ((stack1 = ((stack1 = depth0.config),stack1 == null || stack1 === false ? stack1 : stack1._buttons)),stack1 == null || stack1 === false ? stack1 : stack1._root)),stack1 == null || stack1 === false ? stack1 : stack1.text)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
-    + "</button>\n	<button id=\"previous\" class=\"button ";
+    + "</button>\r\n	<button id=\"previous\" class=\"button ";
   stack2 = helpers['if'].call(depth0, ((stack1 = ((stack1 = ((stack1 = depth0.config),stack1 == null || stack1 === false ? stack1 : stack1._buttons)),stack1 == null || stack1 === false ? stack1 : stack1._previous)),stack1 == null || stack1 === false ? stack1 : stack1._isHidden), {hash:{},inverse:self.noop,fn:self.program(1, program1, data),data:data});
   if(stack2 || stack2 === 0) { buffer += stack2; }
   buffer += "\" ";
@@ -1865,12 +1865,12 @@ function program3(depth0,data) {
   if(stack2 || stack2 === 0) { buffer += stack2; }
   buffer += ">"
     + escapeExpression(((stack1 = ((stack1 = ((stack1 = ((stack1 = depth0.config),stack1 == null || stack1 === false ? stack1 : stack1._buttons)),stack1 == null || stack1 === false ? stack1 : stack1._previous)),stack1 == null || stack1 === false ? stack1 : stack1.text)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
-    + "</button>\n	<button id=\"up\" class=\"button ";
+    + "</button>\r\n	<button id=\"up\" class=\"button ";
   stack2 = helpers['if'].call(depth0, ((stack1 = ((stack1 = ((stack1 = depth0.config),stack1 == null || stack1 === false ? stack1 : stack1._buttons)),stack1 == null || stack1 === false ? stack1 : stack1._up)),stack1 == null || stack1 === false ? stack1 : stack1._isHidden), {hash:{},inverse:self.noop,fn:self.program(1, program1, data),data:data});
   if(stack2 || stack2 === 0) { buffer += stack2; }
   buffer += "\">"
     + escapeExpression(((stack1 = ((stack1 = ((stack1 = ((stack1 = depth0.config),stack1 == null || stack1 === false ? stack1 : stack1._buttons)),stack1 == null || stack1 === false ? stack1 : stack1._up)),stack1 == null || stack1 === false ? stack1 : stack1.text)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
-    + "</button>\n	<button id=\"next\" class=\"button ";
+    + "</button>\r\n	<button id=\"next\" class=\"button ";
   stack2 = helpers['if'].call(depth0, ((stack1 = ((stack1 = ((stack1 = depth0.config),stack1 == null || stack1 === false ? stack1 : stack1._buttons)),stack1 == null || stack1 === false ? stack1 : stack1._next)),stack1 == null || stack1 === false ? stack1 : stack1._isHidden), {hash:{},inverse:self.noop,fn:self.program(1, program1, data),data:data});
   if(stack2 || stack2 === 0) { buffer += stack2; }
   buffer += "\" ";
@@ -1878,7 +1878,7 @@ function program3(depth0,data) {
   if(stack2 || stack2 === 0) { buffer += stack2; }
   buffer += ">"
     + escapeExpression(((stack1 = ((stack1 = ((stack1 = ((stack1 = depth0.config),stack1 == null || stack1 === false ? stack1 : stack1._buttons)),stack1 == null || stack1 === false ? stack1 : stack1._next)),stack1 == null || stack1 === false ? stack1 : stack1.text)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
-    + "</button>\n</div>";
+    + "</button>\r\n</div>";
   return buffer;
   });
 
